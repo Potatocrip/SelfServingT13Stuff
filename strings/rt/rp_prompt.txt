@@ -1,4 +1,4 @@
-<b>The year is 1521.</b> You are on the land known as 'TEMPERANCE,' a large continent that supports two major factions: The Great Empire of Perserdun and the Risvonian Ziggurate.
+You are on the land known as 'TEMPERANCE,' a large continent that supports two major factions: The Great Empire of Perserdun and the Risvonian Ziggurate.
 <br>
 <br>
 Ten years ago - strange, hyperfuturistic factories dubbed as 'MACHINES' started to appear in TEMPERANCE. They are the Machine of Love, Life, and War.
@@ -7,20 +7,20 @@ Ten years ago - strange, hyperfuturistic factories dubbed as 'MACHINES' started 
 <b>LOVE</b> brought ideas, foreign culture, and curious devices like the 'radio.'
 <br>
 <br>
-<b>LIFE</b> brought various medical wonders. It taught people the idea of microbes, and created things such as concrete.
+<b>LIFE</b> brought various medical wonders. It taught people the idea of microbes and chemistry, while creating things such as concrete.
 <br>
 <br>
-<b>WAR</b> brought rifles, bombs - gas masks, and artillery guns.
+<b>WAR</b> brought rifles, bombs - gas masks, and artillery guns into the world.
 <br>
 <br>
-You find yourself on the City-State of King's Row, a place heavily benefited by the exclusive surgence of various MACHINE-related dungeons known as 'OUTLETs'.
+You find yourself on the land of King's Row, a place heavily benefited by the exclusive surgence of various MACHINE-related dungeons dubbed 'OUTLETs'.
 <br>
 <br>
 The <b>Empire</b> demands loyalty and expansion. They love to show others the might and will of their God-King 'Rab.' 
 <br>
-The <b>Ziggurate</b> crushes those beneath it. They are strong - the others? Weak. From the Inheritor-Dunes of Risvon, to the great West - they seek to conquer all.
+The <b>Ziggurate</b> crushes those beneath it. They prioritize strength and hate the weak. From the Inheritor-Dunes of Risvon, to the great West - they seek to conquer all.
 <br>
-<b>King's Row</b> wishes to keep their way of life alive. Peace makes for the best riches, but war makes for good business as well.
+<b>King's Row</b> wishes to survive, and make some money admist the conflict.
 <br>
 <br>
 The Empire and the Ziggurate are natural enemies. One must conquer the other.
