@@ -72,3 +72,4 @@
 	H.change_stat("perception", 2)
 	H.change_stat("speed", 2)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_LONGSTRIDER, TRAIT_GENERIC)

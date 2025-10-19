@@ -67,3 +67,4 @@
 	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/pistols, 4, TRUE)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_LONGSTRIDER, TRAIT_GENERIC)

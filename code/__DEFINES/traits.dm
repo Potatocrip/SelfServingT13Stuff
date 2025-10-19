@@ -260,7 +260,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_WATERBREATHING = span_info("I do not drown in bodies of water."),
 	TRAIT_NUDE_SLEEPER = span_warning("I can't fall asleep unless I'm nude and in bed."),
 	TRAIT_ABYSSOR_SWIM = span_info("I get far less tired when swimming than my peers."),
-	TRAIT_LONGSTRIDER = span_info("Each of my steps finds it's footing no matter how treacherous the terrain is."),
+	TRAIT_LONGSTRIDER = span_info("I've been properly trained. Rough terrain doesn't slow my pace."),
 	TRAIT_TRAINED_SMITH = span_info("I've spent long training, and with some more, I will be able to smith legendary items."),
 	TRAIT_DEATHSIGHT = span_info("I can feel when someone nearby draws the Undermaiden's attention."),
 	TRAIT_FORGEBLESSED = span_info("Countless long nights spent forging metal have honed my endurance, allowing me to work an anvil far longer than most without tiring."),
