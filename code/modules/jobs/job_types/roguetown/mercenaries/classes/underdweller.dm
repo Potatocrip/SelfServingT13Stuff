@@ -3,13 +3,7 @@
 	name = "Underdweller"
 	tutorial = "A member of the Underdwellers, you've taken many of the deadliest contracts known to man in literal underground circles. Drow or Dwarf, you've put your differences aside for coin and adventure."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = list(
-		/datum/species/dwarf/mountain,
-		/datum/species/elf/dark,
-		/datum/species/kobold,
-		/datum/species/goblinp,				//Might be a little weird but goblins do reside in caves, and they could use a unique merc class type.
-		/datum/species/anthromorphsmall,	//Basically all under-ground races. Perfect for cave-clearing.
-	)
+	allowed_races = RACES_CONSCRIPT
 	outfit = /datum/outfit/job/roguetown/mercenary/underdweller
 	category_tags = list(CTAG_MERCENARY)
 	traits_applied = list(TRAIT_OUTLANDER)

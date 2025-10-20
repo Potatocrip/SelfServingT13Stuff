@@ -21,8 +21,6 @@
 	underwear_type = /obj/item/undies
 
 /datum/sprite_accessory/underwear/briefs/get_icon_state(obj/item/organ/organ, obj/item/bodypart/bodypart, mob/living/carbon/owner)
-	if(is_species(owner,/datum/species/dwarf))
-		return "maledwarf_reg"
 	if(owner.gender == FEMALE)
 		return "maleelf_reg"
 	return "male_reg"

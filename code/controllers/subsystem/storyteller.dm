@@ -1219,8 +1219,6 @@ SUBSYSTEM_DEF(gamemode)
 				GLOB.azure_round_stats[STATS_ALIVE_NORTHERN_HUMANS]++
 			if(iswoodelf(human_mob))
 				GLOB.azure_round_stats[STATS_ALIVE_WOOD_ELVES]++
-			if(ishalfelf(human_mob))
-				GLOB.azure_round_stats[STATS_ALIVE_HALF_ELVES]++
 			if(istiefling(human_mob))
 				GLOB.azure_round_stats[STATS_ALIVE_TIEFLINGS]++
 			if(ishalfkin(human_mob))

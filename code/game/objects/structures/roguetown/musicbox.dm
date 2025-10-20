@@ -1,32 +1,13 @@
 #define MUSIC_TAVCAT_OTHERWORLDLY list(\
-	"Lore" = 'sound/music/jukeboxes/otherworld/ac-ler.ogg',\
-	"Landmarks of Lullabies" = 'sound/music/jukeboxes/otherworld/ac-lol.ogg',\
-	"Waters of Sacrifice" = 'sound/music/jukeboxes/otherworld/acn-wos.ogg',\
-	"Solar Wind" = 'sound/music/jukeboxes/otherworld/av_solar.ogg',\
-	"Balthasar" = 'sound/music/jukeboxes/otherworld/ac-balthasar.ogg',\
-	"Dead Windmills" = 'sound/music/jukeboxes/otherworld/dead_windmills.ogg',\
-	"In Heaven Everythin" = 'sound/music/jukeboxes/otherworld/in_heaven_eif.ogg',\
-	"Jazznocn" = 'sound/music/jukeboxes/otherworld/jazznocn.ogg',\
-	"Vivalaluna-Damla" = 'sound/music/jukeboxes/otherworld/vivalaluna-damla.ogg',\
-	"Shades of Futility" = 'sound/music/jukeboxes/otherworld/fb-sofutile.ogg',\
-	"Mr Doubt" = 'sound/music/jukeboxes/otherworld/mr_doubt.ogg'\
+	"PEACE" = 'sound/music/jukeboxes/otherworld/song1.ogg',\
+	"FOR ME" = 'sound/music/jukeboxes/otherworld/song2.ogg',\
+	"SPIT" = 'sound/music/jukeboxes/otherworld/song3.ogg',\
+	"RESPIRATOR" = 'sound/music/jukeboxes/otherworld/song4.ogg',\
+	"DAMAGED" = 'sound/music/jukeboxes/otherworld/song5.ogg',\
 )
-#define MUSIC_TAVCAT_GENERIC list(\
-	"Song 1" = 'sound/music/jukeboxes/gen/tavern1.ogg',\
-	"Song 2" = 'sound/music/jukeboxes/gen/tavern2.ogg',\
-	"Song 3" = 'sound/music/jukeboxes/gen/tavern3.ogg'\
-)
-#define MUSIC_TAVCAT_OLDSCHOOL list(\
-	"Autumn Voyage" = 'sound/music/jukeboxes/oldschool/Autumn_Voyage.ogg',\
-	"Fanfare" = 'sound/music/jukeboxes/oldschool/Fanfare.ogg',\
-	"Greatness" = 'sound/music/jukeboxes/oldschool/Greatness.ogg',\
-	"Medieval" = 'sound/music/jukeboxes/oldschool/Medieval.ogg',\
-	"Sea Shanty2" = 'sound/music/jukeboxes/oldschool/Sea_Shanty2.ogg',\
-	"Shine" = 'sound/music/jukeboxes/oldschool/Shine.ogg',\
-	"Spirit" = 'sound/music/jukeboxes/oldschool/Spirit.ogg',\
-	"Still Night" = 'sound/music/jukeboxes/oldschool/Still_Night.ogg',\
-	"Venture" = 'sound/music/jukeboxes/oldschool/Venture.ogg',\
-	"Yesteryear" = 'sound/music/jukeboxes/oldschool/Yesteryear.ogg'\
+#define MUSIC_TAVCAT_RADIO list(\
+	"Risvonian Talkshow" = 'sound/music/jukeboxes/gen/talkshow.ogg',\
+	"Ziggurate's Simplified Anthem" = 'sound/music/jukeboxes/gen/countdown.ogg',\
 )
 
 /datum/looping_sound/musloop
@@ -47,15 +28,15 @@
 			L.add_stress(stress2give)
 
 /obj/structure/roguemachine/musicbox
-	name = "wax music device"
-	desc = "A marvelous device invented to record sermons. Aleksandar Gemrald Sparks invented this machine to discover prophecies of Psydon's return but failed. It now brings us strange music from another realm."
+	name = "metal radio"
+	desc = "Discovered within one of LOVE's catacombs, this funny little piece allows for telecommunications. It can even play some pre-recorded music."
 	icon = 'icons/roguetown/misc/machines.dmi'
 	icon_state = "music0"
 	density = TRUE
 	anchored = TRUE
 	max_integrity = 0
 	var/datum/looping_sound/musloop/soundloop
-	var/list/init_curfile = list('sound/music/jukeboxes/gen/tavern1.ogg') // A list of songs that curfile is set to on init. MUST BE IN ONE OF THE MUSIC_TAVCAT_'s.
+	var/list/init_curfile = list('sound/music/jukeboxes/gen/talkshow.ogg') // A list of songs that curfile is set to on init. MUST BE IN ONE OF THE MUSIC_TAVCAT_'s.
 	var/curfile // The current track that is playing right now
 	var/playing = FALSE // If music is playing or not. playmusic() deals with this don't mess with it.
 	var/curvol = 50 // The current volume at which audio is played. MAPPERS MAY TOUCH THIS.
@@ -115,16 +96,14 @@
 		toggle_music()
 
 	if(button_selection=="Change Song")
-		var/songlists_selection = input(user, "Which song list?", "\The [src]") as null | anything in list("OTHERWORLDLY"=MUSIC_TAVCAT_OTHERWORLDLY, "GENERIC"=MUSIC_TAVCAT_GENERIC, "OLDSCHOOL"=MUSIC_TAVCAT_OLDSCHOOL)
+		var/songlists_selection = input(user, "Which song list?", "\The [src]") as null | anything in list("RECORDED MUSIC"=MUSIC_TAVCAT_OTHERWORLDLY, "RADIO STATION"=MUSIC_TAVCAT_RADIO)
 		playsound(loc, pick('sound/misc/keyboard_select (1).ogg','sound/misc/keyboard_select (2).ogg','sound/misc/keyboard_select (3).ogg','sound/misc/keyboard_select (4).ogg'), 100, FALSE, -1)
 		user.visible_message(span_info("[user] presses a button on \the [src]."),span_info("I press a button on \the [src]."))
 		var/chosen_songlists_selection = null
-		if(songlists_selection=="OTHERWORLDLY")
+		if(songlists_selection=="RECORDED MUSIC")
 			chosen_songlists_selection = MUSIC_TAVCAT_OTHERWORLDLY
-		if(songlists_selection=="GENERIC")
-			chosen_songlists_selection = MUSIC_TAVCAT_GENERIC
-		if(songlists_selection=="OLDSCHOOL")
-			chosen_songlists_selection = MUSIC_TAVCAT_OLDSCHOOL
+		if(songlists_selection=="RADIO STATION")
+			chosen_songlists_selection = MUSIC_TAVCAT_RADIO
 		var/song_selection = input(user, "Which song do I play?", "\The [src]") as null | anything in chosen_songlists_selection
 		if(!Adjacent(user))
 			return
@@ -160,12 +139,11 @@
 
 /obj/structure/roguemachine/musicbox/tavern
 	init_curfile = list(\
-		'sound/music/jukeboxes/gen/tavern1.ogg',\
-		'sound/music/jukeboxes/gen/tavern2.ogg',\
-		'sound/music/jukeboxes/gen/tavern3.ogg',\
-		'sound/music/jukeboxes/otherworld/ac-lol.ogg',
-		'sound/music/jukeboxes/otherworld/ac-balthasar.ogg',\
-		'sound/music/jukeboxes/otherworld/vivalaluna-damla.ogg',\
+		'sound/music/jukeboxes/gen/talkshow.ogg',\
+		'sound/music/jukeboxes/gen/countdown.ogg',\
+		'sound/music/jukeboxes/otherworld/song1.ogg',
+		'sound/music/jukeboxes/otherworld/song2.ogg',\
+		'sound/music/jukeboxes/otherworld/song3.ogg',\
 	)
 	curvol = 65
 	playuponspawn = TRUE

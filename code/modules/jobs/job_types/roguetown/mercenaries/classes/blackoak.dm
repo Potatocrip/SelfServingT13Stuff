@@ -4,7 +4,6 @@
 	tutorial = "A shady guardian of the Black Oaks. Half mercenary band, half irregular militia fighting for control of their ancestral elven homeland of the Peaks. Thankfully, you are not here today to shed the blood of the Duke's men- unless someone pays you to..."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
-		/datum/species/human/halfelf,
 		/datum/species/elf/wood,
 	)
 	outfit = /datum/outfit/job/roguetown/mercenary/blackoak
