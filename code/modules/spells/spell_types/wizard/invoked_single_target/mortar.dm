@@ -41,7 +41,7 @@
 	
 		playsound(T, 'sound/magic/artilleryload.ogg', 80, TRUE, soundping = FALSE)
 
-		spawn(delay)
+		sleep(delay)
 		new /obj/effect/temp_visual/mortarmark(affected_turf)
 		for(var/mob/living/L in affected_turf.contents) 
 			if(L.anti_magic_check())
@@ -50,7 +50,7 @@
 				return TRUE
 
 		playsound(T, mortarfall, 100, FALSE)
-		spawn (30)
+		sleep (3 SECONDS)
 		explosion(T, devastation_range = 2, heavy_impact_range = 3, light_impact_range = 4, smoke = TRUE, soundin = mortarexplosion)
 		new /obj/effect/decal/crater(T)
 	return TRUE
