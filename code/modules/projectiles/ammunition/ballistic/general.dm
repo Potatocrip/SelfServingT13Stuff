@@ -1,7 +1,7 @@
 //rifles
 
 /obj/item/ammo_casing/a762
-	name = "7.62 FMJ bullet casing"
+	name = "7.62mmR lead bullet casing"
 	desc = "A 7.62 FMJ bullet."
 	icon_state = "spent-casing_QT_rifle"
 	caliber = "a762"

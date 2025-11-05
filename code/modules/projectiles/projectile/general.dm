@@ -1,5 +1,5 @@
 /obj/projectile/bullet/a762
-	name = "7.62 bullet"
+	name = "7.62mmR lead bullet"
 	icon_state = "bullet_proj"
 	damage = 70
 
