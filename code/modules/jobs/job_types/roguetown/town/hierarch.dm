@@ -56,10 +56,9 @@
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 
 	if(should_wear_masc_clothes(H))
-		armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/bulwark
+		armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/hierarch
 		pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 		shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 		gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
-		head  = /obj/item/clothing/head/roguetown/flathat
 	else if(should_wear_femme_clothes(H))
 		shirt = /obj/item/clothing/suit/roguetown/shirt/hierarchess
