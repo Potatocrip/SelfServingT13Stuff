@@ -784,7 +784,7 @@
 
 /turf/closed/wall/mineral/rogue/kingsrow
 	name = "complex wall"
-	desc = "It's looks like it's made out of interlocking & hinged sheets of unfolded metal."
+	desc = "It looks like it's made out of interlocking & hinged sheets of unfolded metal."
 	icon = 'icons/turf/roguewall.dmi'
 	icon_state = "cornermetaldark"
 	smooth = SMOOTH_FALSE
@@ -817,15 +817,14 @@
 /turf/closed/wall/mineral/rogue/kingsrow/end/north
 	dir = 1
 
-/turf/closed/wall/mineral/rogue/kingsrow/slitted
-	icon_state = "cornermetaldark"
-
 /turf/closed/wall/mineral/rogue/kingsrow/light
 	name = "light source"
-	desc = "This panel has some kind of bulb in it."
+	desc = "There's a light fixed to this one."
 	icon_state = "subwindowmetaldark"
-	opacity = FALSE
 	max_integrity = 850
+	light_outer_range =  1
+	light_power = 0.75
+	light_color = LIGHT_COLOR_BLUEGREEN
 
 /turf/closed/wall/mineral/rogue/scary
 	name = "weird wall"
@@ -861,6 +860,3 @@
 
 /turf/closed/wall/mineral/rogue/scary/end/north
 	dir = 1
-
-/turf/closed/wall/mineral/rogue/scary/slitted
-	icon_state = "cornersteeldark"

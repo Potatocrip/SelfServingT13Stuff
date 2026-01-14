@@ -1578,3 +1578,160 @@
 	heavyfootstep = FOOTSTEP_PLATING
 	smooth = SMOOTH_TRUE
 	canSmoothWith = list(/turf/open/floor/rogue/warfloor1,/turf/open/floor/rogue/warfloor2,/turf/open/floor/rogue/warfloor3,/turf/open/floor/rogue/mainwarfloor)
+
+/turf/open/floor/rogue/risvon
+	name = "concrete floor"
+	icon_state = "risvon1"
+	desc = "Harsh, warm concrete."
+	landsound = 'sound/foley/jumpland/tileland.wav'
+	footstep = FOOTSTEP_FLOOR
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	footstepstealth = TRUE
+	smooth = SMOOTH_MORE
+	canSmoothWith = list(/turf/closed/wall/mineral/rogue/miscroof,
+						/turf/closed/wall/mineral/rogue/risvon,
+						/turf/closed/wall/mineral/rogue/machine,
+						/turf/closed/wall/mineral/rogue/perserdun,
+						/turf/closed/wall/mineral/rogue/kingsrow,
+						/turf/closed/wall/mineral/rogue/scary,
+						/turf/open/floor/rogue/cobble,
+						/turf/open/floor/rogue/dirt,
+						/turf/open/floor/rogue/grass,
+						/turf/open/floor/rogue/grassred,
+						/turf/open/floor/rogue/grassyel,
+						/turf/open/floor/rogue/grasscold,
+						/turf/open/floor/rogue/snowpatchy,
+						/turf/open/floor/rogue/snow,
+						/turf/open/floor/rogue/snowrough,)
+
+/turf/open/floor/rogue/risvon/Initialize()
+	. = ..()
+	icon_state = "risvon[rand(1,2)]"
+
+/turf/open/floor/rogue/risvondeco
+	name = "chiseled floor"
+	icon_state = "decoris1"
+	desc = "It's easy to tell that this is a slotted-in tile."
+	landsound = 'sound/foley/jumpland/tileland.wav'
+	footstep = FOOTSTEP_FLOOR
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	footstepstealth = TRUE
+	smooth = SMOOTH_MORE
+	canSmoothWith = list(/turf/closed/wall/mineral/rogue/miscroof,
+						/turf/closed/wall/mineral/rogue/risvon,
+						/turf/closed/wall/mineral/rogue/machine,
+						/turf/closed/wall/mineral/rogue/perserdun,
+						/turf/closed/wall/mineral/rogue/kingsrow,
+						/turf/closed/wall/mineral/rogue/scary,
+						/turf/open/floor/rogue/risvondeco,
+						/turf/open/floor/rogue/plate,
+						/turf/open/floor/rogue/wardouble,
+						/turf/open/floor/rogue/warquad,
+						/turf/open/floor/rogue/med,)
+
+/turf/open/floor/rogue/risvondeco/Initialize()
+	. = ..()
+	icon_state = "decoris[rand(1,2)]"
+
+/turf/open/floor/rogue/plate
+	name = "metal floor"
+	icon_state = "metal1"
+	desc = "It's cold."
+	landsound = 'sound/foley/jumpland/metalland.wav'
+	footstep = FOOTSTEP_PLATING
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	footstepstealth = TRUE
+	smooth = SMOOTH_MORE
+	canSmoothWith = list(/turf/closed/wall/mineral/rogue/miscroof,
+						/turf/closed/wall/mineral/rogue/risvon,
+						/turf/closed/wall/mineral/rogue/machine,
+						/turf/closed/wall/mineral/rogue/perserdun,
+						/turf/closed/wall/mineral/rogue/kingsrow,
+						/turf/closed/wall/mineral/rogue/scary,
+						/turf/open/floor/rogue/risvon,
+						/turf/open/floor/rogue/risvondeco,
+						/turf/open/floor/rogue/wardouble,
+						/turf/open/floor/rogue/warquad,
+						/turf/open/floor/rogue/med,)
+
+/turf/open/floor/rogue/plate/Initialize()
+	. = ..()
+	icon_state = "metal[rand(1,2)]"
+
+/turf/open/floor/rogue/wardouble
+	name = "metal floor"
+	icon_state = "wardouble"
+	desc = "It's cold."
+	landsound = 'sound/foley/jumpland/metalland.wav'
+	footstep = FOOTSTEP_PLATING
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	footstepstealth = TRUE
+	smooth = SMOOTH_MORE
+	canSmoothWith = list(/turf/closed/wall/mineral/rogue/miscroof,
+						/turf/closed/wall/mineral/rogue/risvon,
+						/turf/closed/wall/mineral/rogue/machine,
+						/turf/closed/wall/mineral/rogue/perserdun,
+						/turf/closed/wall/mineral/rogue/kingsrow,
+						/turf/closed/wall/mineral/rogue/scary,
+						/turf/open/floor/rogue/risvon,
+						/turf/open/floor/rogue/risvondeco,
+						/turf/open/floor/rogue/plate,
+						/turf/open/floor/rogue/warquad,
+						/turf/open/floor/rogue/med,)
+
+/turf/open/floor/rogue/warquad
+	name = "metal floor"
+	icon_state = "warquad"
+	desc = "It's cold."
+	landsound = 'sound/foley/jumpland/metalland.wav'
+	footstep = FOOTSTEP_PLATING
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	footstepstealth = TRUE
+	smooth = SMOOTH_MORE
+	canSmoothWith = list(/turf/closed/wall/mineral/rogue/miscroof,
+						/turf/closed/wall/mineral/rogue/risvon,
+						/turf/closed/wall/mineral/rogue/machine,
+						/turf/closed/wall/mineral/rogue/perserdun,
+						/turf/closed/wall/mineral/rogue/kingsrow,
+						/turf/closed/wall/mineral/rogue/scary,
+						/turf/open/floor/rogue/risvon,
+						/turf/open/floor/rogue/risvondeco,
+						/turf/open/floor/rogue/plate,
+						/turf/open/floor/rogue/wardouble,
+						/turf/open/floor/rogue/med,)
+
+/turf/open/floor/rogue/med
+	name = "sterile floor"
+	icon_state = "med1"
+	desc = "It's gloomy."
+	landsound = 'sound/foley/jumpland/tileland.wav'
+	footstep = FOOTSTEP_FLOOR
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	footstepstealth = TRUE
+	smooth = SMOOTH_MORE
+	canSmoothWith = list(/turf/closed/wall/mineral/rogue/miscroof,
+						/turf/closed/wall/mineral/rogue/risvon,
+						/turf/closed/wall/mineral/rogue/machine,
+						/turf/closed/wall/mineral/rogue/perserdun,
+						/turf/closed/wall/mineral/rogue/kingsrow,
+						/turf/closed/wall/mineral/rogue/scary,
+						/turf/open/floor/rogue/risvon,
+						/turf/open/floor/rogue/risvondeco,
+						/turf/open/floor/rogue/plate,
+						/turf/open/floor/rogue/wardouble,
+						/turf/open/floor/rogue/warquad,)
+/turf/open/floor/rogue/med/Initialize()
+	. = ..()
+	icon_state = "med[rand(1,4)]"
