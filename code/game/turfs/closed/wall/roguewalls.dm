@@ -672,16 +672,16 @@
 /turf/closed/wall/mineral/rogue/risvon/outercorner/dir4
 	dir = 4
 
-/turf/closed/wall/mineral/rogue/risvon/innercorner
-	icon_state = "building_IC"
+/turf/closed/wall/mineral/rogue/risvon/tshape
+	icon_state = "building_T"
 
-/turf/closed/wall/mineral/rogue/risvon/innercorner/dir1
+/turf/closed/wall/mineral/rogue/risvon/tshape/dir1
 	dir = 1
 
-/turf/closed/wall/mineral/rogue/risvon/innercorner/dir8
+/turf/closed/wall/mineral/rogue/risvon/tshape/dir8
 	dir = 8
 
-/turf/closed/wall/mineral/rogue/risvon/innercorner/dir4
+/turf/closed/wall/mineral/rogue/risvon/tshape/dir4
 	dir = 4
 
 /turf/closed/wall/mineral/rogue/machine
@@ -780,6 +780,18 @@
 	dir = 8
 
 /turf/closed/wall/mineral/rogue/perserdun/outercorner/dir4
+	dir = 4
+
+/turf/closed/wall/mineral/rogue/perserdun/tshape
+	icon_state = "building2_T"
+
+/turf/closed/wall/mineral/rogue/perserdun/tshape/dir1
+	dir = 1
+
+/turf/closed/wall/mineral/rogue/perserdun/tshape/dir8
+	dir = 8
+
+/turf/closed/wall/mineral/rogue/perserdun/tshape/dir4
 	dir = 4
 
 /turf/closed/wall/mineral/rogue/kingsrow

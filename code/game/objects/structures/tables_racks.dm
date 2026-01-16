@@ -625,3 +625,17 @@
 	else
 		patient = null
 		return FALSE
+
+
+// t13 stuff
+
+/obj/structure/table/wood/perserdunsmall
+	name = "ancient wooden table"
+	desc = ""
+	icon = 'icons/roguetown/misc/tables.dmi'
+	icon_state = "vtableshort"
+	resistance_flags = FLAMMABLE
+	max_integrity = 70
+	smooth = 0
+	climb_offset = 10
+	buildstack = /obj/item/grown/log/tree/small
