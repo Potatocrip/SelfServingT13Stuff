@@ -51,7 +51,7 @@
 	name = ""
 	desc = ""
 	icon = 'icons/effects/dirt.dmi'
-	icon_state = "dirt1" //1-4 are meant for perserdunian tiles
+	icon_state = "dirt1" //dirt 1-4 are meant for perserdunian tiles
 	gender = NEUTER
 	layer = WALL_OBJ_LAYER
 	plane = -1
@@ -66,6 +66,12 @@
 
 /obj/effect/decal/cleanable/dirt/grime/grime4
 	icon_state = "dirt4"
+
+/obj/effect/decal/cleanable/dirt/grime/dust
+	icon_state = "dust1"
+
+/obj/effect/decal/cleanable/dirt/grime/dust
+	icon_state = "dust2"
 
 /obj/effect/decal/cleanable/molten_object
 	name = "gooey grey mass"

@@ -6,6 +6,20 @@
 	},
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
+"ai" = (
+/obj/machinery/light/rogue/wallfire/candle/blue/r{
+	light_color = "#505f7a"
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
+"al" = (
+/obj/structure/chair/wood/rogue/chair4{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "au" = (
 /obj/machinery/light/rogue/smelter/hiron,
 /turf/open/floor/rogue/perdun,
@@ -27,6 +41,18 @@
 /area/rogue/indoors/perserdunbase)
 "be" = (
 /obj/structure/table/vtable,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
+"bn" = (
+/obj/effect/decal/cleanable/dirt/grime,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
+"bp" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	light_color = "#505f7a";
+	pixel_y = -32
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime3,
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
 "bu" = (
@@ -215,6 +241,11 @@
 	},
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
+"dH" = (
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "dO" = (
 /obj/structure/flora/roguetree/stump/log{
 	pixel_x = -18;
@@ -277,6 +308,13 @@
 /obj/effect/landmark/start/knightcommander,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/perserdunbase)
+"eA" = (
+/obj/machinery/light/rogue/wallfire/candle/blue/l{
+	light_color = "#505f7a"
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "eG" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/l{
 	light_color = "#505f7a"
@@ -307,6 +345,11 @@
 /obj/effect/spawner/lootdrop/t13armor,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/perserdun)
+"fh" = (
+/obj/structure/bars,
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "fq" = (
 /obj/structure/table/wood/perserdunsmall{
 	pixel_y = -1
@@ -397,10 +440,26 @@
 	desc = "Comforting to some."
 	},
 /area/rogue/indoors/perserdunbase)
+"gP" = (
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/closed/wall/mineral/rogue/perserdun/long,
+/area/rogue/indoors/perserdunbase)
+"gX" = (
+/obj/effect/landmark/start/auxiliarist,
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "gY" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/perserdun)
+"ha" = (
+/obj/machinery/light/rogue/wallfire/candle/blue/r{
+	light_color = "#505f7a"
+	},
+/obj/effect/decal/cleanable/dirt/grime,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "hl" = (
 /obj/structure/flora/roguetree/burnt{
 	pixel_y = -18;
@@ -447,6 +506,10 @@
 "hV" = (
 /turf/closed/wall/mineral/rogue/perserdun/end/north,
 /area/rogue/indoors/perserdunbase)
+"hW" = (
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "ia" = (
 /obj/structure/roguemachine/goldface/public/grace{
 	pixel_y = 10
@@ -461,8 +524,17 @@
 	},
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
+"iQ" = (
+/obj/structure/closet/crate/chest/neu{
+	name = "prisoner belongings"
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "ji" = (
-)
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/closed/wall/mineral/rogue/perserdun/long,
+/area/rogue/indoors/perserdunbase)
 "jm" = (
 /obj/structure/table/wood/map/two,
 /turf/open/floor/rogue/carpet,
@@ -510,6 +582,7 @@
 /obj/item/reagent_containers/food/snacks/rogue/meat/steak,
 /obj/item/reagent_containers/food/snacks/rogue/meat/steak,
 /obj/item/reagent_containers/food/snacks/rogue/meat/steak,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
 "km" = (
@@ -558,6 +631,11 @@
 /area/rogue/indoors/perserdunbase)
 "ld" = (
 /turf/closed/wall/mineral/rogue/perserdun/end,
+/area/rogue/indoors/perserdunbase)
+"lA" = (
+/obj/structure/fluff/walldeco/chains,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
 "lC" = (
 /turf/closed/wall/mineral/rogue/perserdun/tshape/dir1,
@@ -650,6 +728,10 @@
 /obj/effect/landmark/start/armsman,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/perserdunbase)
+"nz" = (
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/closed/wall/mineral/rogue/perserdun/long/east_west,
+/area/rogue/indoors/perserdunbase)
 "nL" = (
 /obj/structure/fluff/statue/gargoyle/candles{
 	pixel_y = 10
@@ -665,10 +747,19 @@
 /area/rogue/indoors/perserdunbase)
 "nR" = (
 /obj/structure/table/wood/map/six,
+/obj/effect/decal/cleanable/dirt/grime/grime4,
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/perserdunbase)
 "nT" = (
 /turf/closed/wall/mineral/rogue/perserdun/outercorner/dir4,
+/area/rogue/indoors/perserdunbase)
+"nU" = (
+/obj/structure/fluff/walldeco/grandmaster{
+	pixel_x = 33;
+	pixel_y = 0
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
 "nW" = (
 /obj/structure/mineral_door/wood/violet{
@@ -680,6 +771,19 @@
 "oj" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue)
+"ok" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	light_color = "#505f7a";
+	pixel_y = -32
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
+"oo" = (
+/obj/effect/decal/cleanable/dirt/grime,
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "oq" = (
 /obj/structure/table/wood/map/three,
 /turf/open/floor/rogue/perdun,
@@ -749,6 +853,16 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/perserdun)
+"pD" = (
+/obj/structure/chair/wood/rogue/chair4{
+	dir = 4
+	},
+/obj/machinery/light/rogue/wallfire/candle/blue/l{
+	light_color = "#505f7a"
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "pQ" = (
 /obj/structure/fermentation_keg/water,
 /turf/open/floor/rogue/perdun,
@@ -787,6 +901,10 @@
 /area/rogue/outdoors/perserdun)
 "qS" = (
 /obj/item/roguebin/water,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
+"qW" = (
+/obj/effect/decal/cleanable/dirt/grime/grime4,
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
 "re" = (
@@ -926,6 +1044,10 @@
 	light_color = "#505f7a"
 	},
 /turf/open/floor/rogue/church,
+/area/rogue/indoors/perserdunbase)
+"sG" = (
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/turf/closed/wall/mineral/rogue/perserdun/end/west,
 /area/rogue/indoors/perserdunbase)
 "sH" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/l{
@@ -1072,6 +1194,11 @@
 	},
 /turf/open/water/swamp/deep,
 /area/rogue/outdoors/perserdun)
+"tV" = (
+/obj/structure/rack/rogue/shelf/biggest,
+/obj/effect/decal/cleanable/dirt/grime,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "uf" = (
 /turf/closed/wall/mineral/rogue/scary/end,
 /area/rogue)
@@ -1226,6 +1353,13 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/perserdunbase)
+"xL" = (
+/obj/machinery/light/rogue/wallfire/candle/blue/r{
+	light_color = "#505f7a"
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "yh" = (
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/dirt/road,
@@ -1235,6 +1369,10 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
+"yx" = (
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/closed/wall/mineral/rogue/perserdun,
 /area/rogue/indoors/perserdunbase)
 "yD" = (
 /obj/machinery/light/rogue/hearth,
@@ -1251,6 +1389,11 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/perserdun)
+"yL" = (
+/obj/effect/decal/cleanable/dirt/grime,
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "yM" = (
 /obj/effect/decal/cleanable/debris/stony{
 	dir = 8
@@ -1308,6 +1451,13 @@
 /obj/structure/fluff/walldeco/xavo{
 	pixel_y = 32
 	},
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
+"zm" = (
+/obj/machinery/light/rogue/wallfire/candle/blue/r{
+	light_color = "#505f7a"
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime3,
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
 "zB" = (
@@ -1396,6 +1546,13 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/perserdunbase)
+"Bu" = (
+/obj/effect/decal/cleanable/debris/stony{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/grime,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "Bw" = (
 /turf/closed/wall/mineral/rogue/perserdun/tshape,
 /area/rogue/indoors/perserdunbase)
@@ -1421,6 +1578,13 @@
 	},
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
+"BW" = (
+/obj/structure/chair/wood/rogue/chair4{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "BY" = (
 /obj/structure/table/wood/map/four,
 /turf/open/floor/rogue/carpet,
@@ -1428,6 +1592,11 @@
 "Cj" = (
 /turf/open/floor/rogue/perdun,
 /area/rogue/outdoors/exposed/perserdunbase)
+"Cl" = (
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "Cm" = (
 /obj/structure/fluff/walldeco/grandmaster{
 	pixel_y = 32
@@ -1540,6 +1709,12 @@
 	},
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
+"Ey" = (
+/obj/effect/decal/cleanable/debris/stony,
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "EA" = (
 /obj/structure/chair/wood/rogue/chair4{
 	dir = 8
@@ -1608,6 +1783,7 @@
 /obj/structure/fluff/walldeco/xavo{
 	pixel_y = 32
 	},
+/obj/effect/decal/cleanable/dirt/grime/grime4,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/perserdunbase)
 "FO" = (
@@ -1678,6 +1854,14 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/perserdun)
+"If" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	light_color = "#505f7a";
+	pixel_y = -32
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "Ig" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue)
@@ -1790,6 +1974,12 @@
 	pixel_y = -2;
 	layer = 4.11
 	},
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
+"Jx" = (
+/obj/structure/bars,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
 "JJ" = (
@@ -1813,6 +2003,13 @@
 "Ke" = (
 /turf/closed/wall/mineral/rogue/miscroof/outercorner,
 /area/rogue/outdoors/perserdun)
+"Kf" = (
+/obj/machinery/light/rogue/wallfire/candle/weak{
+	pixel_y = -32
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "Kh" = (
 /turf/closed/wall/mineral/rogue/scary/horizontal,
 /area/rogue)
@@ -1856,6 +2053,7 @@
 /area/rogue/indoors/perserdunbase)
 "KO" = (
 /obj/structure/table/wood/map/three,
+/obj/effect/decal/cleanable/dirt/grime/grime4,
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/perserdunbase)
 "Ld" = (
@@ -1901,11 +2099,23 @@
 	},
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
+"LE" = (
+/obj/structure/fluff/walldeco/xavo{
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "LJ" = (
 /obj/structure/chair/wood/rogue/chair4{
 	pixel_y = -9
 	},
 /obj/effect/landmark/start/knightcommander,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
+"LL" = (
+/obj/structure/fluff/railing/border/north,
+/obj/effect/decal/cleanable/dirt/grime/grime4,
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
 "LT" = (
@@ -2084,6 +2294,13 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/perserdun)
+"OC" = (
+/obj/structure/fluff/railing/border/west{
+	pixel_x = -7
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "OE" = (
 /obj/machinery/light/rogue/wallfire/candle/blue{
 	light_color = "#505f7a";
@@ -2144,6 +2361,7 @@
 	pixel_x = -7;
 	pixel_y = -3
 	},
+/obj/effect/decal/cleanable/dirt/grime/grime3,
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
 "PX" = (
@@ -2177,6 +2395,10 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/perserdun)
+"Qw" = (
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/closed/mineral/rogue/bedrock,
+/area/rogue/outdoors/perserdun)
 "Qx" = (
 /obj/structure/fluff/statue/gargoyle/candles{
 	pixel_y = 29;
@@ -2207,6 +2429,10 @@
 /obj/structure/mineral_door/wood/wardoor,
 /turf/open/floor/rogue/warmetal,
 /area/rogue)
+"Rd" = (
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "Rm" = (
 /turf/closed/wall/mineral/rogue/perserdun/outercorner,
 /area/rogue/indoors/perserdunbase)
@@ -2235,6 +2461,19 @@
 "RH" = (
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/perserdun)
+"RJ" = (
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
+"RL" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	light_color = "#505f7a"
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "RR" = (
 /obj/structure/table/vtable/v2,
 /obj/item/clothing/head/roguetown/chef{
@@ -2301,11 +2540,23 @@
 "Sy" = (
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/perserdunbase)
+"Sz" = (
+/obj/machinery/light/rogue/wallfire/candle/blue/r{
+	light_color = "#505f7a"
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "SS" = (
 /obj/machinery/light/rogue/firebowl/standing/blue{
 	light_color = "#505f7a"
 	},
 /turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
+"SX" = (
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/closed/wall/mineral/rogue/perserdun/end,
 /area/rogue/indoors/perserdunbase)
 "Tx" = (
 /turf/open/water/bloody{
@@ -2489,6 +2740,11 @@
 	},
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
+"Wr" = (
+/obj/structure/bed/rogue/bedroll,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "Wt" = (
 /obj/structure/fluff/walldeco/pray{
 	pixel_y = 0;
@@ -2510,9 +2766,30 @@
 	},
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
+"WI" = (
+/obj/structure/chair/wood/rogue/chair4{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "WN" = (
 /turf/closed/wall/mineral/rogue/miscroof/outercorner/dir4,
 /area/rogue/outdoors/perserdun)
+"WT" = (
+/obj/structure/table/vtable,
+/obj/item/rogueweapon/hammer/iron{
+	pixel_y = 9
+	},
+/obj/item/rogueweapon/tongs/stone{
+	name = "tongs";
+	pixel_y = -3;
+	pixel_x = 3
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/open/floor/rogue/perdun,
+/area/rogue/indoors/perserdunbase)
 "XB" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/r{
 	light_color = s
@@ -3930,7 +4207,7 @@ IG
 (11,1,1) = {"
 IG
 IG
-ji
+mG
 vF
 vF
 vF
@@ -12651,7 +12928,7 @@ IG
 IG
 IG
 IG
-IG
+Qw
 IG
 ML
 ML
@@ -12782,7 +13059,7 @@ IG
 IG
 IG
 IG
-IG
+Qw
 IG
 IG
 IG
@@ -12913,7 +13190,7 @@ IG
 IG
 IG
 IG
-IG
+Qw
 IG
 IG
 IG
@@ -13295,7 +13572,7 @@ mN
 BY
 kL
 CQ
-CQ
+Cl
 Bw
 Bb
 Bb
@@ -13426,7 +13703,7 @@ YC
 jm
 CQ
 CQ
-Dz
+sG
 FB
 tE
 zX
@@ -13554,17 +13831,17 @@ Qd
 mN
 nR
 KO
-CQ
+hW
 CQ
 iO
 CQ
-CQ
-CQ
-CQ
-CQ
-CQ
-CQ
-CQ
+Rd
+Rd
+RJ
+hW
+hW
+hW
+hW
 Qd
 eu
 CQ
@@ -13683,9 +13960,9 @@ IG
 Qd
 CQ
 cG
-cG
+BW
 CQ
-CQ
+hW
 zf
 IW
 zY
@@ -13828,7 +14105,7 @@ ma
 rT
 hV
 ma
-ld
+SX
 Bb
 Bb
 Bb
@@ -13950,34 +14227,34 @@ Dz
 CQ
 dP
 CQ
+hW
 CQ
+dP
+CQ
+yL
 CQ
 dP
 CQ
 CQ
+hW
+CQ
+CQ
+qW
+qW
 CQ
 dP
-CQ
-CQ
-CQ
-CQ
-CQ
-CQ
-CQ
-CQ
-dP
-CQ
+RJ
 CQ
 CQ
 ZN
 CQ
 ZN
-CQ
+hW
 dP
 CQ
 CQ
 Dz
-CQ
+hW
 rT
 nT
 qs
@@ -14074,7 +14351,7 @@ nL
 ia
 CQ
 CQ
-CQ
+qW
 CQ
 Rt
 CQ
@@ -14084,6 +14361,7 @@ CQ
 CQ
 CQ
 CQ
+hW
 CQ
 CQ
 CQ
@@ -14092,19 +14370,18 @@ CQ
 CQ
 CQ
 CQ
+qW
+CQ
+CQ
+hW
 CQ
 CQ
 CQ
+hW
 CQ
+hW
 CQ
-CQ
-CQ
-CQ
-CQ
-CQ
-CQ
-CQ
-CQ
+hW
 CQ
 ma
 CQ
@@ -14202,10 +14479,10 @@ IG
 IG
 Qd
 eu
-CQ
+qW
 CQ
 AH
-CQ
+qW
 zf
 cG
 EA
@@ -14216,30 +14493,30 @@ AH
 CQ
 CQ
 CQ
+hW
+CQ
+ai
 CQ
 CQ
+hW
+zm
+CQ
+hW
+qW
+Sz
 AH
 CQ
 CQ
 CQ
-AH
 CQ
 CQ
 CQ
-AH
-AH
-CQ
-CQ
-CQ
-CQ
-CQ
-CQ
-CQ
+hW
 CQ
 zf
 KN
 CQ
-CQ
+qW
 Nl
 qs
 ML
@@ -14344,7 +14621,7 @@ PX
 ld
 nT
 CQ
-CQ
+Rd
 CQ
 Rm
 Bb
@@ -14365,10 +14642,10 @@ CQ
 Rm
 Bb
 Bb
-Bb
+ji
 lC
 lb
-CQ
+hW
 CQ
 Wj
 qs
@@ -14482,7 +14759,7 @@ JT
 Iz
 CQ
 Iz
-JT
+pD
 Iz
 Qd
 sV
@@ -14491,11 +14768,11 @@ sV
 VT
 Qd
 un
-CQ
-Qd
+qW
+nz
 VK
 VK
-VK
+yx
 Qd
 Bd
 CQ
@@ -14608,9 +14885,9 @@ CQ
 oY
 Qd
 Iz
+al
 Iz
-Iz
-CQ
+Rd
 Iz
 Iz
 Iz
@@ -14622,7 +14899,7 @@ CQ
 Qd
 CQ
 CQ
-Qd
+nz
 VK
 VK
 VK
@@ -14735,12 +15012,12 @@ Sy
 Qd
 CQ
 CQ
-CQ
+hW
 Qd
-CQ
+hW
+al
 Iz
-Iz
-CQ
+Rd
 Iz
 Iz
 CQ
@@ -14751,7 +15028,7 @@ Lj
 CQ
 Qd
 CQ
-CQ
+hW
 Qd
 VK
 VK
@@ -14759,7 +15036,7 @@ VK
 Qd
 Vn
 CQ
-CQ
+Rd
 Wj
 qs
 ML
@@ -14870,25 +15147,25 @@ Qd
 CQ
 Iz
 Iz
-CQ
+Rd
 Iz
-Iz
+WI
 CQ
 Qd
 Jk
-CQ
+Rd
 Jk
 CQ
 Qd
-CQ
-CQ
+hW
+hW
 Qd
 VK
 VK
 VK
 Qd
 oq
-CQ
+Rd
 CQ
 tl
 yY
@@ -14983,7 +15260,7 @@ IG
 Qd
 fq
 CQ
-CQ
+hW
 CQ
 hr
 Qd
@@ -14994,14 +15271,14 @@ Sy
 Bj
 Qd
 eu
-CQ
+hW
 CQ
 Qd
 CQ
 Iz
 Iz
 CQ
-Iz
+WI
 Iz
 CQ
 Bw
@@ -15017,8 +15294,8 @@ VK
 VK
 VK
 Qd
-CQ
-CQ
+Rd
+Rd
 Rm
 hV
 qs
@@ -15136,7 +15413,7 @@ CQ
 CQ
 Qd
 au
-jI
+LL
 BI
 jI
 Qd
@@ -15243,7 +15520,7 @@ IG
 Qd
 dG
 CQ
-CQ
+bn
 CQ
 hr
 Qd
@@ -15253,9 +15530,9 @@ Sy
 Sy
 Sy
 Qd
+Rd
 CQ
-CQ
-CQ
+hW
 Qd
 CQ
 sV
@@ -15271,7 +15548,7 @@ Lt
 jI
 Qd
 CQ
-CQ
+hW
 Bw
 Bb
 Bb
@@ -15385,7 +15662,7 @@ Bj
 Qd
 un
 CQ
-oY
+bp
 Qd
 CQ
 sV
@@ -15395,12 +15672,12 @@ xI
 sV
 CQ
 Qd
-XP
+OC
 CQ
 RT
-CQ
+Rd
 Qd
-CQ
+hW
 CQ
 Qd
 VK
@@ -15504,7 +15781,7 @@ Qd
 Vy
 CQ
 CQ
-CQ
+bn
 VN
 Qd
 Da
@@ -15515,11 +15792,11 @@ Sy
 Qd
 CQ
 CQ
-CQ
+hW
 Qd
-CQ
+bn
 AH
-VH
+nU
 eo
 VH
 AH
@@ -15645,7 +15922,7 @@ ld
 lC
 bM
 CQ
-CQ
+hW
 Bw
 Bb
 Bb
@@ -15763,7 +16040,7 @@ IG
 Qd
 zB
 CQ
-CQ
+qW
 CQ
 VN
 Qd
@@ -15773,8 +16050,8 @@ Sy
 kp
 OE
 Qd
-CQ
-CQ
+Rd
+Rd
 oY
 Qd
 rY
@@ -15786,7 +16063,7 @@ be
 Iy
 Qd
 Jv
-CQ
+hW
 PU
 CQ
 Qd
@@ -15903,7 +16180,7 @@ Sy
 Sy
 Sy
 Qd
-CQ
+Rd
 CQ
 CQ
 Qd
@@ -15917,7 +16194,7 @@ Iy
 Qd
 au
 jI
-Lj
+WT
 CQ
 Qd
 CQ
@@ -16022,9 +16299,9 @@ IG
 IG
 Qd
 pm
+Rd
 CQ
-CQ
-CQ
+hW
 MM
 Qd
 vK
@@ -16033,12 +16310,12 @@ Sy
 Sy
 Sy
 Qd
-eu
+LE
 CQ
-CQ
+Rd
 Qd
 fu
-CQ
+qW
 mN
 be
 CQ
@@ -16048,7 +16325,7 @@ Qd
 Gx
 jI
 Jk
-CQ
+bn
 Qd
 Uz
 CQ
@@ -16152,7 +16429,7 @@ IG
 IG
 Qd
 UE
-CQ
+Rd
 CQ
 CQ
 eg
@@ -16163,7 +16440,7 @@ Sy
 Sy
 OJ
 Qd
-CQ
+Rd
 CQ
 CQ
 Qd
@@ -16171,21 +16448,21 @@ CQ
 CQ
 mN
 IE
-Ry
+gX
 IE
 Iy
 Qd
 XP
 CQ
 CQ
-CQ
+hW
 Qd
 CQ
 CQ
 Qd
 CQ
 dP
-CQ
+bn
 Dz
 EE
 TK
@@ -16283,8 +16560,8 @@ IG
 Qd
 IE
 CQ
-CQ
-CQ
+bn
+bn
 MM
 Qd
 Cm
@@ -16295,27 +16572,27 @@ ZJ
 Qd
 CQ
 CQ
-CQ
+Rd
 Dj
 CQ
 CQ
 CQ
 CQ
-CQ
-CQ
+qW
+qW
 CQ
 Dz
 CQ
 CQ
 CQ
-CQ
+hW
 Qd
 CQ
 CQ
 Dz
 CQ
 CQ
-CQ
+bn
 KA
 JJ
 TK
@@ -16412,10 +16689,10 @@ IG
 IG
 Qd
 pm
+qW
 CQ
-CQ
-CQ
-MM
+bn
+tV
 Qd
 RZ
 ss
@@ -16425,20 +16702,20 @@ du
 Qd
 un
 CQ
-oY
+If
 Qd
 bu
 CQ
 wX
+qW
 CQ
-CQ
-CQ
+qW
 CQ
 ma
+hW
+Rd
 CQ
-CQ
-CQ
-CQ
+hW
 Qd
 CQ
 CQ
@@ -16554,11 +16831,11 @@ Bb
 Bb
 ow
 nT
-CQ
+hW
 CQ
 Qd
 Ue
-CQ
+Rd
 RR
 CQ
 mN
@@ -16568,10 +16845,10 @@ zf
 Km
 CQ
 Km
-CQ
+hW
 Qd
 un
-CQ
+bn
 zf
 CQ
 CQ
@@ -16685,7 +16962,7 @@ CQ
 CQ
 Qd
 CQ
-CQ
+qW
 Qd
 EO
 pQ
@@ -16698,14 +16975,14 @@ Qd
 Km
 CQ
 yZ
-CQ
+hW
 Qd
 CQ
 CQ
 Qd
 CQ
 AH
-CQ
+Rd
 zf
 EE
 TK
@@ -16811,15 +17088,15 @@ Tx
 np
 jw
 CQ
-kq
+lA
 ON
 Qd
 CQ
-CQ
+qW
 Ja
 Bb
 Bb
-Bb
+gP
 Bb
 Bb
 Bb
@@ -16945,11 +17222,11 @@ CQ
 CQ
 Dz
 CQ
-CQ
+dH
 Qd
 dF
-dP
-vf
+eA
+Jx
 CQ
 Lz
 CQ
@@ -16957,7 +17234,7 @@ Qd
 LV
 CQ
 vf
-dP
+eA
 CQ
 vf
 Vh
@@ -17075,11 +17352,11 @@ xe
 sJ
 EK
 CQ
-oY
+ok
 Qd
 dF
-CQ
-vf
+Rd
+Jx
 be
 Wz
 CQ
@@ -17087,10 +17364,10 @@ Qd
 Hc
 CQ
 tk
-CQ
+hW
 CQ
 tk
-CQ
+hW
 Dm
 Qd
 VK
@@ -17207,9 +17484,9 @@ zf
 CQ
 CQ
 Qd
-dF
+iQ
 CQ
-vf
+Jx
 oI
 EW
 CQ
@@ -17330,15 +17607,15 @@ Qd
 Tx
 Os
 CQ
+Rd
 CQ
-CQ
-ON
+Kf
 Qd
-CQ
-CQ
+qW
+Cl
 Qd
 un
-CQ
+Rd
 vf
 vf
 tk
@@ -17471,7 +17748,7 @@ dF
 CQ
 tk
 CQ
-CQ
+Rd
 CQ
 Qd
 bX
@@ -17594,20 +17871,20 @@ Bb
 Bb
 Bb
 lC
-un
+RL
 hn
 Qd
 dF
 AH
 vf
-CQ
-AH
+Rd
+ha
 cG
 Qd
 vf
 vf
 vf
-yM
+Bu
 CQ
 vf
 vf
@@ -17725,7 +18002,7 @@ XN
 XN
 Qd
 CQ
-CQ
+qW
 rT
 Bb
 Bb
@@ -17738,10 +18015,10 @@ tf
 CQ
 CQ
 CQ
-CQ
+Rd
 vf
 CQ
-Zp
+Wr
 Qd
 VK
 VK
@@ -17858,7 +18135,7 @@ CQ
 CQ
 CQ
 CQ
-CQ
+qW
 dP
 CQ
 CQ
@@ -17870,7 +18147,7 @@ CQ
 CQ
 CQ
 tk
-tf
+Ey
 Dm
 Qd
 VK
@@ -17985,14 +18262,14 @@ nM
 XN
 KA
 CQ
+qW
+CQ
+CQ
+qW
 CQ
 CQ
 CQ
-CQ
-CQ
-CQ
-CQ
-CQ
+Rd
 ac
 CQ
 CQ
@@ -18000,7 +18277,7 @@ CQ
 CQ
 SS
 vf
-vf
+fh
 vf
 Qd
 VK
@@ -18116,18 +18393,18 @@ XN
 Qd
 CQ
 CQ
+qW
 CQ
 CQ
 CQ
+xL
 CQ
-AH
-CQ
-CQ
+qW
 zf
 MR
 yM
 CQ
-CQ
+hW
 CQ
 vf
 CQ
@@ -18516,10 +18793,10 @@ pQ
 Qd
 qD
 CQ
-CQ
+oo
 tf
 CQ
-CQ
+hW
 CQ
 CQ
 Qd
