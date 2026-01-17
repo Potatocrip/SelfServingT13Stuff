@@ -47,6 +47,26 @@
 /obj/effect/decal/cleanable/dirt/cobweb/cobweb2
 	icon_state = "cobweb2"
 
+/obj/effect/decal/cleanable/dirt/grime
+	name = ""
+	desc = ""
+	icon = 'icons/effects/dirt.dmi'
+	icon_state = "dirt1" //1-4 are meant for perserdunian tiles
+	gender = NEUTER
+	layer = WALL_OBJ_LAYER
+	plane = -1
+	beauty = -100
+	alpha = 200
+
+/obj/effect/decal/cleanable/dirt/grime/grime2
+	icon_state = "dirt2"
+
+/obj/effect/decal/cleanable/dirt/grime/grime3
+	icon_state = "dirt3"
+
+/obj/effect/decal/cleanable/dirt/grime/grime4
+	icon_state = "dirt4"
+
 /obj/effect/decal/cleanable/molten_object
 	name = "gooey grey mass"
 	desc = ""
