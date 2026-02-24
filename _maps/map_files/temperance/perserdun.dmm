@@ -1863,6 +1863,10 @@
 /area/rogue/indoors/perserdunbase)
 "zC" = (
 /obj/structure/table/vtable/v2,
+/obj/item/reagent_containers/glass/bottle/alchemical/meth,
+/obj/item/reagent_containers/glass/bottle/alchemical/meth,
+/obj/item/reagent_containers/glass/bottle/alchemical/heroin,
+/obj/item/reagent_containers/glass/bottle/alchemical/heroin,
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/perserdunbase)
 "zX" = (

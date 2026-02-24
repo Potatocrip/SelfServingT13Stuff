@@ -1943,6 +1943,7 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
+/obj/structure/barricade/rogue,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/risvon)
 "qO" = (
@@ -2277,6 +2278,7 @@
 "sZ" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/structure/vine,
+/obj/structure/barricade/rogue,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/risvon)
 "tb" = (
@@ -5408,6 +5410,13 @@
 	},
 /turf/open/floor/rogue/risvon,
 /area/rogue/indoors/risvonbase)
+"RT" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/obj/structure/barricade/rogue,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/risvon)
 "RV" = (
 /turf/closed/mineral/random/rogue/med,
 /area/rogue/outdoors/risvon)
@@ -5541,6 +5550,10 @@
 	},
 /turf/open/floor/rogue/risvon,
 /area/rogue/outdoors/exposed/risvonbase)
+"Tp" = (
+/obj/structure/barricade/rogue,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/risvon)
 "Tu" = (
 /obj/effect/decal/carpet/kover_black{
 	pixel_y = 1;
@@ -6216,6 +6229,10 @@
 /area/rogue/indoors/risvonbasebar)
 "YW" = (
 /obj/structure/table/wood/perserdunsmall,
+/obj/item/reagent_containers/glass/bottle/alchemical/heroin,
+/obj/item/reagent_containers/glass/bottle/alchemical/heroin,
+/obj/item/reagent_containers/glass/bottle/alchemical/meth,
+/obj/item/reagent_containers/glass/bottle/alchemical/meth,
 /turf/open/floor/rogue/med,
 /area/rogue/indoors/risvonbase)
 "YX" = (
@@ -19334,7 +19351,7 @@ cn
 cn
 nW
 Br
-Jb
+RT
 nW
 nW
 jR
@@ -19463,7 +19480,7 @@ cn
 cn
 cn
 nW
-dd
+Tp
 Jb
 nW
 nW

@@ -68,7 +68,16 @@
 	name = "wooden barricade"
 	desc = ""
 	icon = 'icons/roguetown/misc/structure.dmi'
-	icon_state = "woodenbarricade_r"
+	icon_state = "woodenbarricade"
+	max_integrity = 60
+	bar_material = WOOD
+	drop_amount = 0
+
+/obj/structure/barricade/rogue/tanktrap
+	name = "tank trap"
+	desc = ""
+	icon = 'icons/roguetown/misc/structure.dmi'
+	icon_state = "tanktrap"
 	max_integrity = 60
 	bar_material = WOOD
 	drop_amount = 0
