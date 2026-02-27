@@ -4326,7 +4326,10 @@
 /area/rogue/indoors/risvonbasebar)
 "Jr" = (
 /obj/structure/chair/wood/rogue/fancy{
-	dir = 2
+	dir = 1
+	},
+/obj/structure/fluff/walldeco/commandant{
+	pixel_x = -32
 	},
 /turf/open/floor/rogue/tile/masonic/inverted,
 /area/rogue/indoors/risvonbase)
@@ -5346,7 +5349,10 @@
 	desc = "A hide of a slain bear. It looks rich and expensive."
 	},
 /obj/structure/chair/wood/rogue/fancy{
-	dir = 1
+	dir = 2
+	},
+/obj/structure/fluff/walldeco/rpainting/forest{
+	pixel_x = -31
 	},
 /turf/open/floor/rogue/tile/masonic/inverted,
 /area/rogue/indoors/risvonbase)

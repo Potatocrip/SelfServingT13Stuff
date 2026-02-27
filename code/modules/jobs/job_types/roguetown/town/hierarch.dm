@@ -13,7 +13,7 @@
 	tutorial = "You're the leading force of modernity in Kingsrow. \
 				Originally some Council Member, or a Hand - you decided to take power from your Master with the new stash of arms given. \
 				Your main goal is to remain an independent state, or at least have some form of sovereignty as you sell away your land. \
-				You should also prioritize your people the foreign factions. They generally love you."
+				You should also prioritize your people before the foreign factions. They generally appreciate the work you put in."
 
 	outfit = /datum/outfit/job/roguetown/hierarch
 	display_order = JDO_HIERARCH
@@ -28,7 +28,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/flashlight/flare/torch/lantern
-	beltr = /obj/item/storage/belt/rogue/pouch/stim
+	beltr = /obj/item/storage/keyring/royal
 	id = /obj/item/clothing/ring/gold
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)

@@ -2814,7 +2814,7 @@
 "NL" = (
 /obj/effect/decal/carpet/kover_darkred{
 	pixel_y = 0;
-	pixel_x = -21;
+	pixel_x = -42;
 	dir = 4
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
