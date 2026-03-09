@@ -200,6 +200,7 @@
 	/datum/species/elf/wood,\
 	/datum/species/demihuman,\
 	/datum/species/tieberian,\
+	/datum/species/human/halfelf,\
 )
 
 #define RACES_CONSCRIPT list(\
