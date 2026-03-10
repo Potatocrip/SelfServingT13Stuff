@@ -2,7 +2,7 @@
 	name = "heroin"
 	color = "#edeff1" // This shit is WHITE.
 	overdose_threshold = 8
-	metabolization_rate = 0.0002083 //5 units needs to last 20 minutes at the LEAST
+	metabolization_rate = 0.03//5 Units needs to last a very long time. Set to 0.003 since before it wasn't actually lasting 20 minutes?
 
 /obj/item/reagent_containers/powder/heroin
 	name = "heroin"

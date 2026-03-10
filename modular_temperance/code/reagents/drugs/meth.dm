@@ -2,7 +2,7 @@
 	name = "meth"
 	color = "#edeff1" // This shit is WHITE.
 	overdose_threshold = 8
-	metabolization_rate = 0.0002083 //5 units needs to last 20 minutes at the LEAST
+	metabolization_rate = 0.03 // This needs to last 20 minutes at least and 30 minutes at max
 
 /obj/item/reagent_containers/powder/meth
 	name = "meth"
