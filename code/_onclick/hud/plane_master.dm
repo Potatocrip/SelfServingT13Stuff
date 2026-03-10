@@ -70,7 +70,7 @@
 				0, 0, 0, 0),
 			space = FILTER_COLOR_HSV)
 			filters += filter(type="bloom")
-			filters += filter(type="blur", size = 0.6)
+			filters += filter(type="blur", size = 0.3)
 		if(L.has_status_effect(/datum/status_effect/meth))
 			filters += filter(type="color", color = list(
 				2.5, 0, 0, 0,
@@ -79,7 +79,7 @@
 				0, 0, 0, 1,
 				0, 0, 0, 0),
 			space = FILTER_COLOR_HSV)
-			filters += filter(type="bloom", threshold = rgb(17, 156, 149), offset = 2, size = 1)
+			filters += filter(type="bloom", threshold = rgb(17, 156, 149), offset = 1, size = 1)
 
 /atom/movable/screen/plane_master/game_world
 	name = "game world plane master"
@@ -116,7 +116,7 @@
 					0, 0, 0, 0),
 				space = FILTER_COLOR_HSV)
 				filters += filter(type="bloom")
-				filters += filter(type="blur", size = 0.6)
+				filters += filter(type="blur", size = 0.3)
 			if(L.has_status_effect(/datum/status_effect/meth))
 				filters += filter(type="color", color = list(
 					2.5, 0, 0, 0,
@@ -125,7 +125,7 @@
 					0, 0, 0, 1,
 					0, 0, 0, 0),
 				space = FILTER_COLOR_HSV)
-				filters += filter(type="bloom", threshold = rgb(17, 156, 149), offset = 2, size = 1)
+				filters += filter(type="bloom", threshold = rgb(17, 156, 149), offset = 1, size = 1)
 /*
 /atom/movable/screen/plane_master/byondlight
 	name = "byond lighting master"
@@ -214,7 +214,7 @@
 					0, 0, 0, 0),
 				space = FILTER_COLOR_HSV)
 				filters += filter(type="bloom")
-				filters += filter(type="blur", size = 0.6)
+				filters += filter(type="blur", size = 0.3)
 			if(L.has_status_effect(/datum/status_effect/meth))
 				filters += filter(type="color", color = list(
 					2.5, 0, 0, 0,
@@ -223,7 +223,7 @@
 					0, 0, 0, 1,
 					0, 0, 0, 0),
 				space = FILTER_COLOR_HSV)
-				filters += filter(type="bloom", threshold = rgb(17, 156, 149), offset = 2, size = 1)
+				filters += filter(type="bloom", threshold = rgb(17, 156, 149), offset = 1, size = 1)
 	filters += filter(type = "alpha", render_source = FIELD_OF_VISION_BLOCKER_RENDER_TARGET, flags = MASK_INVERSE)
 
 /atom/movable/screen/plane_master/game_world_above
@@ -256,7 +256,7 @@
 					0, 0, 0, 0),
 				space = FILTER_COLOR_HSV)
 				filters += filter(type="bloom")
-				filters += filter(type="blur", size = 0.6)
+				filters += filter(type="blur", size = 0.3)
 			if(L.has_status_effect(/datum/status_effect/meth))
 				filters += filter(type="color", color = list(
 					2.5, 0, 0, 0,
@@ -265,7 +265,7 @@
 					0, 0, 0, 1,
 					0, 0, 0, 0),
 				space = FILTER_COLOR_HSV)
-				filters += filter(type="bloom", threshold = rgb(17, 156, 149), offset = 2, size = 1)
+				filters += filter(type="bloom", threshold = rgb(17, 156, 149), offset = 1, size = 1)
 
 /atom/movable/screen/plane_master/field_of_vision_blocker
 	name = "field of vision blocker plane master"
@@ -313,7 +313,7 @@
 						0, 0, 0, 0),
 					space = FILTER_COLOR_HSV)
 					filters += filter(type="bloom")
-					filters += filter(type="blur", size = 0.6)
+					filters += filter(type="blur", size = 0.3)
 				if(L.has_status_effect(/datum/status_effect/meth))
 					filters += filter(type="color", color = list(
 					2.5, 0, 0, 0,
@@ -322,7 +322,7 @@
 					0, 0, 0, 1,
 					0, 0, 0, 0),
 					space = FILTER_COLOR_HSV)
-					filters += filter(type="bloom", threshold = rgb(17, 156, 149), offset = 2, size = 1)
+					filters += filter(type="bloom", threshold = rgb(17, 156, 149), offset = 1, size = 1)
 
 /atom/movable/screen/plane_master/game_world_walls
 	name = "game world walls"
@@ -355,7 +355,7 @@
 						0, 0, 0, 0),
 					space = FILTER_COLOR_HSV)
 					filters += filter(type="bloom")
-					filters += filter(type="blur", size = 0.6)
+					filters += filter(type="blur", size = 0.3)
 				if(L.has_status_effect(/datum/status_effect/meth))
 					filters += filter(type="color", color = list(
 					2.5, 0, 0, 0,
@@ -364,7 +364,7 @@
 					0, 0, 0, 1,
 					0, 0, 0, 0),
 					space = FILTER_COLOR_HSV)
-					filters += filter(type="bloom", threshold = rgb(17, 156, 149), offset = 2, size = 1)
+					filters += filter(type="bloom", threshold = rgb(17, 156, 149), offset = 1, size = 1)
 
 //Contains all weather overlays
 /atom/movable/screen/plane_master/weather_overlay
