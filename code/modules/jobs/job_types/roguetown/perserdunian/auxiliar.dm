@@ -54,7 +54,7 @@
 	backr = /obj/item/storage/backpack/rogue/backpack/perserdun
 	backpack_contents = list(
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpotnew = 3,
-		/obj/item/ammo_box/handfuls/rifle = 4,
+		/obj/item/ammo_box/handfuls/rifle = 6,
 		/obj/item/storage/belt/rogue/pouch/coins/poor,
 		/obj/item/gasgrenade = 2,
 		/obj/item/natural/cloth,
