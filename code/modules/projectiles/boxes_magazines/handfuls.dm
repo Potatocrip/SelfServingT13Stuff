@@ -6,11 +6,9 @@
 	max_ammo = 5
 	multiload = 0
 
-/obj/item/ammo_box/handfuls/get_round(keep = FALSE)
-    var/obj/item/ammo_casing/R = ..(keep)
-    if(!stored_ammo.len) // i literally have ZERO idea how to force this to the ground before its qdel'd. im super sorry - zera
-        qdel(src)
-    return R
+/obj/item/ammo_box/handfuls/proc/check_rounds
+	if(!stored_ammo.len)
+		qdel(src)
 
 //rifle handfuls
 /obj/item/ammo_box/handfuls/rifle
