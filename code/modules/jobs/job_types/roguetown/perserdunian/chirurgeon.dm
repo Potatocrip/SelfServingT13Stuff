@@ -7,7 +7,7 @@
 	spawn_positions = 2
 	allowed_races = RACES_TEMPERANCE
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_ages = list(AGE_ADULT)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 
 	tutorial = "You're one of the most competent doctors around. \
 				After promotion from an Auxiliarist Leech, you now specialize in the treatment of your Empire's wounded. \

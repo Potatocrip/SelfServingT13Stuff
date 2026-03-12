@@ -7,7 +7,7 @@
 	spawn_positions = 2
 	allowed_races = RACES_TEMPERANCE
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_ages = list(AGE_ADULT)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 
 	tutorial = "You're the local Caprito's chief surgeon. \
 				Typically a female-regulated role, your main purpose is to tend to the wounds of the men, and keep them in fighting shape. \

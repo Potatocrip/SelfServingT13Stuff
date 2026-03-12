@@ -7,7 +7,7 @@
 	spawn_positions = 2
 	allowed_races = RACES_TEMPERANCE
 	allowed_sexes = list(MALE)
-	allowed_ages = list(AGE_ADULT)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 
 	tutorial = "You're a diplomat. Your main goal is to get the locals to export their WAR MACHINE's goods for the Empire.\
 				You conduct trades, relationships, and manage the forward outpost. \

@@ -7,7 +7,7 @@
 	spawn_positions = 4
 	allowed_races = RACES_CONSCRIPT
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_ages = list(AGE_ADULT)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 
 	tutorial = "You are a supporter of Perserdun's war effort. \
 				Whenever you are a leech or an ingeniare, you still carry a gun and know how to use it.\

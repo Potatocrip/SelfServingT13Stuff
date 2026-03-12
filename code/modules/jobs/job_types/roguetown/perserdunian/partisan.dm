@@ -7,7 +7,7 @@
 	spawn_positions = 8
 	allowed_races = RACES_CONSCRIPT
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_ages = list(AGE_ADULT)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 
 	tutorial = "You've been temporarily reassigned to work as a backliner for the Empire. \
 				Generally speaking, you're prohibited to fight - except in the case of self defense. \

@@ -7,7 +7,7 @@
 	spawn_positions = 8
 	allowed_races = RACES_CONSCRIPT
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_ages = list(AGE_ADULT)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 
 	tutorial = "You are the rank and file soldier of the Great Empire of Perserdun. \
 				Your main purpose is to bundle together with other Armsmen and to kill the enemies of the Empire. \

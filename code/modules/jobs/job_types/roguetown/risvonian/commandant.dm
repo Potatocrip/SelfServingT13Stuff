@@ -7,7 +7,7 @@
 	spawn_positions = 1
 	allowed_races = RACES_TEMPERANCE
 	allowed_sexes = list(MALE)
-	allowed_ages = list(AGE_ADULT)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	selection_color = JCOLOR_RISVON
 
 	tutorial = "You are the commanding officer of the local Risvon Capitro. Or Chapter, if you're a scrub. \

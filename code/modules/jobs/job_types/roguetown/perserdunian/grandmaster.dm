@@ -7,7 +7,7 @@
 	spawn_positions = 1
 	allowed_races = RACES_TEMPERANCE
 	allowed_sexes = list(MALE) //until a female armor sprite is made
-	allowed_ages = list(AGE_ADULT)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	selection_color = JCOLOR_PERSERDUN
 
 	tutorial = "You are the highest ranking Perserdunian officer in the regiment, akin to a Captain. \
