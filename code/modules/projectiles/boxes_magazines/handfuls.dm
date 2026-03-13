@@ -5,7 +5,6 @@
 	caliber = "a762"
 	max_ammo = 5
 	multiload = 0
-	handful = TRUE
 
 //rifle handfuls
 /obj/item/ammo_box/handfuls/rifle
