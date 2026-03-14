@@ -1,5 +1,5 @@
 /datum/supply_pack/rogue/guns
-	group = "GUNS"
+	group = "FIREARMS"
 	crate_name = "merchant guild's crate"
 	crate_type = /obj/structure/closet/crate/chest/merchant
 
@@ -36,12 +36,4 @@
 	cost = 195 // T3 weapon
 	contains = list(
 					/obj/item/gun/ballistic/rifle/reaper,
-				)
-
-/datum/supply_pack/rogue/ranged_weapons/net
-	name = "Net"
-	cost = 20
-	contains = list(
-					/obj/item/net,
-					/obj/item/net
 				)
