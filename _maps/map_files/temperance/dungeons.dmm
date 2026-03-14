@@ -222,7 +222,7 @@
 /area/rogue/under/cave/dungeon1)
 "cY" = (
 /obj/structure/table/wood/perserdunsmall/smallmetal2,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/item/roguecoin/gold/virtuepile,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cave/warmachine)
 "da" = (
@@ -322,8 +322,8 @@
 /obj/item/clothing/mask/rogue/gasmask/eb_gasmask,
 /obj/item/clothing/head/roguetown/helmet/heavy/ebhelmet,
 /obj/item/clothing/shoes/roguetown/armor/ebboots/wrapped,
-/obj/item/clothing/suit/roguetown/armor/plate/full/ebarmor,
 /obj/item/clothing/gloves/roguetown/leather/ebgloves,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron/ziggurate,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
 "eb" = (
@@ -547,7 +547,7 @@
 /area/rogue/under/cave/warmachine)
 "hr" = (
 /obj/structure/closet/crate/drawer/random,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/item/roguecoin/copper/pile,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cave/warmachine)
 "hs" = (
@@ -1236,10 +1236,10 @@
 /area/rogue/under/cave/warmachine)
 "td" = (
 /obj/structure/closet/crate/drawer/random,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
 /obj/structure/fluff/walldeco/vent/vent3{
 	pixel_y = 30
 	},
+/obj/item/roguecoin/silver/pile,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cave/warmachine)
 "th" = (
@@ -1298,9 +1298,12 @@
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
 "tY" = (
-/obj/structure/closet/crate/roguecloset/metal,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/structure/bars/grille,
+/obj/structure/closet/crate/roguecloset/metal/metal2{
+	plane = -5
+	},
+/obj/effect/spawner/lootdrop/general_loot_mid,
+/obj/item/roguecoin/silver/pile,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
 "up" = (
@@ -1900,6 +1903,16 @@
 /obj/effect/decal/remains/corpse/body/body2,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/dungeon1)
+"El" = (
+/obj/structure/bars/grille,
+/obj/structure/closet/crate/roguecloset/metal/metal2{
+	plane = -5
+	},
+/obj/effect/spawner/lootdrop/general_loot_mid,
+/obj/item/storage/belt/rogue/pouch/pillbottle,
+/obj/item/roguecoin/silver/pile,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/warmachine)
 "Em" = (
 /obj/effect/decal/skibidi{
 	dir = 2;
@@ -2155,12 +2168,12 @@
 /area/rogue/under/cave/warmachine)
 "Je" = (
 /obj/structure/closet/crate/drawer/filing/random,
-/obj/item/clothing/suit/roguetown/armor/plate/full/ebarmor/pauldrons,
 /obj/item/clothing/head/roguetown/helmet/heavy/ebhelmet/visored,
 /obj/item/clothing/mask/rogue/gasmask/eb_gasmask,
 /obj/item/clothing/gloves/roguetown/leather/ebgloves,
 /obj/item/clothing/shoes/roguetown/armor/ebboots/armored,
 /obj/item/clothing/shoes/roguetown/armor/ebboots/armored,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron/ziggurate/pauldrons,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
 "Jf" = (
@@ -2522,8 +2535,8 @@
 /obj/item/clothing/mask/rogue/gasmask/eb_gasmask,
 /obj/item/clothing/shoes/roguetown/armor/ebboots/wrapped,
 /obj/item/clothing/gloves/roguetown/leather/ebgloves,
-/obj/item/clothing/suit/roguetown/armor/plate/full/ebarmor,
 /obj/effect/decal/cleanable/dirt/grime,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron/ziggurate,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
 "OQ" = (
@@ -2677,7 +2690,7 @@
 	plane = -5
 	},
 /obj/effect/spawner/lootdrop/general_loot_mid,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/item/roguecoin/gold/virtuepile,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
 "RL" = (
@@ -2979,8 +2992,9 @@
 	plane = -5
 	},
 /obj/effect/spawner/lootdrop/general_loot_mid,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
 /obj/item/storage/belt/rogue/pouch/pillbottle,
+/obj/item/roguecoin/silver/pile,
+/obj/item/roguecoin/gold/pile,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
 "WT" = (
@@ -3006,9 +3020,9 @@
 /obj/item/clothing/mask/rogue/gasmask/eb_gasmask,
 /obj/item/clothing/head/roguetown/helmet/heavy/ebhelmet,
 /obj/item/clothing/shoes/roguetown/armor/ebboots/wrapped,
-/obj/item/clothing/suit/roguetown/armor/plate/full/ebarmor,
 /obj/item/clothing/gloves/roguetown/leather/ebgloves,
 /obj/effect/decal/cleanable/dirt/grime/grime2,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron/ziggurate,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
 "Xg" = (
@@ -7068,9 +7082,9 @@ wJ
 VU
 MD
 bZ
-tY
-bZ
 QH
+bZ
+bZ
 wJ
 FI
 FI
@@ -20444,7 +20458,7 @@ MD
 MD
 MD
 MD
-MD
+Df
 MD
 lo
 zr
@@ -22033,7 +22047,7 @@ OQ
 MD
 MD
 MD
-Rz
+tY
 VC
 FI
 FI
@@ -22260,7 +22274,7 @@ YD
 MD
 MD
 MD
-Rz
+tY
 wJ
 FI
 FI
@@ -29324,7 +29338,7 @@ Rz
 MD
 MD
 YD
-WQ
+El
 VC
 FI
 FI
@@ -30685,7 +30699,7 @@ wJ
 RZ
 Jf
 Jf
-Jf
+qX
 Jf
 Jf
 Qs
@@ -31140,7 +31154,7 @@ pQ
 Jf
 Ns
 Jf
-Jf
+qX
 Jf
 Qs
 Vl
@@ -31366,7 +31380,7 @@ wJ
 cm
 fR
 Jf
-qX
+Jf
 Fq
 eJ
 VC

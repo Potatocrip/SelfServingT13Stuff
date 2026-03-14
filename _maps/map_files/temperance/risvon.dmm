@@ -870,6 +870,23 @@
 /obj/effect/loretile/bastillexiphos,
 /turf/open/floor/rogue/risvon,
 /area/rogue/indoors/risvonbase)
+"hP" = (
+/obj/structure/table/wood/perserdunsmall,
+/obj/effect/decal/carpet/square{
+	dir = 1
+	},
+/obj/item/ammo_box/handfuls/rattlesnake,
+/obj/item/ammo_box/handfuls/rattlesnake,
+/obj/item/ammo_box/handfuls/shotgun/buckshot,
+/obj/item/ammo_box/handfuls/shotgun/buckshot,
+/obj/item/ammo_box/handfuls/shotgun/buckshot,
+/obj/item/ammo_box/handfuls/shotgun/buckshot,
+/obj/item/ammo_box/handfuls/shotgun,
+/obj/item/ammo_box/handfuls/shotgun,
+/obj/item/ammo_box/handfuls/shotgun,
+/obj/item/ammo_box/handfuls/shotgun,
+/turf/open/floor/rogue/risvon,
+/area/rogue/indoors/risvonbase)
 "hU" = (
 /obj/structure/fluff/walldeco/sad{
 	pixel_y = 32
@@ -1671,13 +1688,26 @@
 	},
 /area/rogue/outdoors/risvon)
 "oJ" = (
-/obj/structure/roguemachine/goldface/public/katarina{
-	pixel_y = 12
-	},
 /obj/structure/table/wood/perserdunsmall,
 /obj/effect/decal/carpet/square{
 	dir = 1
 	},
+/obj/item/ammo_box/clip/pistol,
+/obj/item/ammo_box/clip/pistol,
+/obj/item/ammo_box/clip/pistol,
+/obj/item/ammo_box/clip/pistol,
+/obj/item/ammo_box/clip/pistol,
+/obj/item/ammo_box/clip/pistol,
+/obj/item/ammo_box/clip/pistol,
+/obj/item/ammo_box/clip/pistol,
+/obj/item/ammo_box/clip/pistol,
+/obj/item/ammo_box/clip/pistol,
+/obj/item/ammo_box/clip/pistol,
+/obj/item/ammo_box/clip/pistol,
+/obj/item/ammo_box/clip/pistol,
+/obj/item/ammo_box/clip/pistol,
+/obj/item/ammo_box/clip/pistol,
+/obj/item/ammo_box/clip/pistol,
 /turf/open/floor/rogue/risvon,
 /area/rogue/indoors/risvonbase)
 "oO" = (
@@ -2313,8 +2343,8 @@
 /obj/item/clothing/head/roguetown/helmet/heavy/ebhelmet,
 /obj/item/clothing/gloves/roguetown/leather/ebgloves,
 /obj/item/clothing/under/roguetown/heavy_leather_pants,
-/obj/item/clothing/suit/roguetown/armor/plate/full/ebarmor,
 /obj/item/clothing/shoes/roguetown/armor/ebboots/wrapped,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron/ziggurate,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
 "tr" = (
@@ -4984,9 +5014,9 @@
 /obj/item/clothing/shoes/roguetown/armor/ebboots/armored,
 /obj/item/clothing/mask/rogue/gasmask/eb_gasmask,
 /obj/item/clothing/gloves/roguetown/leather/ebgloves,
-/obj/item/clothing/suit/roguetown/armor/plate/full/ebarmor,
 /obj/item/clothing/head/roguetown/helmet/heavy/ebhelmet,
 /obj/item/clothing/under/roguetown/heavy_leather_pants,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron/ziggurate,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
 "OM" = (
@@ -6067,10 +6097,10 @@
 /obj/structure/chair/stool/rogue,
 /obj/item/clothing/head/roguetown/helmet/heavy/ebhelmet/visored,
 /obj/item/clothing/mask/rogue/gasmask/eb_gasmask,
-/obj/item/clothing/suit/roguetown/armor/plate/full/ebarmor/pauldrons,
 /obj/item/clothing/under/roguetown/heavy_leather_pants,
 /obj/item/clothing/gloves/roguetown/leather/ebgloves,
 /obj/item/clothing/shoes/roguetown/armor/ebboots/armored,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron/ziggurate/pauldrons,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
 "Xn" = (
@@ -6129,7 +6159,6 @@
 "Xz" = (
 /obj/effect/decal/cleanable/dirt/cobweb,
 /obj/effect/decal/cleanable/dirt/grime/grime3,
-/obj/structure/chair/bench/couchablack,
 /obj/structure/mannequin/male{
 	layer = 5;
 	dir = 2
@@ -6139,7 +6168,7 @@
 /obj/item/clothing/gloves/roguetown/leather/ebgloves,
 /obj/item/clothing/head/roguetown/helmet/heavy/ebhelmet,
 /obj/item/clothing/under/roguetown/heavy_leather_pants,
-/obj/item/clothing/suit/roguetown/armor/plate/full/ebarmor,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron/ziggurate,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
 "XB" = (
@@ -6403,7 +6432,6 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/exposed/risvonbase)
 "ZO" = (
-/obj/structure/chair/bench/couchablack/r,
 /obj/structure/mannequin/male{
 	layer = 5;
 	dir = 2
@@ -6413,7 +6441,7 @@
 /obj/item/clothing/gloves/roguetown/leather/ebgloves,
 /obj/item/clothing/head/roguetown/helmet/heavy/ebhelmet,
 /obj/item/clothing/under/roguetown/heavy_leather_pants,
-/obj/item/clothing/suit/roguetown/armor/plate/full/ebarmor,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron/ziggurate,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
 "ZP" = (
@@ -13472,7 +13500,7 @@ xK
 xK
 WW
 Tx
-oJ
+hP
 xK
 xK
 at
