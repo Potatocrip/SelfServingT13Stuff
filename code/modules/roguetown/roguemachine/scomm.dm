@@ -777,5 +777,5 @@
 	name = "communication piece"
 	icon_state = "scomstone"
 	desc = "A wrist-mounted communication device. Used by the Royalists."
-	var/faction_net = SCOMNET_KINGS
+	faction_net = SCOMNET_KINGS
 	drop_sound = 'sound/foley/coinphy (1).ogg'
