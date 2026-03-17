@@ -1314,6 +1314,10 @@
 /obj/structure/mineral_door/wood/fancy,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/outdoors)
+"hE" = (
+/obj/item/reagent_containers/food/snacks/deadmouse,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors)
 "hF" = (
 /obj/effect/mine/explosive,
 /obj/structure/flora/roguegrass/water/reeds,
@@ -1573,6 +1577,10 @@
 "jO" = (
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/town)
+"jR" = (
+/obj/item/reagent_containers/food/snacks/deadmouse,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/beach/forest/south)
 "jV" = (
 /obj/structure/bed/rogue/inn/double,
 /obj/item/bedsheet/rogue/double_pelt,
@@ -3754,6 +3762,10 @@
 /mob/living/simple_animal/hostile/rogue/skeleton/bow,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors)
+"zg" = (
+/obj/item/reagent_containers/food/snacks/deadmouse,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/beach/forest/south)
 "zk" = (
 /obj/structure/fluff/railing/border,
 /obj/structure/fluff/railing/border{
@@ -4176,6 +4188,10 @@
 /obj/structure/flora/roguegrass/herb/rosa,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
+"BY" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/bigrat,
+/turf/closed/mineral/rogue,
+/area/rogue/under/cave)
 "Ca" = (
 /obj/structure/fluff/railing/border/east,
 /obj/structure/fluff/railing/border/west,
@@ -7381,6 +7397,10 @@
 /obj/structure/handcart,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/town)
+"WZ" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/bigrat,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/beach/forest/south)
 "Xa" = (
 /obj/structure/fluff/pillow/magenta{
 	pixel_x = 2;
@@ -16851,7 +16871,7 @@ md
 TY
 TY
 TY
-TY
+BY
 aX
 TY
 aX
@@ -62302,7 +62322,7 @@ xP
 Hf
 tn
 tn
-Hf
+WZ
 Hf
 Hf
 Hf
@@ -65061,7 +65081,7 @@ xP
 xP
 Hf
 Hf
-xP
+zg
 Hf
 Hf
 Hf
@@ -65130,7 +65150,7 @@ xP
 Zm
 xP
 Hf
-Hf
+WZ
 Hf
 xP
 hc
@@ -65259,7 +65279,7 @@ Hf
 xP
 Hf
 Hf
-Hf
+WZ
 Hf
 xP
 tn
@@ -68659,7 +68679,7 @@ xP
 Hf
 Hf
 Hf
-Hf
+WZ
 Hf
 Hf
 hc
@@ -69022,7 +69042,7 @@ tn
 tn
 tn
 tn
-xP
+zg
 xP
 tn
 tn
@@ -73687,7 +73707,7 @@ Hf
 Hf
 Hf
 Hf
-Hf
+WZ
 Hf
 Hf
 tn
@@ -76204,7 +76224,7 @@ hc
 xP
 xP
 Hf
-Hf
+WZ
 Hf
 Hf
 Hf
@@ -78031,7 +78051,7 @@ tn
 hc
 xP
 Hf
-Hf
+WZ
 Hf
 Hf
 xP
@@ -80580,7 +80600,7 @@ xP
 xP
 xP
 QI
-QI
+jR
 QI
 Xp
 xP
@@ -90589,7 +90609,7 @@ xP
 xP
 Xp
 QI
-QI
+jR
 EL
 tn
 Xp
@@ -94303,7 +94323,7 @@ ej
 xK
 SL
 xK
-SL
+hE
 SL
 SL
 ej
@@ -99905,7 +99925,7 @@ Hf
 tn
 tn
 Hf
-Hf
+WZ
 Hf
 Hf
 Hf
