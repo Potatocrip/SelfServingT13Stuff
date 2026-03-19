@@ -59,7 +59,7 @@
 			if(C.working)
 				return
 			if((
-				locate(/obj/structure/barricade/brutswehr) || \
+				locate(/obj/structure/barricade/brustwehr) || \
 				locate(/obj/structure/fluff/railing/sandbag)) in src.loc.contents \
 				)
 				to_chat(user, "\red There is no more space.")
@@ -77,7 +77,7 @@
 			if(!do_after(user, 20,src))
 				C.working = 0
 				return
-			new /obj/structure/barricade/brutswehrincomplete(src.loc)
+			new /obj/structure/barricade/brustwehrincomplete(src.loc)
 			C.ground = 0
 			C.working = 0
 			var/obj/item/I = C.heldclod

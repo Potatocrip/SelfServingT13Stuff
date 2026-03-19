@@ -1,5 +1,5 @@
 //port from escal, this is horrific shitcode bye
-/obj/structure/barricade/brutswehrincomplete
+/obj/structure/barricade/brustwehrincomplete
 	name = "incomplete brustwehr"
 	icon = 'icons/obj/structures.dmi'
 	icon_state = "brustwehr_isntready"
@@ -10,7 +10,7 @@
 	pass_flags_self = PASSTABLE
 	var/digstage = 0
 
-/obj/structure/barricade/brutswehrincomplete/attackby(obj/item/W, mob/user, params)
+/obj/structure/barricade/brustwehrincomplete/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/rogueweapon/shovel))
 		var/obj/item/rogueweapon/shovel/C = W
 		if(user.used_intent.type == /datum/intent/shovelscoop)
@@ -41,12 +41,12 @@
 		else
 			return ..()
 
-/obj/structure/barricade/brutswehrincomplete/proc/update_stage()
+/obj/structure/barricade/brustwehrincomplete/proc/update_stage()
 	if(digstage >= 3)
-		new /obj/structure/barricade/brutswehr(src.loc)
+		new /obj/structure/barricade/brustwehr(src.loc)
 		qdel(src)
 
-/obj/structure/barricade/brutswehr
+/obj/structure/barricade/brustwehr
 	name = "brustwehr"
 	desc = "Land structure to cover your ass!"
 	icon = 'icons/obj/sandbags.dmi'
@@ -58,16 +58,16 @@
 	climbable = TRUE
 	var/health = 100
 
-/obj/structure/barricade/brutswehr/New()
+/obj/structure/barricade/brustwehr/New()
 	..()
 	update_nearby_icons()
 
-/obj/structure/barricade/brutswehr/Destroy()
+/obj/structure/barricade/brustwehr/Destroy()
 	..()
 	update_nearby_icons()
 
 	//Explosion Act MANNY: this is shitcode and can be done better, but is functional and idc
-/obj/structure/barricade/brutswehr/ex_act(severity)
+/obj/structure/barricade/brustwehr/ex_act(severity)
 	switch(severity)
 		if(1.0)
 			visible_message("\red <B>[src] is blown apart!</B>")
@@ -90,19 +90,19 @@
 			return
 
 	//Update Sides
-/obj/structure/barricade/brutswehr/proc/update_nearby_icons()
+/obj/structure/barricade/brustwehr/proc/update_nearby_icons()
 	update_icon()
 	for(var/direction in GLOB.cardinals)
-		for(var/obj/structure/barricade/brutswehr/B in get_step(src,direction))
+		for(var/obj/structure/barricade/brustwehr/B in get_step(src,direction))
 			B.update_icon()
 
 	//Update Icons
-/obj/structure/barricade/brutswehr/update_icon()
+/obj/structure/barricade/brustwehr/update_icon()
 	spawn(2)
 		if(!src)
 			return
 		var/junction = 0 //will be used to determine from which side the barricade is connected to other barricades
-		for(var/obj/structure/barricade/brutswehr/B in orange(src,1))
+		for(var/obj/structure/barricade/brustwehr/B in orange(src,1))
 			if(abs(x-B.x)-abs(y-B.y) ) 		//doesn't count barricades, placed diagonally to src
 				junction |= get_dir(src,B)
 
@@ -119,7 +119,7 @@
 	if(!check4struct(user))
 		return
 
-	var/obj/structure/brutswehr/B = new(user.loc)
+	var/obj/structure/brustwehr/B = new(user.loc)
 	B.set_dir(user.dir)
 	user.drop_item()
 	qdel(src)
