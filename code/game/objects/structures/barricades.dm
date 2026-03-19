@@ -83,7 +83,8 @@
 	desc = ""
 	icon = 'icons/roguetown/misc/structure.dmi'
 	icon_state = "tanktrap"
-	max_integrity = 60
+	max_integrity = 100
+	proj_pass_rate = 50
 	bar_material = WOOD
 	drop_amount = 0
 
