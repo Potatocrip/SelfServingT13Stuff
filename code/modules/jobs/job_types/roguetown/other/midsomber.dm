@@ -14,7 +14,7 @@
 	allowed_races = RACES_ALL_KINDS
 	tutorial = ""
 
-	spells = list(/obj/effect/proc_holder/spell/invoked/projectile/bloodsteal, /obj/effect/proc_holder/spell/invoked/projectile/fetch, /obj/effect/proc_holder/spell/invoked/projectile/bloodlightning)
+	spells = list(/obj/effect/proc_holder/spell/invoked/projectile/bloodsteal, /obj/effect/proc_holder/spell/invoked/projectile/fetch, /obj/effect/proc_holder/spell/invoked/projectile/bloodlightning, /obj/effect/proc_holder/spell/self/recall_weapon, /obj/effect/proc_holder/spell/self/bind_weapon)
 	outfit = /datum/outfit/job/roguetown/midsomber
 
 	show_in_credits = FALSE
@@ -45,7 +45,11 @@
 	H.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/magic/arcane, 3, TRUE)
-
+	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/bloodsteal)
+	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/fetch)
+	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/bloodlightning)
+	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/recall_weapon)
+	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/bind_weapon)
 
 	belt = /obj/item/storage/belt/rogue/leather
 	pants = /obj/item/clothing/under/roguetown/platelegs/blk/death
@@ -54,6 +58,13 @@
 	gloves = /obj/item/clothing/gloves/roguetown/leather/midsomber
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backl = /obj/item/rogueweapon/sword/long/death //change this later
+
+
+	to_chat(H, span_warning("You start with Bind Weapon. Remember to Bind your weapon so you can use your abilities and build up Arcyne Momentum."))
+
+	var/datum/status_effect/buff/arcyne_momentum/momentum = H.apply_status_effect(/datum/status_effect/buff/arcyne_momentum)
+	if(momentum)
+		momentum.chant = blade
 
 	H.change_stat("intelligence", 3)
 	H.change_stat("strength", 2)
