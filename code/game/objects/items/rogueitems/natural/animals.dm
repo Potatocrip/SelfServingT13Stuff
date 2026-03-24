@@ -3,7 +3,7 @@
 /obj/item/natural/hide
 	name = "hide"
 	icon_state = "hide"
-	desc = "Hide from one of Dendor's creachers."
+	desc = "Hide from one of Dendor's creatures."
 	force = 0
 	throwforce = 0
 	w_class = WEIGHT_CLASS_SMALL
@@ -28,7 +28,7 @@
 /obj/item/natural/fur
 	name = "fur"
 	icon_state = "wool1"
-	desc = "Fur from one of Dendor's creachers."
+	desc = "Fur from one of Dendor's creatures."
 	force = 0
 	throwforce = 0
 	w_class = WEIGHT_CLASS_SMALL
@@ -43,7 +43,7 @@
 	color = null
 
 /obj/item/natural/fur/wolf
-	desc = "from a volf."
+	desc = "from a wolf."
 	icon_state = "pelt_volf"
 	color = null
 
@@ -68,7 +68,7 @@
 	color = null
 
 /obj/item/natural/fur/direbear
-	desc = "fur from one of Dendor's mightiest creachers."
+	desc = "fur from one of Dendor's mightiest creatures."
 	icon_state = "pelt_direbear"
 	color = "#33302b"
 	sellprice = 28

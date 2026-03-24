@@ -323,7 +323,7 @@
 	update_icon()
 
 /obj/item/quiver/zigs
-	name = "zig box"
+	name = "cigarette box"
 	desc = "A box for all your smoking needs."
 	icon = 'icons/roguetown/items/smokebox.dmi'
 	icon_state = "smokebox"

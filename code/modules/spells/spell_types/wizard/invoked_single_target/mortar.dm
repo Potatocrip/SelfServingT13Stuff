@@ -66,7 +66,7 @@
 	name = "mortar marker"
 	desc = "Get out of the way!"
 	randomdir = FALSE
-	duration = 8 SECONDS
+	duration = 5 SECONDS
 	layer = MASSIVE_OBJ_LAYER
 	light_outer_range = 2
 	light_color = COLOR_NAVY

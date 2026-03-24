@@ -78,8 +78,7 @@
 	icon_state = "iplate"
 	desc = "Full iron plate armor. Slow to don and doff without the aid of an Armsman."
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = ARMOR_INT_CHEST_PLATE_IRON
-	armor = ARMOR_GRUDGEBEARER
+	armor = ARMOR_PLATE_GOOD
 	allowed_race = ALL_RACES_TYPES
 	prevent_crits = list(BCLASS_TWIST)
 	equip_delay_self = 5 SECONDS
@@ -97,7 +96,8 @@
 	icon_state = "grandmaster"
 	item_state = "grandmaster"
 	body_parts_covered = COVERAGE_FULL
-	sleeved = 'icons/roguetown/clothing/onmob/armor.dmi'
+	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_armor.dmi'
+	sleevetype = "grandmaster"
 
 /obj/item/clothing/suit/roguetown/armor/leather/consulo
 	name = "consulo's coat"

@@ -8,8 +8,8 @@
 	gripped_intents = list(/datum/intent/use)
 
 /obj/item/natural/head/volf
-	name = "volf head"
-	desc = "The head of a fearsome volf."
+	name = "wolf head"
+	desc = "The head of a fearsome wolf."
 	icon_state = "volfhead"
 	layer = 3.1
 	grid_height = 32

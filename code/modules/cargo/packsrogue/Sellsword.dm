@@ -24,7 +24,7 @@
 	contains = list(/obj/item/clothing/head/roguetown/helmet/sallet/visored)
 
 /datum/supply_pack/rogue/Sellsword/wolfhelm
-	name = "Volf Plate Helm"
+	name = "Wolf Plate Helm"
 	cost = 30
 	contains = list(/obj/item/clothing/head/roguetown/helmet/heavy/volfplate)
 

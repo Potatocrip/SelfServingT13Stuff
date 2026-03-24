@@ -19,8 +19,8 @@
 /obj/item/ammo_box/magazine/internal/boltaction/leverchester
 	name = "WTF."
 	desc = "YOU SHOULD NOT BE SEEING THIS!!!"
-	ammo_type = /obj/item/ammo_casing/a9mm
-	caliber = "a9mm"
+	ammo_type = /obj/item/ammo_casing/a44
+	caliber = "a44"
 	max_ammo = 6
 	multiload = 0
 

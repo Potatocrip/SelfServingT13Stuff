@@ -30,12 +30,12 @@
 	contains = list(/obj/item/reagent_containers/powder/spice)
 
 /datum/supply_pack/rogue/drugs/swampzig
-	name = "Swampweeed Zig"
+	name = "Swampweeed cigarette"
 	cost = 5
 	contains = list(/obj/item/clothing/mask/cigarette/rollie/cannabis)
 
 /datum/supply_pack/rogue/drugs/pipezig
-	name = "Pipeweed Zig"
+	name = "Pipeweed cigarette"
 	cost = 2
 	contains = list(/obj/item/clothing/mask/cigarette/rollie/nicotine)
 

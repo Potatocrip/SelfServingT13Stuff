@@ -27,6 +27,8 @@
 	var/list/bullet_cost
 	///cost of the materials in the magazine/box itself
 	var/list/base_cost
+	///Whether or not the box should be deleted when the last bullet is removed
+	var/handful = FALSE
 
 /obj/item/ammo_box/Initialize()
 	. = ..()
@@ -34,6 +36,13 @@
 		for(var/i = 1, i <= max_ammo, i++)
 			stored_ammo += new ammo_type(src)
 	update_icon()
+
+/obj/item/ammo_box/examine(mob/user)
+	. = ..()
+	if(stored_ammo.len)
+		. += "It contains [stored_ammo.len] casing[stored_ammo.len == 1 ? "" : "s"]."
+	else
+		. += "It's empty."
 
 ///gets a round from the magazine, if keep is TRUE the round will stay in the gun
 /obj/item/ammo_box/proc/get_round(keep = FALSE)
@@ -44,6 +53,8 @@
 		stored_ammo -= b
 		if (keep)
 			stored_ammo.Insert(1,b)
+		if(handful && !stored_ammo.len)
+			qdel(src)
 		return b
 
 ///puts a round into the magazine
@@ -84,6 +95,9 @@
 			if(did_load)
 				AM.stored_ammo -= AC
 				num_loaded++
+				if(AM.handful && !AM.stored_ammo.len)
+					qdel(AM)
+					break
 			if(!did_load || !multiload)
 				break
 	if(istype(A, /obj/item/ammo_casing))
