@@ -307,7 +307,7 @@
 	name = "M2"
 	desc = "A slick, top of the line War Machine production. This, this is power."
 	icon_state = "m2"
-	mag_type = /obj/item/ammo_box/magazine/hmg/a303
+	mag_type = /obj/item/ammo_box/magazine/hmg/a50d
 	fire_sound = HMGM2SHOT
 	burst = 2
 

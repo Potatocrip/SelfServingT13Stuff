@@ -9,12 +9,12 @@
 	bullet_type = RIFLECASING
 
 
-//M1 AMMO placeholder btw
+//M2 AMMO 
 
-/obj/item/ammo_casing/a303
-	name = ".303 caliber bullet"
+/obj/item/ammo_casing/a50d
+	name = ".50D caliber bullet"
 	desc = "An pretty bullet that breaks hearts."
 	icon_state = "amrcasing-spent"
-	caliber = "a303"
+	caliber = "a50d"
 	projectile_type = /obj/projectile/bullet/a303
 	bullet_type = RIFLECASING

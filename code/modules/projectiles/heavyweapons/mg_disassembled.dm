@@ -14,12 +14,7 @@
 	icon_state = "utes-disconnected"
 	id_g = "uts"
 
-/obj/item/mg_disassembled/kord
-	name = "disassembled KORD"
-	icon_state = "pkms-disconnected"
-	id_g = "krd"
-
 /obj/item/mg_disassembled/m2
-	name = "disassembled M2 Browning"
+	name = "disassembled M2"
 	icon_state = "m2-disconnected"
 	id_g = "mbr"

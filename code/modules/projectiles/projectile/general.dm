@@ -61,7 +61,7 @@
 	damage = 70
 	armor_penetration = 10
 
-/obj/projectile/bullet/a303
+/obj/projectile/bullet/a50D //kingsrow mg
 	name = ".303 bullet"
-	damage = 50
-	armor_penetration = 30
+	damage = 100
+	armor_penetration = 80

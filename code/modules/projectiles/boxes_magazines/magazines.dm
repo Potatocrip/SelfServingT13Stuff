@@ -37,11 +37,11 @@
 	multiload = 1
 	icon_state = "762x59box"
 
-/obj/item/ammo_box/magazine/hmg/a303
-	name = ".303 box magazine"
+/obj/item/ammo_box/magazine/hmg/a50d
+	name = ".50D box magazine"
 	desc = "A box magazine for heavy machineguns."
-	ammo_type = /obj/item/ammo_casing/a303
-	caliber = "a303"
+	ammo_type = /obj/item/ammo_casing/a50d
+	caliber = "a50d"
 	max_ammo = 40
 	multiload = 1
 	icon_state = "303strip"
