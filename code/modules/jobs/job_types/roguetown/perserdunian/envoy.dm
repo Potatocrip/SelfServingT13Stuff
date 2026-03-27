@@ -41,7 +41,7 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/envoy
 	cloak = /obj/item/clothing/cloak/envoy
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
-	belt = /obj/item/storage/belt/rogue/leather/black
+	belt = /obj/item/storage/belt/rogue/leather/black/soldier
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	beltr = /obj/item/storage/belt/rogue/surgery_bag/full
 	head = /obj/item/clothing/head/roguetown/helmet/leather/envoy

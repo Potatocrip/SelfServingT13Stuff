@@ -248,3 +248,12 @@
 /datum/component/storage/concrete/grid/pillbottle/New(datum/P, ...)
 	. = ..()
 	set_holdable(/obj/item/reagent_containers/pill)
+
+/datum/component/storage/concrete/grid/hmg
+	screen_max_rows = 8
+	screen_max_columns = 8
+	insert_preposition = "in"
+
+/datum/component/storage/concrete/grid/hmg/New(datum/P, ...)
+	. = ..()
+	set_holdable(/obj/item/ammo_box/magazine/hmg)

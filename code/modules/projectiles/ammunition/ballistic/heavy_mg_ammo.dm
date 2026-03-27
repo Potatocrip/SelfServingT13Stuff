@@ -16,5 +16,5 @@
 	desc = "An pretty bullet that breaks hearts."
 	icon_state = "amrcasing-spent"
 	caliber = "a50d"
-	projectile_type = /obj/projectile/bullet/a303
+	projectile_type = /obj/projectile/bullet/a50d
 	bullet_type = RIFLECASING

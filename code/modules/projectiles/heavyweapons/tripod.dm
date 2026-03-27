@@ -6,6 +6,7 @@
 	name = "stationary machinegun tripod"
 	icon = 'icons/obj/stationary_guns.dmi'
 	icon_state = "basic-mg-tripod"
+	w_class = WEIGHT_CLASS_NORMAL
 	anchored = 0
 	density = 0
 	var/id_g = "bmg"
@@ -93,7 +94,7 @@
 	need_type = /obj/item/gun/ballistic/heavy_mg/utes
 
 /obj/item/mg_tripod/m2
-	name = "M2 Browning tripod"
+	name = "M2 tripod"
 	icon_state = "nato-tripod" //  fix //FIX! ~JTB
 	id_g = "mbr"
 	need_type = /obj/item/gun/ballistic/heavy_mg/m2

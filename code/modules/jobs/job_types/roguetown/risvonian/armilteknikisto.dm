@@ -1,28 +1,29 @@
-/datum/job/roguetown/soldato
-	title = "Soldato"
-	flag = SOLDATO
+/datum/job/roguetown/armilteknikisto
+	title = "Armilteknikisto"
+	flag = ARMILTEKNIKISTO
 	department_flag = RISVON
 	faction = "Station"
-	total_positions = 8
-	spawn_positions = 8
+	total_positions = 1
+	spawn_positions = 1
 	allowed_races = RACES_CONSCRIPT
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 
-	tutorial = "You are the backbone of the Risvon Ziggurate. You are typically a volunteer, or a conscript. \
+	tutorial = "You are an armsman, promoted to the special position of Heavy Weapons Technician. \
+				You are part of a team. Work with your Municioteknikisto to achieve complete efficiency with your gun. \
 				Your main purpose is follow the orders of your superiors. They are your Oficiros, and your Commandant. \
 				For most of your life, you've been filled with a firm belief that the strong must rule. \
 				You are also a firm believer of the denial of one's desires, in favor for unity and a greater good." 
 
-	outfit = /datum/outfit/job/roguetown/soldato
-	display_order = JDO_SOLDATO
+	outfit = /datum/outfit/job/roguetown/armilteknikisto
+	display_order = JDO_ARMILTEKNIKISTO
 	give_bank_account = TRUE
 	min_pq = 0
 	max_pq = null
 
 	cmode_music = 'sound/music/combat_soldato.ogg'
 
-/datum/job/roguetown/soldato/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+/datum/job/roguetown/armilteknikisto/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
@@ -37,7 +38,7 @@
 
 
 
-/datum/outfit/job/roguetown/soldato/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/armilteknikisto/pre_equip(mob/living/carbon/human/H)
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron/ziggurate
@@ -48,19 +49,17 @@
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	belt = /obj/item/storage/belt/rogue/leather/black/soldier
 	beltl = /obj/item/flashlight/flare/torch/lantern
-	beltr = /obj/item/storage/belt/rogue/pouch/ammobag
+	beltr = /obj/item/rogueweapon/stoneaxe/woodcut/risvon
 	wrists = /obj/item/scomstone
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
 	id = /obj/item/roguekey/risvon
 	backr = /obj/item/storage/backpack/rogue/backpack/risvon
+	backl = /obj/item/mg_disassembled/utes
 	backpack_contents = list(
-		/obj/item/ammo_box/clip/pistol = 6,
-		/obj/item/rogueweapon/huntingknife/idagger/steel,
-		/obj/item/gun/ballistic/rifle/repeater/pistol,
 		/obj/item/storage/belt/rogue/pouch/coins/poor,
 		/obj/item/smokegrenade = 1,
-		/obj/item/rogueweapon/stoneaxe/woodcut/risvon,
-		/obj/item/reagent_containers/glass/bottle/rogue/healthpotnew,
+		/obj/item/mg_tripod/utes,
+		/obj/item/ammo_box/magazine/hmg/a762x59 = 2,
 	)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)
@@ -77,7 +76,6 @@
 	H.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE)
 	H.change_stat("constitution", 1)
 	H.change_stat("endurance", 1)
-	H.change_stat("perception", 2)
-	H.change_stat("speed", 2)
+	H.change_stat("perception", 3)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_LONGSTRIDER, TRAIT_GENERIC)

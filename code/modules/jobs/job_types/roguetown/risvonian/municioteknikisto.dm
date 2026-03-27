@@ -1,6 +1,6 @@
-/datum/job/roguetown/soldato
-	title = "Soldato"
-	flag = SOLDATO
+/datum/job/roguetown/municioteknikisto
+	title = "Municioteknikisto"
+	flag = MUNICIOTEKNIKISTO
 	department_flag = RISVON
 	faction = "Station"
 	total_positions = 8
@@ -9,20 +9,20 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 
-	tutorial = "You are the backbone of the Risvon Ziggurate. You are typically a volunteer, or a conscript. \
-				Your main purpose is follow the orders of your superiors. They are your Oficiros, and your Commandant. \
+	tutorial = "You are an armsman, promoted to the special postition of Heavy Munitions Technician. \
+				Your main purpose is follow the orders of the Armilteknikisto. Coordinate to achieve peak heavy weapons efficiency. \
 				For most of your life, you've been filled with a firm belief that the strong must rule. \
 				You are also a firm believer of the denial of one's desires, in favor for unity and a greater good." 
 
-	outfit = /datum/outfit/job/roguetown/soldato
-	display_order = JDO_SOLDATO
+	outfit = /datum/outfit/job/roguetown/municioteknikisto
+	display_order = JDO_MUNICIOTEKNIKISTO
 	give_bank_account = TRUE
 	min_pq = 0
 	max_pq = null
 
 	cmode_music = 'sound/music/combat_soldato.ogg'
 
-/datum/job/roguetown/soldato/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+/datum/job/roguetown/municioteknikisto/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
@@ -37,7 +37,7 @@
 
 
 
-/datum/outfit/job/roguetown/soldato/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/municioteknikisto/pre_equip(mob/living/carbon/human/H)
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron/ziggurate
@@ -48,19 +48,14 @@
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	belt = /obj/item/storage/belt/rogue/leather/black/soldier
 	beltl = /obj/item/flashlight/flare/torch/lantern
-	beltr = /obj/item/storage/belt/rogue/pouch/ammobag
+	beltr = /obj/item/storage/belt/rogue/pouch/ammobag/pistol
 	wrists = /obj/item/scomstone
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
 	id = /obj/item/roguekey/risvon
-	backr = /obj/item/storage/backpack/rogue/backpack/risvon
+	backr = /obj/item/storage/backpack/rogue/backpack/mg
+	backl = /obj/item/gun/ballistic/rifle/repeater/pistol
 	backpack_contents = list(
-		/obj/item/ammo_box/clip/pistol = 6,
-		/obj/item/rogueweapon/huntingknife/idagger/steel,
-		/obj/item/gun/ballistic/rifle/repeater/pistol,
-		/obj/item/storage/belt/rogue/pouch/coins/poor,
-		/obj/item/smokegrenade = 1,
-		/obj/item/rogueweapon/stoneaxe/woodcut/risvon,
-		/obj/item/reagent_containers/glass/bottle/rogue/healthpotnew,
+		/obj/item/ammo_box/magazine/hmg/a762x59 = 8,
 	)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)

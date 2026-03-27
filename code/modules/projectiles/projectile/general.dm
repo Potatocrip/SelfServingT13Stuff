@@ -61,7 +61,7 @@
 	damage = 70
 	armor_penetration = 10
 
-/obj/projectile/bullet/a50D //kingsrow mg
-	name = ".303 bullet"
+/obj/projectile/bullet/a50d //kingsrow mg
+	name = ".50D bullet"
 	damage = 100
 	armor_penetration = 80

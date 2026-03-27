@@ -45,7 +45,7 @@
 	head = /obj/item/clothing/head/roguetown/helmet/leather/grandmaster
 	mask = /obj/item/clothing/mask/rogue/gasmask/grandmask
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
-	belt = /obj/item/storage/belt/rogue/leather/black
+	belt = /obj/item/storage/belt/rogue/leather/black/soldier
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	beltr = /obj/item/gun/ballistic/revolver/grandmaster
 	wrists = /obj/item/scomstone/garrison

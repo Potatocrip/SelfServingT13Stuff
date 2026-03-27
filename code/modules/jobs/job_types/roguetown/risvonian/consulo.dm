@@ -41,7 +41,7 @@
 	cloak = /obj/item/clothing/cloak/templar/malumite
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
-	belt = /obj/item/storage/belt/rogue/leather/black
+	belt = /obj/item/storage/belt/rogue/leather/black/soldier
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	wrists = /obj/item/scomstone
 	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
