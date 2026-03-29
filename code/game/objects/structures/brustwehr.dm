@@ -53,7 +53,7 @@
 	icon_state = "brustwehr_0"
 	density = 1
 	anchored = 1
-	max_integrity = 800
+	max_integrity = 4000
 	smooth = TRUE
 	climbable = TRUE
 	var/health = 100
