@@ -16,10 +16,16 @@
 	swingsound = list('sound/combat/wooshes/blunt/shovel_swing.ogg','sound/combat/wooshes/blunt/shovel_swing2.ogg')
 	drop_sound = 'sound/foley/dropsound/shovel_drop.ogg'
 	var/obj/item/natural/dirtclod/heldclod
+	var/ground = 0 
+	var/max_ground = 2 //how many dirtclods a shovel can hold at once
+	var/working = 0
+	var/folded = FALSE
 	smeltresult = /obj/item/ingot/iron
 	max_blade_int = 50
 	grid_width = 32
 	grid_height = 96
+
+
 
 /obj/item/rogueweapon/shovel/Destroy()
 	if(heldclod)
@@ -36,6 +42,8 @@
 /obj/item/rogueweapon/shovel/update_icon()
 	if(heldclod)
 		icon_state = "dirt[initial(icon_state)]"
+	else if(folded)
+		icon_state = "[initial(icon_state)]_fold"
 	else
 		icon_state = "[initial(icon_state)]"
 
@@ -67,11 +75,7 @@
 				if(D.holie && D.holie.stage < 4)
 					D.holie.attackby(src, user)
 				else
-					if(istype(T, /turf/open/floor/rogue/dirt/road))
-						qdel(heldclod)
-						T.ChangeTurf(/turf/open/floor/rogue/dirt, flags = CHANGETURF_INHERIT_AIR)
-					else
-						heldclod.forceMove(T)
+					heldclod.forceMove(T)
 					heldclod = null
 					playsound(T,'sound/items/empty_shovel.ogg', 100, TRUE)
 					update_icon()
@@ -86,6 +90,7 @@
 						T.ChangeTurf(/turf/open/floor/rogue/dirt/road, flags = CHANGETURF_INHERIT_AIR)
 					heldclod = new(src)
 					playsound(T,'sound/items/dig_shovel.ogg', 100, TRUE)
+					ground += max_ground
 					update_icon()
 			return
 		if(heldclod)
@@ -170,6 +175,40 @@
 	max_blade_int = 0
 	smeltresult = null
 	grid_height = 64
+
+/obj/item/rogueweapon/shovel/small/etool
+	force = 10
+	name = "etool"
+	desc = "Arguably, a tool of war."
+	icon_state = "etool"
+	max_blade_int = 50
+	smeltresult = /obj/item/ingot/iron
+
+/obj/item/rogueweapon/shovel/small/etool/attack_self(mob/living/user) // hi its manny. potentially shitcode. idc
+	if(src.heldclod)
+		return
+	if(src.folded)
+		src.folded = FALSE
+		src.possible_item_intents = list(/datum/intent/shovelscoop, /datum/intent/mace/strike/shovel)
+		user.update_a_intents()
+		src.grid_height = 64
+		src.w_class = WEIGHT_CLASS_NORMAL
+		update_icon(src)
+	else
+		src.folded = TRUE
+		src.possible_item_intents = list(/datum/intent/mace/strike/shovel)
+		user.update_a_intents()
+		src.grid_height = 32
+		src.w_class = WEIGHT_CLASS_SMALL
+		update_icon(src)
+
+/obj/item/rogueweapon/shovel/small/etool/getonmobprop(tag)
+	. = ..()
+	if(tag)
+		switch(tag)
+			if("gen")
+				return list("shrink" = 0.6,"sx" = 4,"sy" = -4,"nx" = 6,"ny" = -2,"wx" = -4,"wy" = -4,"ex" = 5,"ey" = -5,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = 94,"sturn" = -75,"wturn" = -70,"eturn" = 77,"nflip" = 0,"sflip" = 8,"wflip" = 8,"eflip" = 0)
+
 
 /obj/item/rogueweapon/shovel/aalloy
 	force = 8

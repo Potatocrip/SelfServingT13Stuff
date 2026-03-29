@@ -14,7 +14,8 @@
 	anchored = TRUE
 	density = TRUE
 	max_integrity = 100
-	var/proj_pass_rate = 50 //How many projectiles will pass the cover. Lower means stronger cover
+	var/proj_pass_rate = 30 //How many projectiles will pass the cover. Lower means stronger cover
+	var/proj_pass_rate_bonus = 0 //used for mob lying bonus
 	var/bar_material = METAL
 
 /obj/structure/barricade/deconstruct(disassembled = TRUE)
@@ -46,7 +47,11 @@
 		var/obj/projectile/proj = mover
 		if(proj.firer && Adjacent(proj.firer))
 			return 1
-		if(prob(proj_pass_rate))
+		if(ismob(proj.original))
+			var/mob/living/M = proj.original
+			if(!(M.mobility_flags & MOBILITY_STAND)) //if target on ground give bonus
+				proj_pass_rate_bonus = 20
+		if(prob(proj_pass_rate -= proj_pass_rate_bonus))
 			return 1
 		return 0
 	else
@@ -78,7 +83,8 @@
 	desc = ""
 	icon = 'icons/roguetown/misc/structure.dmi'
 	icon_state = "tanktrap"
-	max_integrity = 60
+	max_integrity = 100
+	proj_pass_rate = 50
 	bar_material = WOOD
 	drop_amount = 0
 
