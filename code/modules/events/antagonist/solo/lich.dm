@@ -14,7 +14,7 @@
 	base_antags = 1
 	maximum_antags = 2
 
-	weight = 2	//i hate you
+	weight = 1	//i hate you
 	max_occurrences = 1 // mashallah
 
 	earliest_start = 0 SECONDS

@@ -5,7 +5,7 @@
 	name = "Beastmen"
 	id = "demihuman"
 	desc = "<b>Beastmen</b><br>\
-	Beastmen are created through the union of Eastern Black Beasts and humans/elves. \
+	Beastmen are created through the union of Xiaoren and humans/elves. \
 	They sport the animalistic features of their progenitor, and usually make for better combatants at the cost of severe mental instability. \
 	This typically manifests in the form of impulsiveness, violent mood swings, and a noticeable lack of critical thinking. \
 	They are noticeably rarer than humans and elves, due to inherited genetic defects that make them incapable of crossbreeding with other races. \

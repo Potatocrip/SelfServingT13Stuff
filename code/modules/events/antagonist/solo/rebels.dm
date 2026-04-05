@@ -18,7 +18,7 @@
 	typepath = /datum/round_event/antagonist/solo/rebel
 	antag_datum = /datum/antagonist/prebel/head
 
-	weight = 2
+	weight = 1
 
 	restricted_roles = list(
 		"Grand Duke",
