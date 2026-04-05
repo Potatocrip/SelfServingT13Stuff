@@ -27,7 +27,7 @@
 			pants = /obj/item/clothing/under/roguetown/trou
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltr = /obj/item/gun/ballistic/revolver/doublebarrel
-			shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
+			shoes = /obj/item/clothing/shoes/roguetown/boots
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 			backl = /obj/item/storage/backpack/rogue/satchel
 			belt = /obj/item/storage/belt/rogue/leather
@@ -116,7 +116,7 @@
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltr = /obj/item/rogueweapon/knuckles
 			head = /obj/item/clothing/head/roguetown/articap
-			shoes = /obj/item/clothing/shoes/roguetown/simpleshoes/buckle
+			shoes = /obj/item/clothing/shoes/roguetown/boots
 			neck = /obj/item/clothing/neck/roguetown/gorget
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 			backl = /obj/item/storage/backpack/rogue/satchel
