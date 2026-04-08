@@ -21,7 +21,7 @@
 	H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/revolvers, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/shotguns, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/rifles, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
