@@ -59,9 +59,9 @@
 		/obj/item/grenade,
 		/obj/item/rogueweapon/stoneaxe/woodcut/risvon,
 	)
-	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE) // THEY DO NOT GET SWORDS, THEY ARE SAVAGES, THEY USE AXES
 	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE) // they are also better than soldatos at axes, gives them a 10% chance to better get by parries
