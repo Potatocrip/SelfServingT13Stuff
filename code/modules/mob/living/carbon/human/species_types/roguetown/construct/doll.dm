@@ -22,7 +22,7 @@
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY,NOBLOOD)
 	default_features = MANDATORY_FEATURE_LIST
 	use_skintones = 1
-	possible_ages = AGE_ADULT
+	possible_ages = ALL_AGES_LIST
 	skinned_type = /obj/item/ingot/steel
 	disliked_food = NONE
 	liked_food = NONE
