@@ -27,7 +27,7 @@
 	caliber = "a45acp"
 	max_ammo = 7
 	multiload = 1
-	icon_state = "colt-mag"
+	icon_state = "coltmag"
 
 /obj/item/ammo_box/magazine/luger
     name = "KRL magazine"
@@ -35,9 +35,9 @@
     multiple_sprites = AMMO_BOX_PER_BULLET
     ammo_type = /obj/item/ammo_casing/a9mm
     caliber = "a9mm"
-    max_ammo = 8
+    max_ammo = 9
     multiload = 1
-    icon_state = "luger-mag"
+    icon_state = "lugermag"
 
 
 //hmg 

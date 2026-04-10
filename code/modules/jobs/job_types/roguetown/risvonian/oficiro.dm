@@ -6,7 +6,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	allowed_races = RACES_CONSCRIPT
-	allowed_sexes = list(MALE)
+	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 
 	tutorial = "You're a Risvonian military officer. \
@@ -43,9 +43,8 @@
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	head = /obj/item/clothing/head/roguetown/helmet/kettle/iron/oficiro
 	mask = /obj/item/clothing/mask/rogue/gasmask/risvonmask
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	belt = /obj/item/storage/belt/rogue/leather/black/soldier
-	beltl = /obj/item/gun/ballistic/pistol/offiseroluger
+	beltl = /obj/item/gun/ballistic/rifle/repeater/offiseroluger
 	beltr = /obj/item/storage/belt/rogue/pouch/ammobag
 	wrists = /obj/item/scomstone
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves1

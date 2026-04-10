@@ -42,7 +42,6 @@
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
 	mask = /obj/item/clothing/mask/rogue/gasmask/risvonmask
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	belt = /obj/item/storage/belt/rogue/leather/black/soldier
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	beltr = /obj/item/storage/belt/rogue/pouch/stim
@@ -69,6 +68,7 @@
 	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/pistols, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/magic/arcane, 3, TRUE)
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/diagnose/secular)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/regression)

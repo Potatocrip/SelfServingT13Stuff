@@ -212,6 +212,32 @@
 	/datum/species/human/halfelf,\
 )
 
+#define RACES_TEMPERANCE_NONCOMBATANT list(\
+	/datum/species/human/northern,\
+	/datum/species/elf/wood,\
+	/datum/species/demihuman,\
+	/datum/species/tieberian,\
+	/datum/species/human/halfelf,\
+	/datum/species/construct/metal/porcelain,\
+)
+
+#define RACES_CONSCRIPT_NONCOMBATANT list(\
+	/datum/species/human/northern,\
+	/datum/species/elf/wood,\
+	/datum/species/demihuman,\
+	/datum/species/tieberian,\
+	/datum/species/anthromorph,\
+	/datum/species/human/halfelf,\
+	/datum/species/construct/metal/porcelain,\
+)
+
+#define RACES_TEMPERANCE_NO_BM list(\
+	/datum/species/human/northern,\
+	/datum/species/elf/wood,\
+	/datum/species/tieberian,\
+	/datum/species/human/halfelf,\
+)
+
 #define RACES_ALL_KINDS list(RACES_DESPISED, RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED, RACES_CONSCRIPT, RACES_TEMPERANCE)
 
 #define RACES_NO_CONSTRUCT list(RACES_DESPISED, RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED)
@@ -227,6 +253,7 @@
 	/datum/species/tieberian,\
 	/datum/species/anthromorph,\
 	/datum/species/human/halfelf,\
+	/datum/species/construct/metal/porcelain,\
 )
 
 #define CLOTHED_RACES_TYPES list(\
@@ -236,6 +263,7 @@
 	/datum/species/tieberian,\
 	/datum/species/anthromorph,\
 	/datum/species/human/halfelf,\
+	/datum/species/construct/metal/porcelain,\
 )
 // Non-dwarf non-kobold non-goblin mostly
 #define NON_DWARVEN_RACE_TYPES list(\

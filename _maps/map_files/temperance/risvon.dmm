@@ -557,7 +557,7 @@
 "fi" = (
 /obj/structure/mineral_door/wood{
 	lockid = "risvontag";
-	name = "PRISONER TRANSFER"
+	name = "KASPAFISTO"
 	},
 /turf/open/floor/rogue/risvon,
 /area/rogue/indoors/risvonbase)
@@ -5604,6 +5604,8 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/blood/old,
+/obj/effect/landmark/start/kaspafisto,
+/obj/effect/landmark/start/kaspafistolate,
 /turf/open/floor/rogue/risvon,
 /area/rogue/indoors/risvonbase)
 "SB" = (
@@ -6329,6 +6331,10 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/risvonbase)
+"Yg" = (
+/obj/effect/landmark/mapGenerator/rogue/risvon,
+/turf/closed/mineral/rogue/bedrock,
+/area/rogue/outdoors/caves)
 "Yh" = (
 /obj/structure/table/wood/large_table/north_west,
 /obj/item/reagent_containers/glass/cup/steel,
@@ -6669,7 +6675,7 @@ Uh
 Uh
 Uh
 Uh
-Uh
+Yg
 "}
 (2,1,1) = {"
 Uh

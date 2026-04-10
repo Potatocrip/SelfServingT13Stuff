@@ -45,10 +45,9 @@
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
 	mask = /obj/item/clothing/mask/rogue/gasmask/risvonmask
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	belt = /obj/item/storage/belt/rogue/leather/black/soldier
 	beltl = /obj/item/flashlight/flare/torch/lantern
-	beltr = /obj/item/gun/ballistic/pistol/offiseroluger
+	beltr = /obj/item/gun/ballistic/rifle/repeater/offiseroluger
 	wrists = /obj/item/scomstone
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
 	id = /obj/item/roguekey/risvon

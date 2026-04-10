@@ -261,7 +261,6 @@
 	movement_interrupt = FALSE
 	sound = list('sound/magic/rewind.ogg', 'sound/magic/rewind2.ogg', 'sound/magic/rewind3.ogg')
 	invocation_type = "none"
-	associated_skill = /datum/skill/magic/holy
 	antimagic_allowed = TRUE
 	recharge_time = 5 SECONDS
 
@@ -290,10 +289,8 @@
 	movement_interrupt = FALSE
 //	chargedloop = /datum/looping_sound/invokeholy
 	chargedloop = null
-	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
 	sound = list('sound/magic/convergence1.ogg','sound/magic/convergence2.ogg','sound/magic/convergence3.ogg','sound/magic/convergence4.ogg')
 	invocation_type = "none"
-	associated_skill = /datum/skill/magic/holy
 	antimagic_allowed = TRUE
 	recharge_time = 10 SECONDS
 
@@ -327,7 +324,6 @@
 	charging_slowdown = 3
 	sound = 'sound/magic/timeforward.ogg'
 	chargedloop = /datum/looping_sound/invokegen
-	associated_skill = /datum/skill/magic/holy
 	overlay_state = "sands_of_time"
 	var/brute = 0
 	var/burn = 0

@@ -3228,6 +3228,10 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/perserdunbase)
+"VF" = (
+/obj/effect/landmark/mapGenerator/rogue/perserdun,
+/turf/closed/mineral/rogue/bedrock,
+/area/rogue/outdoors/perserdun)
 "VQ" = (
 /obj/structure/table/church/end,
 /obj/machinery/light/rogue/wallfire/candle/floorcandle/alt{
@@ -20267,7 +20271,7 @@ IG
 IG
 IG
 IG
-IG
+VF
 "}
 (2,1,2) = {"
 IG

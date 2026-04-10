@@ -609,13 +609,13 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/servisto
-	name = "Servisto"
+	name = "Magiisto"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/servistolate
-	name = "Servisto"
+	name = "Magiisto"
 	icon_state = "arrow"
-	jobspawn_override = list("Servisto")
+	jobspawn_override = list("Magiisto")
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/curacisto
@@ -650,6 +650,16 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Consulo"
 	icon_state = "arrow"
 	jobspawn_override = list("Consulo")
+	delete_after_roundstart = FALSE
+
+/obj/effect/landmark/start/kaspafisto
+	name = "Kaspafisto"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/kaspafistolate
+	name = "Kaspafisto"
+	icon_state = "arrow"
+	jobspawn_override = list("Kaspafisto")
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/hierarch

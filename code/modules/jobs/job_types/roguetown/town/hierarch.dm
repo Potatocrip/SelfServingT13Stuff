@@ -30,7 +30,7 @@
 	beltr = /obj/item/storage/keyring/royal
 	id = /obj/item/clothing/ring/gold
 	backl = /obj/item/storage/backpack/rogue/satchel
-	backr = /obj/item/gun/ballistic/pistol/broomhandle
+	backr = /obj/item/gun/ballistic/rifle/repeater/broomhandle
 	wrists = /obj/item/scomstone/kingsrow
 	backpack_contents = list(
 		/obj/item/flashlight/flare/torch/lantern = 1,

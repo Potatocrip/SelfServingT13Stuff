@@ -104,7 +104,7 @@ Just because it'd get a LITTLE annoying if you kept seeing this over and over. H
 	sound = 'sound/loredump/lore_sting6.ogg'
 
 /datum/loreblurb/code1
-	title = "DIVINE MESSAGE"
+	title = "FROM A RADIO"
 	description = "34 15 43 313 26 16 312 61 34 15 43 312 53 26"
 	sound = 'sound/loredump/lore_sting6.ogg'
 
@@ -115,7 +115,7 @@ Just because it'd get a LITTLE annoying if you kept seeing this over and over. H
 	sound = 'sound/loredump/lore_sting6.ogg'
 
 /datum/loreblurb/code2
-	title = "DIVINE MESSAGE"
+	title = "SOMETHING WHISPERS"
 	description = "41 231 41 26 312 51 15 52 312 34"
 	sound = 'sound/loredump/lore_sting6.ogg'
 
@@ -126,7 +126,7 @@ Just because it'd get a LITTLE annoying if you kept seeing this over and over. H
 	sound = 'sound/loredump/lore_sting6.ogg'
 
 /datum/loreblurb/code3
-	title = "DIVINE MESSAGE"
+	title = "WHISPERED IN YOUR EAR"
 	description = "132 53 34 231 16 312 41 213"
 	sound = 'sound/loredump/lore_sting6.ogg'
 

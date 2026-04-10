@@ -69,7 +69,7 @@
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
 			pants = /obj/item/clothing/under/roguetown/trou/leather
-			beltl = /obj/item/gun/ballistic/pistol/fury
+			beltl = /obj/item/gun/ballistic/rifle/repeater/fury
 			beltr = /obj/item/rogueweapon/knuckles
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			neck = /obj/item/clothing/neck/roguetown/gorget

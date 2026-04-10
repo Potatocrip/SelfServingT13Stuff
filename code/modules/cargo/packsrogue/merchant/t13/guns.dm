@@ -42,19 +42,40 @@
 	name = "KR 'Confessor' Pistol"
 	cost = 85
 	contains = list(
-					/obj/item/gun/ballistic/pistol/luger,
+					/obj/item/gun/ballistic/rifle/repeater/luger,
 				)
 
 /datum/supply_pack/rogue/firearms/artyluger
 	name = "KR 'Preacher' Stocked Pistol"
 	cost = 180
 	contains = list(
-					/obj/item/gun/ballistic/pistol/artyluger,
+					/obj/item/gun/ballistic/rifle/repeater/artyluger,
 				)
 
 /datum/supply_pack/rogue/firearms/fury
 	name = "Fury Semi-Automatic Pistol"
 	cost = 90
 	contains = list(
-					/obj/item/gun/ballistic/pistol/fury,
+					/obj/item/gun/ballistic/rifle/repeater/fury,
+				)
+
+/datum/supply_pack/rogue/firearms/sawedoff
+	name = "Sawed-off 'Persuader' Shotgun-Pistol"
+	cost = 75
+	contains = list(
+					/obj/item/gun/ballistic/revolver/sawedoff,
+				)
+
+/datum/supply_pack/rogue/firearms/infiltrator
+	name = "KR 'Infiltrator' One-Use Pistol"
+	cost = 60
+	contains = list(
+					/obj/item/gun/ballistic/rifle/repeater/infiltrator,
+				)
+
+/datum/supply_pack/rogue/firearms/levershotgun
+	name = "M&C 'Hare' Lever Action Shotgun"
+	cost = 180
+	contains = list(
+					/obj/item/gun/ballistic/shotgun/levershotgun,
 				)

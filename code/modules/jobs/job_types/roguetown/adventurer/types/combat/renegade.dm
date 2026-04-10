@@ -1,9 +1,9 @@
-/datum/advclass/gunslinger
+/datum/advclass/renegade
 	name = "Renegade Gunslinger"
 	tutorial = "Convicts, criminals, and outcasts. Whatever it may be, you're on the run, and you've got a gun."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_CONSCRIPT
-	outfit = /datum/outfit/job/roguetown/adventurer/gunslinger
+	outfit = /datum/outfit/job/roguetown/adventurer/renegade
 	maximum_possible_slots = 5
 	traits_applied = list(TRAIT_OUTLANDER)
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT)
@@ -11,7 +11,7 @@
 					"Desperado" = "You might just be a bandit, or a cowboy lover. You carry a mass-produced revolver.",
 					"Gangster" = "You're probably from a gang. Or, you happened to kill whoever held the pistol before you. Make some money, grab some guns. Try not to die.",)
 
-/datum/outfit/job/roguetown/adventurer/gunslinger/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/adventurer/renegade/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
 	var/classes = list("Perpretrator","Desperado","Gangster")
@@ -26,7 +26,7 @@
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 			pants = /obj/item/clothing/under/roguetown/trou
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-			beltr = /obj/item/gun/ballistic/revolver/doublebarrel
+			backr = /obj/item/gun/ballistic/revolver/doublebarrel
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 			backl = /obj/item/storage/backpack/rogue/satchel
@@ -114,19 +114,17 @@
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/artificer
 			pants = /obj/item/clothing/under/roguetown/trou/leather
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-			beltr = /obj/item/rogueweapon/knuckles
-			head = /obj/item/clothing/head/roguetown/articap
+			beltr = /obj/item/gun/ballistic/rifle/repeater/jackal
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			neck = /obj/item/clothing/neck/roguetown/gorget
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 			backl = /obj/item/storage/backpack/rogue/satchel
-			backr = /obj/item/gun/ballistic/rifle/repeater/jackal
 			belt = /obj/item/storage/belt/rogue/leather
 			backpack_contents = list(
 				/obj/item/lockpick = 1, 
 				/obj/item/rogueweapon/huntingknife = 1, 
 				/obj/item/recipe_book/survival = 1,
-				/obj/item/rogueweapon/scabbard/sheath = 1,
+				/obj/item/rogueweapon/knuckles = 1,
 				/obj/item/ammo_box/magazine/jackal = 3,
 				/obj/item/flashlight/flare/torch = 1,
 				)

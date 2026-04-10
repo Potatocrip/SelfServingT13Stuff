@@ -18,6 +18,8 @@
 	layer = ABOVE_OBJ_LAYER + 0.11
 	anchored = 1
 	density = 1
+	can_buckle = 1
+	buckle_lying = 0
 	w_class = WEIGHT_CLASS_GIGANTIC
 	dist_fire_sound = DISTANTHMG
 	far_volume = 60 // 60 is max, loudest guns for fun
@@ -98,6 +100,7 @@
 
 /obj/item/gun/ballistic/heavy_mg/afterattack(atom/A, mob/user)
 	if(check_direction(user, A))
+		update_pixels()
 		return ..() //fire gun
 	else
 		rotate_to(user, A)
@@ -125,15 +128,26 @@
 /obj/item/gun/ballistic/heavy_mg/attack_hand(mob/user)
 	var/grip_dir = reverse_direction(dir)
 	var/turf/T = get_step(src.loc, grip_dir)
+	var/mob/living/M = user
 	if(user.loc == T)
+		if(!(M.mobility_flags & MOBILITY_STAND))	
+			return
 		if(user.get_active_held_item() == null && user.get_inactive_held_item() == null)
-			started_using(user)
-
+			buckle_mob(user)
 		else
 			to_chat(user, "\red Your hands are busy by holding things.")
-
 	else
-		to_chat(user, "\red You're too far from the handles.")
+		src.setDir(user.dir)
+		to_chat(user, "You turn the gun to it's proper face.")
+
+/obj/item/gun/ballistic/heavy_mg/buckle_mob(mob/user, force = FALSE, check_loc = TRUE)
+	started_using(user)
+	..()
+	update_pixels(user) 
+
+/obj/item/gun/ballistic/heavy_mg/unbuckle_mob(mob/user, force = FALSE)
+	..()
+	stopped_using(user)
 
 /obj/item/gun/ballistic/heavy_mg/attack_right(mob/user)
 	if(user.get_active_held_item() == null)
@@ -218,8 +232,6 @@
 
 /obj/item/gun/ballistic/heavy_mg/proc/started_using(mob/user as mob, var/need_message = 1)
 	var/mob/living/M = user
-	if(!(M.mobility_flags & MOBILITY_STAND))	
-		return
 	if(need_message)
 		user.visible_message("<span class='notice'>[user.name] handeled \the [src].</span>", \
 							 "<span class='notice'>You handeled \the [src].</span>")
@@ -237,7 +249,7 @@
 /obj/item/gun/ballistic/heavy_mg/proc/stopped_using(mob/user as mob, var/need_message = 1)
 	if(need_message)
 		user.visible_message("<span class='notice'>[user.name] released \the [src].</span>", \
-							 "<span class='notice'>You released \the [src].</span>")
+							"<span class='notice'>You released \the [src].</span>")
 	var/mob/living/M = user
 	used_by_mob = null
 	user.using_object = null
