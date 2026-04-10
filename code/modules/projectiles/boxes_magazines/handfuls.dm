@@ -17,7 +17,7 @@
 	multiload = 0
 	icon_state = "rifle-handful_QT"
 
-/obj/item/ammo_box/handfuls/762lp
+/obj/item/ammo_box/handfuls/riflelp
 	name = "handful of 7.62LP bullets"
 	desc = "A handful of low powder rifle bullets."
 	ammo_type = /obj/item/ammo_casing/a762lp

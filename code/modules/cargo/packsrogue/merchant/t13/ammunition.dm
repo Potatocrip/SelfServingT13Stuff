@@ -108,6 +108,6 @@
 /datum/supply_pack/rogue/ammunition/lowpowder
 	name = "Low Powder Rifle ammo handfuls (x3)"
 	cost = 20
-	contains = list(/obj/item/ammo_box/handfuls/762lp,
-	/obj/item/ammo_box/handfuls/762lp,
-	/obj/item/ammo_box/handfuls/762lp)
+	contains = list(/obj/item/ammo_box/handfuls/riflelp,
+	/obj/item/ammo_box/handfuls/riflelp,
+	/obj/item/ammo_box/handfuls/riflelp)

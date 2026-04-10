@@ -471,6 +471,7 @@
 		/obj/item/ammo_box/handfuls/rattlesnake = 1,
 		/obj/item/ammo_box/clip/broomhandle = 1,
 		/obj/item/ammo_box/clip/mondragon = 1,
+		/obj/item/ammo_box/handfuls/riflelp = 1,
 		/obj/item/ammo_box/speedloader/snub = 1,
 	)
 
