@@ -196,8 +196,10 @@ GLOBAL_LIST_INIT(perserdun_positions, list(
 GLOBAL_LIST_INIT(risvon_positions, list(
 	"Commandant",
 	"Oficiro",
+	"Kaspafisto",
 	"Veterano",
 	"Soldato",
+	"Bastiono",
 	"Armilteknikisto",
 	"Municioteknikisto",
 	"Servisto",
