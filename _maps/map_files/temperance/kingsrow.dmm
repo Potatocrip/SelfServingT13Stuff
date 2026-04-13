@@ -2135,7 +2135,7 @@
 "nR" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/warmetal,
-/area/rogue/outdoors/beach/forest/south)
+/area/rogue/under/cave/warmachine)
 "nW" = (
 /obj/structure/table/wood/large_table/north_east{
 	dir = 1
@@ -3778,7 +3778,7 @@
 /obj/structure/mineral_door/wood/wardoor,
 /obj/structure/mineral_door/wood/wardoor,
 /turf/open/floor/rogue/warquad,
-/area/rogue/outdoors/beach/forest/south)
+/area/rogue/under/cave/warmachine)
 "yw" = (
 /obj/structure/table/wood/large_table/south_west,
 /turf/open/floor/rogue/cobble,
@@ -4073,7 +4073,7 @@
 /area/rogue/indoors/shelter/town)
 "AC" = (
 /turf/closed/wall/mineral/rogue/machine/outercorner/dir8,
-/area/rogue/outdoors/beach/forest/south)
+/area/rogue/under/cave/warmachine)
 "AD" = (
 /obj/structure/vampire/necromanticbook{
 	pixel_x = -16;
@@ -4094,7 +4094,7 @@
 /area/rogue/indoors/shelter/town)
 "AJ" = (
 /turf/closed/wall/mineral/rogue/machine/outercorner/dir4,
-/area/rogue/outdoors/beach/forest/south)
+/area/rogue/under/cave/warmachine)
 "AK" = (
 /turf/open/floor/rogue/snow,
 /area/rogue/under/cave)
@@ -4116,7 +4116,7 @@
 /area/rogue/indoors/shelter/town)
 "AS" = (
 /turf/closed/wall/mineral/rogue/machine/long,
-/area/rogue/outdoors/beach/forest/south)
+/area/rogue/under/cave/warmachine)
 "AV" = (
 /obj/structure/table/wood/longreif,
 /obj/item/storage/belt/rogue/pouch/coins/mid,
@@ -4972,7 +4972,7 @@
 /area/rogue/outdoors/beach/forest/south)
 "Gs" = (
 /turf/closed/wall/mineral/rogue/machine/outercorner,
-/area/rogue/outdoors/beach/forest/south)
+/area/rogue/under/cave/warmachine)
 "Gv" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/dirt/road,
@@ -5303,7 +5303,7 @@
 /obj/effect/spawner/lootdrop/medicines,
 /obj/effect/spawner/lootdrop/medicines,
 /turf/open/floor/rogue/wardouble,
-/area/rogue/outdoors/beach/forest/south)
+/area/rogue/under/cave/warmachine)
 "Iz" = (
 /obj/structure/closet/crate/drawer,
 /turf/open/floor/carpet/royalblack,
@@ -6394,9 +6394,6 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors)
-"Pw" = (
-/turf/open/floor/rogue/warmetal,
-/area/rogue/outdoors/beach/forest/south)
 "Px" = (
 /obj/structure/closet/crate/drawer/filing/random{
 	pixel_x = -2
@@ -6616,7 +6613,7 @@
 "Qp" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/wardouble,
-/area/rogue/outdoors/beach/forest/south)
+/area/rogue/under/cave/warmachine)
 "Qq" = (
 /obj/structure/fluff/railing/border/west,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -6706,7 +6703,7 @@
 /area/rogue/outdoors)
 "QN" = (
 /turf/closed/wall/mineral/rogue/machine/outercorner/dir1,
-/area/rogue/outdoors/beach/forest/south)
+/area/rogue/under/cave/warmachine)
 "QP" = (
 /obj/structure/mineral_door/wood/donjon/stone/broken,
 /turf/open/floor/rogue/cobble,
@@ -6853,7 +6850,7 @@
 "RA" = (
 /obj/structure/mineral_door/wood/wardoor,
 /turf/open/floor/rogue/warquad,
-/area/rogue/outdoors/beach/forest/south)
+/area/rogue/under/cave/warmachine)
 "RB" = (
 /obj/structure/fluff/railing/border/east,
 /turf/open/transparent/openspace,
@@ -7554,11 +7551,11 @@
 /area/rogue/indoors/shelter/town)
 "Wz" = (
 /turf/open/floor/rogue/wardouble,
-/area/rogue/outdoors/beach/forest/south)
+/area/rogue/under/cave/warmachine)
 "WA" = (
 /obj/structure/machine/spawner,
 /turf/open/floor/rogue/wardouble,
-/area/rogue/outdoors/beach/forest/south)
+/area/rogue/under/cave/warmachine)
 "WC" = (
 /obj/machinery/light/rogue/wallfire{
 	pixel_x = 32;
@@ -7652,7 +7649,7 @@
 /area/rogue/indoors/shelter/town)
 "Xm" = (
 /turf/closed/wall/mineral/rogue/machine/long/east_west,
-/area/rogue/outdoors/beach/forest/south)
+/area/rogue/under/cave/warmachine)
 "Xn" = (
 /obj/machinery/light/rogue/wallfire{
 	pixel_y = 32
@@ -88986,8 +88983,8 @@ tn
 yF
 QN
 AJ
-Pw
-Pw
+YY
+YY
 Gs
 AC
 yF
@@ -89213,8 +89210,8 @@ tn
 xP
 tn
 Xm
-Pw
-Pw
+YY
+YY
 Xm
 cF
 xP
@@ -89440,8 +89437,8 @@ tn
 xP
 xP
 Xm
-Pw
-Pw
+YY
+YY
 Xm
 cF
 xP
@@ -89667,8 +89664,8 @@ tn
 Gs
 AS
 AC
-Pw
-Pw
+YY
+YY
 QN
 AS
 AJ
@@ -89893,10 +89890,10 @@ tn
 tn
 Xm
 nR
-Pw
-Pw
-Pw
-Pw
+YY
+YY
+YY
+YY
 nR
 Xm
 xP
@@ -90119,12 +90116,12 @@ tn
 tn
 xP
 Xm
-Pw
-Pw
-Pw
-Pw
-Pw
-Pw
+YY
+YY
+YY
+YY
+YY
+YY
 Xm
 xP
 tn
@@ -90346,12 +90343,12 @@ tn
 tn
 xP
 RA
-Pw
-Pw
+YY
+YY
 Wz
 WA
-Pw
-Pw
+YY
+YY
 RA
 tn
 tn
@@ -90573,12 +90570,12 @@ tn
 tn
 xP
 RA
-Pw
-Pw
+YY
+YY
 Wz
 Wz
-Pw
-Pw
+YY
+YY
 yt
 tn
 tn
@@ -90800,12 +90797,12 @@ tn
 tn
 xP
 Xm
-Pw
-Pw
-Pw
-Pw
-Pw
-Pw
+YY
+YY
+YY
+YY
+YY
+YY
 Xm
 xP
 tn
@@ -91028,10 +91025,10 @@ tn
 xP
 Xm
 nR
-Pw
-Pw
-Pw
-Pw
+YY
+YY
+YY
+YY
 nR
 Xm
 tn
@@ -91256,8 +91253,8 @@ xP
 QN
 AS
 AJ
-Pw
-Pw
+YY
+YY
 Gs
 AS
 AC
@@ -91483,8 +91480,8 @@ xP
 xP
 xP
 Xm
-Pw
-Pw
+YY
+YY
 Xm
 xP
 tn
@@ -91710,8 +91707,8 @@ xP
 xP
 xP
 Xm
-Pw
-Pw
+YY
+YY
 Xm
 xP
 tn
@@ -91937,8 +91934,8 @@ xP
 xP
 Gs
 AC
-Pw
-Pw
+YY
+YY
 QN
 AJ
 tn

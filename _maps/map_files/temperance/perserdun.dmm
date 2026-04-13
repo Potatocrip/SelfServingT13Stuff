@@ -1511,7 +1511,7 @@
 /area/rogue/under/cave/warmachine)
 "wy" = (
 /turf/closed/wall/mineral/rogue/machine/outercorner/dir4,
-/area/rogue/outdoors/perserdun)
+/area/rogue/under/cave/warmachine)
 "wA" = (
 /turf/closed/wall/mineral/rogue/decowood,
 /area/rogue/under/cave/warmachine)
@@ -1524,7 +1524,7 @@
 /area/rogue/outdoors/perserdun)
 "wC" = (
 /turf/closed/wall/mineral/rogue/machine/outercorner,
-/area/rogue/outdoors/perserdun)
+/area/rogue/under/cave/warmachine)
 "wD" = (
 /obj/structure/chair/wood/rogue/chair3,
 /turf/open/floor/rogue/ruinedwood,
@@ -1552,7 +1552,7 @@
 /area/rogue/indoors/perserdunbase)
 "xf" = (
 /turf/closed/wall/mineral/rogue/machine/outercorner/dir1,
-/area/rogue/outdoors/perserdun)
+/area/rogue/under/cave/warmachine)
 "xl" = (
 /obj/structure/mineral_door/wood/wardoor,
 /turf/open/floor/rogue/warmetal,
@@ -1717,9 +1717,6 @@
 	},
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
-"zC" = (
-/turf/closed/mineral/rogue/bedrock,
-/area/rogue/under/cave/warmachine)
 "zE" = (
 /obj/structure/bed/rogue/inn/wool{
 	dir = 8
@@ -2025,12 +2022,12 @@
 /area/rogue/outdoors/perserdun)
 "EC" = (
 /turf/closed/wall/mineral/rogue/machine/long/east_west,
-/area/rogue/outdoors/perserdun)
+/area/rogue/under/cave/warmachine)
 "ED" = (
 /obj/structure/mineral_door/wood/wardoor,
 /obj/structure/mineral_door/wood/wardoor,
 /turf/open/floor/rogue/warquad,
-/area/rogue/outdoors/perserdun)
+/area/rogue/under/cave/warmachine)
 "EE" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/dirt/road,
@@ -2400,7 +2397,7 @@
 "JE" = (
 /obj/structure/mineral_door/wood/wardoor,
 /turf/open/floor/rogue/warquad,
-/area/rogue/outdoors/perserdun)
+/area/rogue/under/cave/warmachine)
 "JJ" = (
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/perserdun)
@@ -2514,7 +2511,7 @@
 /obj/effect/spawner/lootdrop/medicines,
 /obj/effect/spawner/lootdrop/medicines,
 /turf/open/floor/rogue/wardouble,
-/area/rogue/outdoors/perserdun)
+/area/rogue/under/cave/warmachine)
 "LI" = (
 /obj/structure/fluff/railing/sandbag{
 	dir = 1;
@@ -2867,7 +2864,7 @@
 "PV" = (
 /obj/structure/machine/spawner,
 /turf/open/floor/rogue/wardouble,
-/area/rogue/outdoors/perserdun)
+/area/rogue/under/cave/warmachine)
 "Qd" = (
 /turf/closed/wall/mineral/rogue/perserdun/long/east_west,
 /area/rogue/indoors/perserdunbase)
@@ -2915,7 +2912,7 @@
 /area/rogue/outdoors/indoors/persunbaseoutlook)
 "QC" = (
 /turf/closed/wall/mineral/rogue/machine/outercorner/dir8,
-/area/rogue/outdoors/perserdun)
+/area/rogue/under/cave/warmachine)
 "QG" = (
 /obj/structure/table/wood/map/six,
 /turf/open/floor/rogue/ruinedwood,
@@ -2978,7 +2975,7 @@
 "Ry" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/wardouble,
-/area/rogue/outdoors/perserdun)
+/area/rogue/under/cave/warmachine)
 "RG" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/rogue/metal{
@@ -3002,7 +2999,7 @@
 "Sq" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/warmetal,
-/area/rogue/outdoors/perserdun)
+/area/rogue/under/cave/warmachine)
 "Sy" = (
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/perserdunbase)
@@ -3139,7 +3136,7 @@
 /area/rogue/outdoors/indoors/persunbaseoutlook)
 "Ug" = (
 /turf/closed/wall/mineral/rogue/machine/long,
-/area/rogue/outdoors/perserdun)
+/area/rogue/under/cave/warmachine)
 "Uj" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
 /obj/structure/table/wood/perserdunsmall/smallmetal3,
@@ -3504,7 +3501,7 @@
 /area/rogue/indoors/perserdunbase)
 "Zi" = (
 /turf/open/floor/rogue/wardouble,
-/area/rogue/outdoors/perserdun)
+/area/rogue/under/cave/warmachine)
 "Zn" = (
 /obj/structure/closet/crate/roguecloset/dark{
 	pixel_x = 7;
@@ -23197,13 +23194,13 @@ mV
 ph
 ph
 Pf
-zC
-zC
-zC
-zC
-zC
-zC
-ML
+IC
+IC
+IC
+IC
+IC
+Kh
+yY
 ML
 ML
 ML
@@ -23327,13 +23324,13 @@ Pk
 ph
 ph
 ph
-zC
-zC
-zC
-zC
-zC
-zC
-ML
+ph
+ph
+ph
+ph
+ph
+mG
+yY
 ML
 ML
 ML
@@ -23457,13 +23454,13 @@ Of
 Pf
 IC
 IC
-zC
-zC
-zC
-zC
-zC
-zC
-ML
+IC
+IC
+IC
+IC
+IC
+Kh
+yY
 ML
 ML
 ML
@@ -29524,8 +29521,8 @@ TK
 TK
 xf
 wy
-Qr
-Qr
+ph
+ph
 wC
 QC
 TK
@@ -29654,8 +29651,8 @@ TK
 ML
 TK
 EC
-Qr
-Qr
+ph
+ph
 EC
 NT
 ML
@@ -29784,8 +29781,8 @@ ML
 ML
 ML
 EC
-Qr
-Qr
+ph
+ph
 EC
 NT
 ML
@@ -29914,8 +29911,8 @@ ML
 wC
 Ug
 QC
-Qr
-Qr
+ph
+ph
 xf
 Ug
 wy
@@ -30043,10 +30040,10 @@ TK
 ML
 EC
 Sq
-Qr
-Qr
-Qr
-Qr
+ph
+ph
+ph
+ph
 Sq
 EC
 qs
@@ -30172,12 +30169,12 @@ NT
 TK
 ML
 EC
-Qr
-Qr
-Qr
-Qr
-Qr
-Qr
+ph
+ph
+ph
+ph
+ph
+ph
 EC
 qs
 ML
@@ -30302,12 +30299,12 @@ ML
 TK
 TK
 JE
-Qr
-Qr
+ph
+ph
 Zi
 PV
-Qr
-Qr
+ph
+ph
 JE
 TK
 TK
@@ -30432,12 +30429,12 @@ ML
 TK
 TK
 JE
-Qr
-Qr
+ph
+ph
 Zi
 Zi
-Qr
-Qr
+ph
+ph
 ED
 TK
 TK
@@ -30562,12 +30559,12 @@ lB
 TK
 ML
 EC
-Qr
-Qr
-Qr
-Qr
-Qr
-Qr
+ph
+ph
+ph
+ph
+ph
+ph
 EC
 TK
 TK
@@ -30693,10 +30690,10 @@ TK
 ML
 EC
 Sq
-Qr
-Qr
-Qr
-Qr
+ph
+ph
+ph
+ph
 Sq
 EC
 TK
@@ -30824,8 +30821,8 @@ NB
 xf
 Ug
 wy
-Qr
-Qr
+ph
+ph
 wC
 Ug
 QC
@@ -30954,8 +30951,8 @@ ML
 ML
 ML
 EC
-Qr
-Qr
+ph
+ph
 EC
 ML
 ML
@@ -31084,8 +31081,8 @@ ML
 ML
 ML
 EC
-Qr
-Qr
+ph
+ph
 EC
 ML
 ML
@@ -31214,8 +31211,8 @@ TK
 ML
 wC
 QC
-Qr
-Qr
+ph
+ph
 xf
 wy
 TK
