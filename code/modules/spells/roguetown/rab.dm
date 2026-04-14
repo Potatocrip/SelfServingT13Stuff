@@ -169,10 +169,10 @@
 
 /obj/effect/proc_holder/spell/invoked/projectile/piercing_blood/cast(list/targets, mob/living/user)
 	if(ishuman(user))
-		if(user.blood_volume < 45)
+		if(user.blood_volume < 50)
 			to_chat(user, span_warning("I don't have enough blood to cast this."))
 			return FALSE
-		user.blood_volume = max(user.blood_volume - 45, 0)
+		user.blood_volume = max(user.blood_volume - 50, 0)
 	else
 		return FALSE
 	. = ..()
@@ -184,9 +184,7 @@
 	impact_type = null
 	hitscan = TRUE
 	movement_type = UNSTOPPABLE
-	damage = 50
-	damage_type = BRUTE
-	nodamage = FALSE
+	nodamage = TRUE
 	speed = 0.3
 	flag = "magic"
 	light_color = "#802121"
@@ -204,6 +202,8 @@
 		if(isliving(target))
 			var/mob/living/L = target
 			L.Immobilize(0.5 SECONDS)
+			L.bleed(40)
+			L.adjustBruteLoss(20)
 	qdel(src)
 
 /obj/effect/proc_holder/spell/invoked/projectile/bloodsiphon
@@ -237,9 +237,7 @@
 	impact_type = null
 	hitscan = TRUE
 	movement_type = UNSTOPPABLE
-	damage = 20
-	damage_type = BRUTE
-	nodamage = FALSE
+	nodamage = TRUE
 	speed = 0.3
 	flag = "magic"
 	light_color = "#e74141"
@@ -260,11 +258,11 @@
 				to_chat(sender, span_warning("[H] has no blood to siphon!"))
 				qdel(src)
 				return BULLET_ACT_BLOCK
-			if(H.blood_volume < 45)
+			if(H.blood_volume < 60)
 				to_chat(sender, span_warning("[H] doesn't have enough blood to siphon!"))
 				qdel(src)
 				return BULLET_ACT_BLOCK
-			var/amount = min(45, H.blood_volume)
+			var/amount = min(60, H.blood_volume)
 			H.blood_volume -= amount
 			H.handle_blood()
 			H.visible_message(span_danger("[target] has blood ripped from their body!"), \
@@ -275,4 +273,7 @@
 				var/mob/living/carbon/human/user = sender
 				user.blood_volume = min(user.blood_volume + amount, BLOOD_VOLUME_NORMAL)
 				user.handle_blood()
+			H.bleed(60)
+			H.adjustBruteLoss(10)
+			H.Immobilize(0.3 SECONDS)
 	qdel(src)
