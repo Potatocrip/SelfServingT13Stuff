@@ -12,7 +12,7 @@
 	tutorial = "You are an Armsman, given the honor of being a Voltigeur. You are expected to serve as a scout and skirmisher. \
 				Having done intense physical training in the mountains of Osk Averwael, you've passed the intense training needed to get this position.\
 				While Voltigeurs were always flankers and scouts, the guns are fairly new; replacing crossbows with guns from the WAR MACHINE. \
-				Be careful not to get caught alone, as you won't excel in a one-on-one fight. Try to always stay on the flanks of another battle. \
+				Be careful not to get caught alone, as you may not excel in a one-on-one fight. Try to always stay on the flanks of another battle. \
 				Voltigeurs have a reputation as the best of Armsman; try to live up to that standard, and take pride in your accomplishments." 
 
 	outfit = /datum/outfit/job/roguetown/voltigeur
