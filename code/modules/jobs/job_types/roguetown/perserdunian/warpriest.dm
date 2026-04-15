@@ -88,7 +88,7 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/blood_link)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/piercing_blood)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/bloodsiphon)
-		H.mind.AddSpell(new /obj/effect/proc_holder/spell/bloodcrawl)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/bloodcrawl)
 	ADD_TRAIT(H, TRAIT_RABCHOSEN, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_RITUALIST, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_GRAVEROBBER, TRAIT_GENERIC)

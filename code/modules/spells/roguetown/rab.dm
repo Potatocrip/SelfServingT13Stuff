@@ -183,9 +183,10 @@
 	muzzle_type = null
 	impact_type = null
 	hitscan = TRUE
-	movement_type = UNSTOPPABLE
 	damage = 40
+	armor_penetration = 20
 	damage_type = BRUTE
+	woundclass = BCLASS_PIERCE
 	nodamage = FALSE
 	speed = 0.3
 	flag = "magic"
@@ -206,11 +207,6 @@
 			L.visible_message(span_danger("[target] is struck by a beam of blood!"), \
 					span_userdanger("I'M STRUCK BY A BEAM OF BLOOD!"), \
 					span_hear("I hear something that sounds like splashes of liquid..."))
-			if(iscarbon(L))
-				var/mob/living/carbon/C = L
-				var/obj/item/bodypart/BP = C.get_bodypart(def_zone) || pick(C.bodyparts)
-				C.apply_damage(35, BRUTE, BP.body_zone)
-				BP.bodypart_attacked_by(BCLASS_CUT, 35, firer, BP.body_zone)
 			qdel(src)
 
 /obj/effect/proc_holder/spell/invoked/projectile/bloodsiphon
@@ -243,9 +239,10 @@
 	muzzle_type = null
 	impact_type = null
 	hitscan = TRUE
-	movement_type = UNSTOPPABLE
 	damage = 20
+	armor_penetration = 10
 	damage_type = BRUTE
+	woundclass = BCLASS_PIERCE
 	nodamage = FALSE
 	speed = 0.3
 	flag = "magic"
@@ -285,7 +282,4 @@
 				user.blood_volume = min(user.blood_volume + amount, BLOOD_VOLUME_NORMAL)
 				user.handle_blood()
 				to_chat(user, span_notice("I drain blood from [H]!"))
-			var/obj/item/bodypart/BP = H.get_bodypart(def_zone) || pick(H.bodyparts)
-			H.apply_damage(20, BRUTE, BP.body_zone)
-			BP.bodypart_attacked_by(BCLASS_CUT, 15, firer, BP.body_zone)
 			qdel(src)
