@@ -52,6 +52,24 @@
 		if(firerlocation.weatherproof)
 			to_chat(src, span_warning("I can't fire [src] until I'm outside!"))
 			return
+		var/turf/aimedturf
+		if(target isturf)
+			aimedturf = target
+		else 
+			aimedturf = target.loc
+		if(aimedturf.weatherproof)
+			to_chat(src, span_warning("I can't fire [src] at a roof!"))
+			return
+		if(shell.BB == null)
+			to_chat(src, span_warning("I can't fire a spent flare!"))
+			return
+		playsound(src, 'sound/combat/ranged/flaregun_high_fire.ogg')//todo: make this an actual sound
+		user.visible_message(span_warning "[user] fires [src] into the air!")
+		shell.BB = null
+		shell.icon_state = flareh-handful-1-spent
+		var/obj/effect/illumination_flare_spawner/uwu //it's my code and i get to name the variables what i want
+		uwu = new /obj/effect/illumination_flare_spawner
+		addtimer(CALLBACK(uwu, PROC_REF(ignite_flare), 6 SECONDS))
 	else
 		..()
 

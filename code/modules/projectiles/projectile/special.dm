@@ -174,29 +174,26 @@
 	desc = "A burned out flare. Sometimes, you feel like you can sympathize with it." //this is not a cry for help btw
 	anchored = FALSE
 
-/obj/effect/flare_illumination
+/obj/item/flashlight/flare/flaregun/high
 	name = "illumination flare"
 	desc = "You shouldn't be seeing this. Tell an admin."
-	anchored = TRUE
+	light_outer_range = 40
+	icon_state = "null"
+	extinguishable = FALSE
+	on = TRUE
+	fuel = 2 MINUTES
+	sellprice = 3
 
-/obj/effect/flare_illumination/proc/illuminate(distance, strength, time, obj/item/spent) //variables let us decide how big the light should be, how bright it should be, how long it should last, and what it should turn into when its done
-	for(var/turf/lightup_turf in RANGE_TURFS(distance, src))
-		if(!lightup_turf.weatherproof)
-			/obj/effect/flare_illumination/proc/tile_illuminate(strength)
-	for(var/mob/living/spotter in RANGE_TURFS(distance*1.5, src))
-	addtimer(CALLBACK(src, PROC_REF(cease_illumination)), time)
+/obj/item/flashlight/flare/flaregun/turn_off()
+	..()
+	icon_state = "fgunhigh-empty"
 
-/obj/effect/flare_illuminator
-	name = "illumination"
-	desc = "You shouldn't be seeing this. Tell an admin."
-	anchored = TRUE
+/obj/effect/illumination_flare_spawner
+	name = "illumination flare spawner"
+	desc = "Something broke! Uh oh."
 
-/obj/effect/flare_illumination/proc/tile_illuminate(strength)
-	var/obj/effect/flare_illuminator
-	new lightspot = flare_illuminator
-	lightspot.set_light(1, 1, strength, color = COLOR_WHITE)
-
-/obj/effect/flare_illumination/proc/cease_illumination()
-	for(var/obj/effect/flare_illuminator/victim in RANGE_TURFS(distance, src))
-		qdel(victim)
+/obj/effect/illumination_flare_spawner/proc/ignite_flare
+	new /obj/item/flashlight/flare/flaregun/high(src)
+	playsound(TODO: PUT A FLARE IGNITING SOUND HERE)
+	loud_message("You hear a flare ignite in the air", hearing_distance = 60) //This really should be based on solely range and having sight, not hearing, but these flares are already driving me mad. Fix it later
 	qdel(src)
