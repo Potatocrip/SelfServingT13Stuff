@@ -51,15 +51,17 @@
 	// neck = /obj/item/clothing/neck/roguetown/psicross/astrata	i'm hoping we get a religious symbol for rab at some point
 	belt = /obj/item/storage/belt/rogue/leather/black/soldier
 	wrists = /obj/item/scomstone/garrison
-	gloves = /obj/item/clothing/wrists/roguetown/wrappings
+	gloves = /obj/item/clothing/wrists/roguetown/wrappings/perserdun
 	id = /obj/item/roguekey/perserdun
 	backr = /obj/item/storage/backpack/rogue/satchel/perserdun
+	
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch/coins/mid,
 		/obj/item/ammo_box/handfuls/mercy,
 		/obj/item/ammo_box/handfuls/mercy,
 		/obj/item/clothing/mask/rogue/gasmask/perserdunmask, // they start with it in their backpack so they don't look dumb in the lobby lol
 	)
+
 	H.adjust_skillrank(/datum/skill/craft/alchemy, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/magic/blood, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
