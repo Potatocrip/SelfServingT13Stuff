@@ -47,8 +47,6 @@
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/warpriest
 	cloak = /obj/item/clothing/cloak/perserduntabard
 	pants = /obj/item/clothing/under/roguetown/trou/artipants
-	head = /obj/item/clothing/head/roguetown/priestmask
-	mask = /obj/item/clothing/mask/rogue/gasmask/perserdunmask
 	// neck = /obj/item/clothing/neck/roguetown/psicross/astrata	i'm hoping we get a religious symbol for rab at some point
 	belt = /obj/item/storage/belt/rogue/leather/black/soldier
 	beltl = /obj/item/flashlight/flare/torch/lantern
@@ -57,11 +55,12 @@
 	gloves = /obj/item/clothing/wrists/roguetown/wrappings
 	id = /obj/item/roguekey/perserdun
 	backl = /obj/item/rogueweapon/woodstaff/quarterstaff
-	backr = /obj/item/storage/backpack/rogue/backpack/perserdun
+	backr = /obj/item/storage/backpack/rogue/satchel/perserdun
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch/coins/mid,
 		/obj/item/ammo_box/handfuls/mercy,
 		/obj/item/ammo_box/handfuls/mercy,
+		/obj/item/clothing/mask/rogue/gasmask/perserdunmask, // they start with it in their backpack so they don't look dumb in the lobby lol
 	)
 	H.adjust_skillrank(/datum/skill/craft/alchemy, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/magic/blood, 4, TRUE)
