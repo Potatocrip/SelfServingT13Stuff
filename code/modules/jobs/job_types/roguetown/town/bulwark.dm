@@ -102,22 +102,3 @@
 		/obj/item/ammo_box/magazine/luger = 3,
 	)
 	H.adjust_skillrank(/datum/skill/combat/rifles, 4, TRUE)
-
-/datum/advclass/bulwark/lmg
-	name = "Gunner"
-	tutorial = "You've selected one of the only LMGs in Kingsrow's armory. Armed with a Leonard gun, you can lay down suppressive fire to keep enemies at bay."
-	outfit = /datum/outfit/job/roguetown/bulwark/lmg
-	category_tags = list(CTAG_BULWARK)
-
-/datum/outfit/job/roguetown/bulwark/lmg/pre_equip(mob/living/carbon/human/H)
-	backl = /obj/item/gun/ballistic/rifle/repeater/lewis
-	backr = /obj/item/storage/backpack/rogue/backpack
-	r_hand = /obj/item/storage/belt/rogue/pouch/panbag/lewis
-	backpack_contents = list(
-		/obj/item/reagent_containers/glass/bottle/rogue/healthpotnew = 2,
-		/obj/item/storage/belt/rogue/pouch/coins/mid = 1,
-		/obj/item/storage/keyring/gatemaster = 1,
-		/obj/item/flashlight/flare/torch/lantern = 1,
-		/obj/item/ammo_box/magazine/luger = 3,
-	)
-	H.adjust_skillrank(/datum/skill/combat/rifles, 4, TRUE)
