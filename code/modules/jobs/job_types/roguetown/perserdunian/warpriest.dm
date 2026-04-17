@@ -22,7 +22,7 @@
 	min_pq = 0
 	max_pq = null
 
-	cmode_music = 'sound/music/combat_warpriest.ogg'
+	cmode_music = 'sound/music/combat_warpriest.ogg' // kensuke ushio - Smells Blood
 
 /datum/job/roguetown/warpriest/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()
