@@ -163,7 +163,7 @@
 	releasedrain = 30
 	chargedrain = 1
 	chargetime = 15
-	recharge_time = 15 SECONDS
+	recharge_time = 30 SECONDS
 	warnie = "spellwarning"
 	no_early_release = TRUE
 	movement_interrupt = FALSE
@@ -193,7 +193,7 @@
 	muzzle_type = null
 	impact_type = null
 	hitscan = TRUE
-	damage = 40
+	damage = 70
 	armor_penetration = 20
 	damage_type = BRUTE
 	woundclass = BCLASS_PIERCE
@@ -230,7 +230,7 @@
 	releasedrain = 30
 	chargedrain = 1
 	chargetime = 25
-	recharge_time = 20 SECONDS
+	recharge_time = 50 SECONDS
 	warnie = "spellwarning"
 	no_early_release = TRUE
 	movement_interrupt = FALSE

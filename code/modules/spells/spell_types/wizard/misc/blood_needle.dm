@@ -52,11 +52,11 @@
 	drawmessage = "I pool blood from under my nails and shape it into a needle."
 	dropmessage = "The needle liquidizes into blood once more, falling to the ground."
 	school = "transmutation"
-	overlay_state = "rune4"
+	overlay_state = "blood_needle"
 	chargedrain = 0
 	chargetime = 0
 	releasedrain = 5
-	chargedloop = /datum/looping_sound/invokegen
+	chargedloop = /datum/looping_sound/invokeblood
 	associated_skill = /datum/skill/magic/blood
 	hand_path = /obj/item/needle/touch_attack/bloodneedle
 	invocation_type = "none"
@@ -66,8 +66,8 @@
 	name = "blood needle"
 	desc = "A needle made of hardened blood, extending from my fingertips. The 'thread' is just fine strands of thick, firm blood."
 	icon = 'icons/roguetown/items/misc.dmi'
-	lefthand_file = 'icons/mob/inhands/misc/food_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/misc/food_righthand.dmi'
+	lefthand_file = 'icons/mob/inhands/items_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/items_righthand.dmi'
 	icon_state = "needle"
 	catchphrase = null
 	on_use_sound = 'sound/magic/blood_needle_use.ogg'
