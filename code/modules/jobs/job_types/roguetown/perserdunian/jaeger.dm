@@ -9,9 +9,9 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 
-	tutorial = "You are the rank and file soldier of the Great Empire of Perserdun. \
-				Your main purpose is to bundle together with other Armsmen and to kill the enemies of the Empire. \
-				Typically, Armsmen are filled with a great love for their nation and volunteer. Others are conscripted, or are convicts." 
+	tutorial = "You are a huntsman, a trapper of the Great Empire of Perserdun. \
+				Your main purpose is to keep your backlines protected and to disorient the enemy's movements. \
+				You did not get chosen for this position, you volunteered. Make the enemy fear every step they take." 
 
 	outfit = /datum/outfit/job/roguetown/jaeger
 	display_order = JDO_JAEGER
