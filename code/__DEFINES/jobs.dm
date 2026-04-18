@@ -286,7 +286,6 @@
 #define JDO_ENVOY 1.82
 #define JDO_RADIOTROOPER 1.83
 
->>>>>>> main
 
 // RISVON
 #define JDO_COMMANDANT 2.0
