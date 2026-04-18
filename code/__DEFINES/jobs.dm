@@ -212,7 +212,6 @@
 
 #define GRANDMASTER	(1<<0) // no-armor leadership wimp w/ drip
 #define GRANDKNIGHT (1<<1) // heaviest armor in the game - very tanky - melee only - consider adding a shield
-<<<<<<< blackguard
 #define KNIGHTCOMMANDER (1<<2) //better armor + sawn down lever-action & a sword
 #define AUXILIARIST	(1<<3) //support role - same w/ servico
 #define BLACKGUARD (1<<3.2) //trench raider - specialized in close combat
