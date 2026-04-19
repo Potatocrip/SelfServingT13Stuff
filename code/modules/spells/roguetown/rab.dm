@@ -77,7 +77,7 @@
 
 /obj/effect/proc_holder/spell/invoked/blood_link
 	name = "Blood Transfer"
-	desc = "Transfers the blood of yourself to a target. Ratio of transfer scales with blood skill."
+	desc = "Transfers the blood of yourself to a target. Ratio of transfer scales with blood skill. Can be used to refuel Piercing Blood."
 	overlay_state = "blood_link"
 	releasedrain = 30
 	chargedrain = 0
