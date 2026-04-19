@@ -19,8 +19,7 @@
 	warnie = "sydwarning"
 	movement_interrupt = FALSE
 	sound = 'sound/magic/heal.ogg' // needs a custom one
-	invocation = "KNIT!"
-	invocation_type = "shout"
+	invocation_type = "none"
 	associated_skill = /datum/skill/magic/blood
 	antimagic_allowed = TRUE
 	recharge_time = 40 SECONDS
