@@ -101,7 +101,7 @@
 	item_state = "revolver"
 	slowdown = 0.15
 	empty_indicator = TRUE
-	fire_sound = HEAVYREVOLVERSHOT
+	fire_sound = REVOLVERSHOT
 	dry_fire_sound = 'sound/combat/ranged/revolver_prime.ogg'
 	load_sound = REVOLVERINSERT
 	recoil = 0.15
@@ -207,8 +207,9 @@
 	dry_fire_sound = 'sound/combat/ranged/revolver_prime.ogg'
 	slowdown = 0.2 //slower
 	empty_indicator = TRUE
-	fire_sound = HEAVYREVOLVERSHOT
+	fire_sound = REVOLVERSHOT
 	load_sound = REVOLVERINSERT
+	dry_fire_sound = 'sound/combat/ranged/revolver_prime.ogg'
 	recoil = 0.1
 	experimental_inhand = FALSE
 	slot_flags = ITEM_SLOT_BACK
