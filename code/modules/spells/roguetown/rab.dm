@@ -18,7 +18,7 @@
 	range = 4
 	warnie = "sydwarning"
 	movement_interrupt = FALSE
-	sound = 'sound/magic/heal.ogg' // needs a custom one
+	sound = 'sound/magic/blood_congeal.ogg'
 	invocation_type = "none"
 	associated_skill = /datum/skill/magic/blood
 	antimagic_allowed = TRUE
