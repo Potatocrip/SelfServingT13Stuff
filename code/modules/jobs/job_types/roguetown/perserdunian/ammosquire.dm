@@ -45,7 +45,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/black/soldier
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	beltr = /obj/item/storage/belt/rogue/pouch/ammobag
-	backl = /obj/item/storage/backpack/rogue/satchel/risvon
+	backl = /obj/item/storage/backpack/rogue/backpack/mg
 	wrists = /obj/item/scomstone/garrison
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
 	backr = /obj/item/storage/backpack/rogue/satchel/perserdun
