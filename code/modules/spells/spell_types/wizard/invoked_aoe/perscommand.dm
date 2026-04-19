@@ -17,7 +17,7 @@
 	antimagic_allowed = TRUE
 	var/order_range = 7
 
-/obj/effect/proc_holder/spell/invoked/holding/cast(list/targets,mob/user = usr)
+/obj/effect/proc_holder/spell/invoked/holdingweak/cast(list/targets,mob/user = usr)
 	. = ..()
 	for(var/mob/living/carbon/human/orderedguy in (get_hearers_in_view(order_range, user) - user))
 		if(isliving(orderedguy))
@@ -46,7 +46,7 @@
 	antimagic_allowed = TRUE
 	var/order_range = 7
 
-/obj/effect/proc_holder/spell/invoked/aim/cast(list/targets,mob/user = usr)
+/obj/effect/proc_holder/spell/invoked/aimweak/cast(list/targets,mob/user = usr)
 	. = ..()
 	for(var/mob/living/carbon/human/orderedguy in (get_hearers_in_view(order_range, user) - user))
 		if(isliving(orderedguy))
@@ -75,7 +75,7 @@
 	antimagic_allowed = TRUE
 	var/order_range = 7
 
-/obj/effect/proc_holder/spell/invoked/charge/cast(list/targets,mob/user = usr)
+/obj/effect/proc_holder/spell/invoked/chargeweak/cast(list/targets,mob/user = usr)
 	. = ..()
 	var/list/chargeline = list("RAAAAAGHHHHH!!", "AGHHHHHH!!", "CHAAAAAAAAARGE!!!")
 	for(var/mob/living/carbon/human/orderedguy in (get_hearers_in_view(order_range, user) - user))
