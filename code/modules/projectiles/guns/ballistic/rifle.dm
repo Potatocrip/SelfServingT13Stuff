@@ -308,7 +308,7 @@
 	force = 40 //if someone hits you with a fucking lewis gun, you're gonna have a bad time
 	spread = 3
 	pump_sound = 'sound/combat/ranged/riflecock.ogg'
-	fire_sound = LMGSHOT
+	fire_sound = LEWISSHOT
 	load_sound = 'sound/combat/ranged/rifleload.ogg'
 	recoil = 0.15
 	semi_auto = TRUE
@@ -335,7 +335,7 @@
 	force = 40
 	spread = 2
 	pump_sound = 'sound/combat/ranged/riflecock.ogg'
-	fire_sound = LMGSHOT
+	fire_sound = DP47SHOT
 	load_sound = 'sound/combat/ranged/rifleload.ogg'
 	recoil = 0.15
 	semi_auto = TRUE
