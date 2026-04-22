@@ -19,7 +19,7 @@
     if(slot == SLOT_CLOAK)
         src.sleeved = null
     else
-        src.sleeved = initial(src.sleeved) // restore original value
+        src.sleeved = initial(src.sleeved) // just in case it bugs out somehow
     update_icon()
 
 /obj/item/clothing/suit/roguetown/shirt/robe/dropped(mob/user)
