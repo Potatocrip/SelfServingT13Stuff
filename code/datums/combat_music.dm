@@ -46,13 +46,6 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	musicpath = list()
 
 // Old RTcode cmode tracks, cherrypicked out of the otherwise purged list bc i thought they were either fitting or cool enough
-/datum/combat_music/bandit_mage
-	name = "Bandit Mage (Hedge Mage)"
-	desc = ""
-	shortname = "Bandit Mage"
-	credits = "Timestopper Tactics - corru.works"
-	musicpath = list('sound/music/combat_bandit_mage.ogg')
-
 /datum/combat_music/beggar
 	name = "Beggar"
 	desc = ""
