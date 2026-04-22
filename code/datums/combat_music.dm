@@ -46,12 +46,6 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	musicpath = list()
 
 // Old RTcode cmode tracks, cherrypicked out of the otherwise purged list bc i thought they were either fitting or cool enough
-/datum/combat_music/beggar
-	name = "Beggar"
-	desc = ""
-	shortname = "Beggar"
-	credits = "Pathologic (Classic) - Most Combat Theme"
-	musicpath = list('sound/music/combat_bum.ogg')
 
 /datum/combat_music/desertrider
 	name = "Desert Rider Mercenary"
@@ -60,24 +54,11 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	credits = "Two Fingers - You Ain't Down"
 	musicpath = list('sound/music/combat_desertrider.ogg')
 
-/datum/combat_music/dwarf
-	name = "Dwarven Grudgebearer"
-	desc = ""
-	shortname = "Dwarf"
-	musicpath = list('sound/music/combat_dwarf.ogg')
-
 /datum/combat_music/forlorn
 	name = "Forlorn Hope Mercenary"
 	desc = ""
 	shortname = "Forlorn Hope"
 	musicpath = list('sound/music/combat_blackstar.ogg')
-
-/datum/combat_music/grenzelhoft
-	name = "Grenzelhoft Mercenary"
-	desc = ""
-	shortname = "Grenzelhoft"
-	credits = "Helbrede - Sons of Tyr"
-	musicpath = list('sound/music/combat_grenzelhoft.ogg')
 
 /datum/combat_music/iconoclast
 	name = "Iconoclast"
@@ -93,25 +74,12 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	credits = "Hellsing OST RAID Track 15: Survival on the Street of Insincerity"
 	musicpath = list('sound/music/inquisitorcombat.ogg')
 
-/datum/combat_music/inquis_ordinator
-	name = "Inquisitor - Ordinator"
-	desc = ""
-	shortname = "Ordinator"
-	musicpath = list('sound/music/combat_inqordinator.ogg')
-
 /datum/combat_music/maniac
 	name = "Maniac"
 	desc = ""
 	shortname = "Maniac"
 	credits = "Thomas Bangalter - Stress"
 	musicpath = list('sound/music/combat_maniac2.ogg')
-
-/datum/combat_music/monastic
-	name = "Monastic Zeal"
-	desc = ""
-	shortname = "Monastic"
-	credits = "Jesper Kyd - Light of the Imperium"
-	musicpath = list('sound/music/combat_holy.ogg')
 
 // Temperance13 tracks, picked because they're general-use enough to be deemed pickable
 
