@@ -673,6 +673,8 @@
 		return
 	if(src.stat == DEAD) //prevents it from playing after death. don't ask me why it does
 		return
+	if(SSticker.round_end)
+		return
 	var/client/listener = src.client
 	var/critmusic = 'sound/music/iamdying.ogg'
 	if(src.DisplayCrit()) //same check as for 'dying' to appear on your screen
