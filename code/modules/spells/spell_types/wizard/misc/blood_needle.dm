@@ -42,6 +42,7 @@
 /obj/item/needle/touch_attack/Destroy()
 	if(attached_spell)
 		attached_spell.on_hand_destroy(src)
+		playsound(get_turf(attached_spell), on_use_sound,50,TRUE)
 	return ..()
 
 
