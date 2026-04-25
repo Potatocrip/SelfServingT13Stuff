@@ -3,7 +3,6 @@
 	desc = "The Empire loves weapons like these. Shreds through people, and kicks like a bitch. Chambered in .50."
 	icon_state = "heavysniper"
 	item_state = "heavysniper"
-	icon = 'icons/roguetown/weapons/64guns.dmi'
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/patience
 	slowdown = 0.5
 	spread = 0.2
@@ -44,6 +43,7 @@
 	desc = "One of the few semi-automatic guns around- and a treasure for anyone who can get their hands on one. You can load it with special clips, or by hand. Chambered in 7.62mmR."
 	icon_state = "rsc"
 	item_state = "rsc"
+	icon = 'icons/roguetown/weapons/64guns.dmi'
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/reaper
 	slowdown = 0.2
 	bolt_type = BOLT_TYPE_LOCKING
