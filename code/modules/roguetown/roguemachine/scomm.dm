@@ -824,7 +824,7 @@
 		input_text = "<small>[input_text]</small>"
 	for(var/obj/item/scomstone/S in SSroguemachine.scomm_machines)
 		if(S.faction_net == faction_net)
-			input_text = "<big><span style='color: [GARRISON_SCOM_COLOR]'>[input_text]</span></big>"
+			input_text = "<span style='color: [GARRISON_SCOM_COLOR]'>[input_text]</span>"
 			S.repeat_message(input_text, src, usedcolor)
 
 /obj/item/scomstone/perlead
@@ -850,5 +850,5 @@
 		input_text = "<small>[input_text]</small>"
 	for(var/obj/item/scomstone/S in SSroguemachine.scomm_machines)
 		if(S.faction_net == faction_net)
-			input_text = "<big><span style='color: [GARRISON_SCOM_COLOR]'>[input_text]</span></big>"
+			input_text = "<span style='color: [GARRISON_SCOM_COLOR]'>[input_text]</span>"
 			S.repeat_message(input_text, src, usedcolor)
