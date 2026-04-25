@@ -19,7 +19,7 @@ GLOBAL_LIST_EMPTY(created_sound_groups)
 	channel_count = 10 //probably more than enough
 
 /datum/sound_group/radios
-	channel_count = 5
+	channel_count = 10
 
 /*
 	parent	(the source of the sound)			The source the sound comes from
@@ -55,7 +55,6 @@ GLOBAL_LIST_EMPTY(created_sound_groups)
 	var/frequency
 	var/stopped = TRUE
 	var/persistent_loop = FALSE //we stay in the client's played_loops so we keep updating volume even when out of range
-	var/repeat_sound = TRUE // if FALSE, sound plays once client-side instead of looping
 	var/cursound
 	var/list/thingshearing = list()
 	var/ignore_walls = TRUE
@@ -215,7 +214,7 @@ GLOBAL_LIST_EMPTY(created_sound_groups)
 	if(persistent_loop)
 		GLOB.persistent_sound_loops -= src
 	if(!direct)
-		for(var/mob/M in thingshearing.Copy())
+		for(var/mob/M in thingshearing)
 			if(M.client)
 				var/list/L = M.client.played_loops[src]
 				if(L)
