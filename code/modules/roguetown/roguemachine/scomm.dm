@@ -796,11 +796,11 @@
 	w_class = WEIGHT_CLASS_SMALL
 	experimental_inhand = FALSE
 	muteinmouth = TRUE
-	var/listening = TRUE
-	var/speaking = TRUE
-	var/messagereceivedsound = 'sound/misc/ris_radio.ogg'
-	var/hearrange = 0 // change to 0 if you want your special scomstone to be only hearable by wearer
-	var/faction_net = SCOMNET_ZIGS
+	listening = TRUE
+	speaking = TRUE
+	messagereceivedsound = 'sound/misc/ris_radio.ogg'
+	hearrange = 0 // change to 0 if you want your special scomstone to be only hearable by wearer
+	faction_net = SCOMNET_ZIGS
 	drop_sound = 'sound/foley/coinphy (1).ogg'
 	sellprice = 100
 	grid_width = 32
@@ -809,10 +809,10 @@
 /obj/item/scomstone/rislead/attack_right(mob/living/carbon/human/user)
 	user.changeNext_move(CLICK_CD_INTENTCAP)
 	visible_message(span_notice ("[user] presses their ring against their mouth."))
-	var/input_text = input(user, "Enter your message:", "Message")
+	vinput_text = input(user, "Enter your message:", "Message")
 	if(!input_text)
 		return
-	var/usedcolor = user.voice_color
+	usedcolor = user.voice_color
 	if(user.voicecolor_override)
 		usedcolor = user.voicecolor_override
 	user.whisper(input_text)
@@ -835,10 +835,10 @@
 /obj/item/scomstone/perlead/attack_right(mob/living/carbon/human/user)
 	user.changeNext_move(CLICK_CD_INTENTCAP)
 	visible_message(span_notice ("[user] presses their ring against their mouth."))
-	var/input_text = input(user, "Enter your message:", "Message")
+	input_text = input(user, "Enter your message:", "Message")
 	if(!input_text)
 		return
-	var/usedcolor = user.voice_color
+	usedcolor = user.voice_color
 	if(user.voicecolor_override)
 		usedcolor = user.voicecolor_override
 	user.whisper(input_text)
