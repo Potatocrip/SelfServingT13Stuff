@@ -809,7 +809,7 @@
 /obj/item/scomstone/rislead/attack_right(mob/living/carbon/human/user)
 	user.changeNext_move(CLICK_CD_INTENTCAP)
 	visible_message(span_notice ("[user] presses their ring against their mouth."))
-	vinput_text = input(user, "Enter your message:", "Message")
+	input_text = input(user, "Enter your message:", "Message")
 	if(!input_text)
 		return
 	usedcolor = user.voice_color
