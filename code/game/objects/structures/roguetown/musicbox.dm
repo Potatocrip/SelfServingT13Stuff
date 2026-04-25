@@ -21,17 +21,15 @@
 	"Face" = 'sound/music/jukeboxes/machine/machineface.ogg',\
 ) // POP MUSIC ONLY FOR THE MACHINE -- NO CHUDMUSIC ALLOWED
 
-GLOBAL_LIST_EMPTY(radio_lobbies)
-
 /datum/looping_sound/radios
 	mid_sounds = list()
-	mid_length = 120000 // 20 minutes.
+	mid_length = 120000 // 20 minutes
 	volume = 100
 	extra_range = 8
 	falloff = 0
 	persistent_loop = TRUE
 	var/stress2give = /datum/stressevent/music
-	sound_group = null
+	sound_group = /datum/sound_group/radios
 
 /datum/looping_sound/radios/on_hear_sound(mob/M)
 	. = ..()
