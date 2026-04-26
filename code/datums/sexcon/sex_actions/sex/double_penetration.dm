@@ -4,7 +4,6 @@
 	category = SEX_CATEGORY_PENETRATE
 	user_sex_part = SEX_PART_COCK
 	target_sex_part = SEX_PART_CUNT|SEX_PART_ANUS
-	knot_on_finish = TRUE
 
 /datum/sex_action/double_penetration_sex/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
@@ -37,15 +36,13 @@
 	playsound(target, list('sound/misc/mat/insert (1).ogg','sound/misc/mat/insert (2).ogg'), 20, TRUE, ignore_walls = FALSE)
 
 /datum/sex_action/double_penetration_sex/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	if(!user.sexcon.do_knot_action)
-		user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] fucks [target]'s holes together."))
-	else
-		user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] knot-fucks [target]'s holes together."))
-	playsound(target, 'sound/misc/mat/segso.ogg', 50, TRUE, -2, ignore_walls = FALSE)
+	user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] fucks [target]'s holes together."))
+	user.sexcon.intercourse_noise(target, TRUE)
 	user.sexcon.do_thrust_animate(target)
 
-	if(HAS_TRAIT(user, TRAIT_DEATHBYSNUSNU))
-		user.sexcon.try_pelvis_crush(target)
+	if(HAS_TRAIT(user, TRAIT_DEATHBYSNUSNU) || (user.STASTR > 12))
+		if(istype(user.rmb_intent, /datum/rmb_intent/strong))
+			user.sexcon.try_pelvis_crush(target)
 
 	user.sexcon.perform_sex_action(user, 3, 0, TRUE)
 	if(user.sexcon.check_active_ejaculation())
@@ -58,7 +55,7 @@
 	if(user.sexcon.considered_limp())
 		user.sexcon.perform_sex_action(target, 1.4, 4, FALSE)
 	else
-		user.sexcon.perform_sex_action(target, 2.7, !user.sexcon.do_knot_action ? 9 : 14, FALSE)
+		user.sexcon.perform_sex_action(target, 2.7, 9, FALSE)
 	target.sexcon.handle_passive_ejaculation()
 
 /datum/sex_action/double_penetration_sex/on_finish(mob/living/carbon/human/user, mob/living/carbon/human/target)

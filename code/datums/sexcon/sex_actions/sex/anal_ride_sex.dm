@@ -16,9 +16,9 @@
 /datum/sex_action/anal_ride_sex/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE
-	if(!get_location_accessible(user, BODY_ZONE_PRECISE_GROIN, TRUE))
+	if(!check_location_accessible(user, user, BODY_ZONE_PRECISE_GROIN, TRUE))
 		return FALSE
-	if(!get_location_accessible(target, BODY_ZONE_PRECISE_GROIN, TRUE))
+	if(!check_location_accessible(user, target, BODY_ZONE_PRECISE_GROIN, TRUE))
 		return FALSE
 	if(!target.getorganslot(ORGAN_SLOT_PENIS))
 		return FALSE
@@ -30,16 +30,17 @@
 
 /datum/sex_action/anal_ride_sex/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] rides [target]."))
-	playsound(target, 'sound/misc/mat/segso.ogg', 50, TRUE, -2, ignore_walls = FALSE)
+	user.sexcon.intercourse_noise(user)
 	user.sexcon.do_thrust_animate(target)
 
-	if(HAS_TRAIT(user, TRAIT_DEATHBYSNUSNU))
-		user.sexcon.try_pelvis_crush(target)
+	if(HAS_TRAIT(user, TRAIT_DEATHBYSNUSNU) || (user.STASTR > 12))
+		if(istype(user.rmb_intent, /datum/rmb_intent/strong))
+			user.sexcon.try_pelvis_crush(target)
 
 	target.sexcon.perform_sex_action(target, 2, 0, TRUE)
 	if(target.sexcon.check_active_ejaculation())
 		target.visible_message(span_love("[target] cums into [user]'s butt!"))
-		target.sexcon.cum_into()
+		target.sexcon.cum_into(splashed_user = user)
 		target.virginity = FALSE
 
 	if(target.sexcon.considered_limp())

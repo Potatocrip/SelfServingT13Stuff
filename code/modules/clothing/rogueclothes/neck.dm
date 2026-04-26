@@ -646,7 +646,6 @@
 	bellsound = FALSE
 	bell = FALSE
 	salvage_result = null
-	nudist_approved = TRUE
 
 /obj/item/clothing/neck/roguetown/collar/leather
 	name = "leather collar"
