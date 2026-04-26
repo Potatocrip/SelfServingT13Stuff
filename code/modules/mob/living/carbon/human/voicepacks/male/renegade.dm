@@ -10,7 +10,7 @@
 		if("grumble")
 			used = list('sound/vo/male/renegade/grumble.ogg')
 		if ("yawn")
-			used = list('sound/vo/male/renegade/yawn.ogg', 'sound/vo/male/renegade/yawn(2).ogg', 'sound/vo/male/renegade/yawn.ogg(3)')
+			used = list('sound/vo/male/renegade/yawn.ogg', 'sound/vo/male/renegade/yawn(2).ogg', 'sound/vo/male/renegade/yawn(3).ogg')
 		if("scream")
 			used = list ('sound/vo/male/renegade/scream (1).ogg', 'sound/vo/male/renegade/scream (2).ogg')
 		if("laugh")
