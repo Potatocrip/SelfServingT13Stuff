@@ -3,6 +3,40 @@
 	stressadd = 5
 	desc = list(span_boldred("I don't indulge my vice."),span_boldred("I need to sate my vice."))
 
+// Vice-specific stress events for multiple vices support
+/datum/stressevent/vice/nympho
+	desc = list(span_boldred("I'm feeling randy..."),span_boldred("I need to sate my desires."))
+
+/datum/stressevent/vice/sadist
+	desc = list(span_boldred("I need to hear someone whimper."),span_boldred("I crave the suffering of others."))
+
+/datum/stressevent/vice/masochist
+	desc = list(span_boldred("I need someone to HURT me."),span_boldred("I crave the sensation of pain."))
+
+/datum/stressevent/vice/greedy
+	desc = list(span_boldred("I need more mammons..."),span_boldred("What I have is not enough!"))
+
+/datum/stressevent/vice/alcoholic
+	desc = list(span_boldred("Time for a drink."),span_boldred("I need some alcohol."))
+
+/datum/stressevent/vice/kleptomaniac
+	desc = list(span_boldred("I need to STEAL something!"),span_boldred("I'll die if I don't steal!"))
+
+/datum/stressevent/vice/junkie
+	desc = list(span_boldred("Time to get really high."),span_boldred("I need a REAL high."))
+
+/datum/stressevent/vice/heroin
+	desc = list(span_boldred("I need a fix."),span_boldred("I can't function without it."))
+
+/datum/stressevent/vice/meth
+	desc = list(span_boldred("I need a hit."),span_boldred("I'm crashing without it."))
+
+/datum/stressevent/vice/smoker
+	desc = list(span_boldred("Time for a flavorful smoke."),span_boldred("I need to smoke something."))
+
+/datum/stressevent/vice/godfearing
+	desc = list(span_boldred("Time to pray to my Patron."),span_boldred("I need to visit my Patron's realm."))
+
 /datum/stressevent/miasmagas
 	timer = 10 SECONDS
 	stressadd = 2
@@ -73,7 +107,7 @@
 	desc = list(span_red("I think I'm bleeding."),span_red("I'm bleeding."))
 
 /datum/stressevent/bleeding/can_apply(mob/living/user)
-	if(user.has_flaw(/datum/charflaw/masochist))
+	if(user.has_flaw(/datum/charflaw/addiction/masochist))
 		return FALSE
 	return TRUE
 
@@ -83,7 +117,7 @@
 	desc = span_red("THE PAIN!")
 
 /datum/stressevent/painmax/can_apply(mob/living/user)
-	if(user.has_flaw(/datum/charflaw/masochist))
+	if(user.has_flaw(/datum/charflaw/addiction/masochist))
 		return FALSE
 	return TRUE
 

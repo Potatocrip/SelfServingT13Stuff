@@ -186,21 +186,6 @@
 
 	return
 
-/obj/structure/fluff/traveltile/proc/can_go(atom/movable/AM)
-	. = TRUE
-	if(AM.recent_travel)
-		if(world.time < AM.recent_travel + 15 SECONDS)
-			. = FALSE
-	if(. && required_trait && isliving(AM))
-		var/mob/living/L = AM
-		if(HAS_TRAIT(L, required_trait))
-			if(world.time > L.last_client_interact + 0.3 SECONDS)
-				return FALSE // we will only be travelling of our own volition (anti-afk-abuse)
-			return TRUE
-		else
-			to_chat(L, "<b>It is a dead end.</b>")
-			return FALSE
-
 /obj/structure/fluff/traveltile/bandit
 	required_trait = TRAIT_BANDITCAMP
 /obj/structure/fluff/traveltile/vampire

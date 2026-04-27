@@ -4,16 +4,15 @@
 	category = SEX_CATEGORY_HANDS
 	/// Target's genitals are being stimulated; set so modular_emit_received_sex_action_signal can resolve receiver_part.
 	target_sex_part = SEX_PART_COCK | SEX_PART_CUNT
-	/// Bespoke per-genital chastity checks live in shows_on_menu/can_perform — skip the generic validate signal to avoid double-blocking.
 
 /datum/sex_action/force_milk_genitals/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE
 	if(!target.getorganslot(ORGAN_SLOT_PENIS) && !target.getorganslot(ORGAN_SLOT_VAGINA))
 		return FALSE
-	if(target.getorganslot(ORGAN_SLOT_PENIS) && !target.sexcon.has_chastity_penis())
+	if(target.getorganslot(ORGAN_SLOT_PENIS))
 		return TRUE
-	if(target.getorganslot(ORGAN_SLOT_VAGINA) && !target.sexcon.has_chastity_vagina())
+	if(target.getorganslot(ORGAN_SLOT_VAGINA))
 		return TRUE
 	return FALSE
 
@@ -27,9 +26,9 @@
 		return FALSE
 	if(!target.getorganslot(ORGAN_SLOT_PENIS) && !target.getorganslot(ORGAN_SLOT_VAGINA))
 		return FALSE
-	if(target.getorganslot(ORGAN_SLOT_PENIS) && !target.sexcon.has_chastity_penis())
+	if(target.getorganslot(ORGAN_SLOT_PENIS))
 		return TRUE
-	if(target.getorganslot(ORGAN_SLOT_VAGINA) && !target.sexcon.has_chastity_vagina())
+	if(target.getorganslot(ORGAN_SLOT_VAGINA))
 		return TRUE
 	return FALSE
 

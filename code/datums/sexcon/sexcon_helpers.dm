@@ -99,18 +99,10 @@
 			playsound(target, pick('sound/misc/mat/intercourse/firm (1).ogg','sound/misc/mat/intercourse/firm (2).ogg','sound/misc/mat/intercourse/firm (3).ogg'), 50, TRUE, -2, ignore_walls = FALSE)
 		if(SEX_FORCE_HIGH)
 			playsound(target, pick('sound/misc/mat/intercourse/plap layer (1).ogg','sound/misc/mat/intercourse/plap layer (2).ogg','sound/misc/mat/intercourse/plap layer (3).ogg','sound/misc/mat/intercourse/plap layer (4).ogg'), 30, TRUE, -2, ignore_walls = FALSE)
-			var/datum/sex_action/action = SEX_ACTION(current_action)
-			if(do_knot_action && action?.knot_on_finish)
-				playsound(target, pick('sound/misc/mat/intercourse/knotfuck (1).ogg','sound/misc/mat/intercourse/knotfuck (2).ogg','sound/misc/mat/intercourse/knotfuck (3).ogg','sound/misc/mat/intercourse/knotfuck (4).ogg'), 60, TRUE, -2, ignore_walls = FALSE)
-			else
-				playsound(target, pick('sound/misc/mat/intercourse/rough (1).ogg','sound/misc/mat/intercourse/rough (2).ogg','sound/misc/mat/intercourse/rough (3).ogg'), 60, TRUE, -2, ignore_walls = FALSE)
+			playsound(target, pick('sound/misc/mat/intercourse/rough (1).ogg','sound/misc/mat/intercourse/rough (2).ogg','sound/misc/mat/intercourse/rough (3).ogg'), 60, TRUE, -2, ignore_walls = FALSE)
 		if(SEX_FORCE_EXTREME, SEX_FORCE_LUDICROUS)
 			playsound(target, pick('sound/misc/mat/intercourse/plap layer (1).ogg','sound/misc/mat/intercourse/plap layer (2).ogg','sound/misc/mat/intercourse/plap layer (3).ogg','sound/misc/mat/intercourse/plap layer (4).ogg'), 60, TRUE, -2, ignore_walls = FALSE)
-			var/datum/sex_action/action = SEX_ACTION(current_action)
-			if(do_knot_action && action?.knot_on_finish)
-				playsound(target, pick('sound/misc/mat/intercourse/knotfuck (1).ogg','sound/misc/mat/intercourse/knotfuck (2).ogg','sound/misc/mat/intercourse/knotfuck (3).ogg','sound/misc/mat/intercourse/knotfuck (4).ogg'), 60, TRUE, -2, ignore_walls = FALSE)
-			else
-				playsound(target, pick('sound/misc/mat/intercourse/brutal (1).ogg','sound/misc/mat/intercourse/brutal (2).ogg','sound/misc/mat/intercourse/brutal (3).ogg'), 60, TRUE, -2, ignore_walls = FALSE)
+			playsound(target, pick('sound/misc/mat/intercourse/brutal (1).ogg','sound/misc/mat/intercourse/brutal (2).ogg','sound/misc/mat/intercourse/brutal (3).ogg'), 60, TRUE, -2, ignore_walls = FALSE)
 		else
 			playsound(target, 'sound/misc/mat/segso.ogg', 50, TRUE, -2, ignore_walls = FALSE)
 
@@ -151,11 +143,7 @@
 	volume_layer *= speed // speed is always between 1-5 (SEX_SPEED_MIN-SEX_SPEED_MAX)
 	playsound(target, pick('sound/misc/mat/saliva (1).ogg','sound/misc/mat/saliva (2).ogg','sound/misc/mat/saliva (3).ogg'), volume_layer, TRUE, -2, ignore_walls = FALSE)
 
-/datum/sex_controller/proc/chastitycourse_noise(mob/living/carbon/human/action_target) // for actions that involve moving a chastity device. Chance increases with force and speed.
-	modular_chastitycourse_noise(action_target)
-	return
-
-/datum/sex_controller/proc/try_do_pain_scream(mob/living/carbon/human/action_target, pain_amt) // for spiked chastity and other high-pain actions, try to make the target scream in pain. Chance increases with pain amount and action force.
+/datum/sex_controller/proc/try_do_pain_scream(mob/living/carbon/human/action_target, pain_amt)
 	if(!action_target || QDELETED(action_target))
 		return
 	if(action_target.stat != CONSCIOUS)
@@ -182,7 +170,7 @@
 	if(!testes)
 		return
 	var/obj/item/organ/vagina/vag = wife.getorganslot(ORGAN_SLOT_VAGINA)
-	if(!vag && !HAS_TRAIT(wife, TRAIT_BAOTHA_FERTILITY_BOON))
+	if(!vag)
 		return
 	if(!is_virile())
 		return
@@ -190,10 +178,6 @@
 		if(!wife.is_fertile())
 			return
 		var/prob_for_impreg = vag.impregnation_probability
-		if(wife.sexcon.knotted_status) // if they're knotted, increased by two factor for dramatic impact
-			prob_for_impreg =  min(prob_for_impreg * 2, IMPREG_PROB_MAX)
-		if(HAS_TRAIT(wife, TRAIT_BAOTHA_FERTILITY_BOON))
-			prob_for_impreg =  min(prob_for_impreg * 2, IMPREG_PROB_MAX) //if female has baotha boon increase chances
 		if(prob(prob_for_impreg))
 			vag.be_impregnated(src)
 			vag.impregnation_probability = IMPREG_PROB_DEFAULT // Reset on success
@@ -201,8 +185,6 @@
 			vag.impregnation_probability = min(prob_for_impreg + IMPREG_PROB_INCREMENT, IMPREG_PROB_MAX)
 	else
 		var/prob_for_impreg = wife.mpreg_chance
-		if(wife.sexcon.knotted_status)
-			prob_for_impreg =  min(prob_for_impreg * 2, IMPREG_PROB_MAX)
 		if(prob(prob_for_impreg))
 			if(wife.mpreg)
 				to_chat(wife, span_love("I feel a surge of warmth inside me again..."))

@@ -7,14 +7,10 @@
 /datum/sex_action/toy_other_masturbate/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE
-	if(!get_dildo_on_belt(target))
-		return FALSE
 	return TRUE
 
 /datum/sex_action/toy_other_masturbate/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
-		return FALSE
-	if(!get_dildo_on_belt(target))
 		return FALSE
 	if(!user.sexcon.Adjacent_Or_Closet(target))
 		return FALSE
@@ -30,7 +26,7 @@
 	user.sexcon.generic_sex_noise()
 
 /datum/sex_action/toy_other_masturbate/on_finish(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	var/obj/item/dildo/dildo = get_dildo_on_belt(target)
+	var/obj/item/dildo/dildo = get_dildo_in_either_hand(user)
 	if(dildo)
 		user.visible_message(span_warning("[user] stops jerking \the [dildo]."))
 	else

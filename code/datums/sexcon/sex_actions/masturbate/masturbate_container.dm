@@ -9,9 +9,9 @@
 		return FALSE
 	if(!user.getorganslot(ORGAN_SLOT_PENIS) && !user.getorganslot(ORGAN_SLOT_VAGINA))
 		return FALSE
-	if(user.getorganslot(ORGAN_SLOT_PENIS) && !user.sexcon.has_chastity_penis())
+	if(user.getorganslot(ORGAN_SLOT_PENIS))
 		return TRUE
-	if(user.getorganslot(ORGAN_SLOT_VAGINA) && !user.sexcon.has_chastity_vagina())
+	if(user.getorganslot(ORGAN_SLOT_VAGINA))
 		return TRUE
 	return FALSE
 
@@ -25,9 +25,9 @@
 		return FALSE
 	if(!user.getorganslot(ORGAN_SLOT_PENIS) && !user.getorganslot(ORGAN_SLOT_VAGINA))
 		return FALSE
-	if(user.getorganslot(ORGAN_SLOT_PENIS) && !user.sexcon.has_chastity_penis())
+	if(user.getorganslot(ORGAN_SLOT_PENIS))
 		return TRUE
-	if(user.getorganslot(ORGAN_SLOT_VAGINA) && !user.sexcon.has_chastity_vagina())
+	if(user.getorganslot(ORGAN_SLOT_VAGINA))
 		return TRUE
 	return FALSE
 
