@@ -27,7 +27,7 @@
 	var/subtle_supported = FALSE
 
 /datum/sex_action/proc/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	return TRUE
+	return FALSE
 
 /datum/sex_action/proc/on_start(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	return
@@ -42,4 +42,4 @@
 	return FALSE
 
 /datum/sex_action/proc/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	return TRUE
+	return FALSE

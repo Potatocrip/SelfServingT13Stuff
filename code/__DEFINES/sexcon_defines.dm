@@ -74,6 +74,8 @@ GLOBAL_LIST_INIT(sex_actions, build_sex_actions())
 /proc/build_sex_actions()
 	. = list()
 	for(var/path in typesof(/datum/sex_action))
+		if(path == /datum/sex_action)
+			continue
 		if(is_abstract(path))
 			continue
 		.[path] = new path()

@@ -71,6 +71,9 @@
 /datum/sex_controller/Destroy()
 	user = null
 	target = null
+	bed = null
+	collar_bell_user = FALSE
+	collar_bell_target = FALSE
 	. = ..()
 
 /datum/sex_controller/proc/do_thrust_animate(atom/movable/target, pixels = 4, time = 2.7)
@@ -81,9 +84,9 @@
 	var/dir = get_dir(user, target)
 	if(user.loc == target.loc)
 		dir = user.dir
-	if(speed > SEX_SPEED_MID)
+	if(speed > SEX_SPEED_MID && time > 1)
 		time -= 0.25
-	if(force < SEX_FORCE_MID)
+	if(force < SEX_FORCE_MID && pixels > 2)
 		pixels -= 1
 	switch(dir)
 		if(NORTH)
@@ -97,6 +100,44 @@
 
 	animate(user, pixel_x = target_x, pixel_y = target_y, time = time)
 	animate(pixel_x = oldx, pixel_y = oldy, time = time)
+	if(bed && force > SEX_FORCE_MID)
+		if (!istype(bed) || QDELETED(bed))
+			bed = null
+			target_on_bed = FALSE
+			return
+		oldy = bed.pixel_y
+		target_y = oldy-1
+		time /= 2
+		animate(bed, pixel_y = target_y, time = time)
+		animate(pixel_y = oldy, time = time)
+		if(target_on_bed && target)
+			oldy = target.pixel_y
+			target_y = oldy-1
+			animate(target, pixel_y = target_y, time = time)
+			animate(pixel_y = oldy, time = time)
+		bed.damage_bed(force > SEX_FORCE_HIGH ? 0.5 : 0.25)
+	
+	if((collar_bell_user || collar_bell_target) && (force > SEX_FORCE_MID))
+		playsound(collar_bell_target && target ? target : user, SFX_COLLARJINGLE, 50, TRUE, ignore_walls = FALSE)
+
+/obj/structure/bed/rogue
+	var/broken_matress = FALSE
+	var/broken_percentage = 0
+
+/obj/structure/bed/rogue/proc/damage_bed(dam_value)
+	if(sleepy <= 2) // the bed is already pretty awful and broken (i.e: straw bed/bedroll), so don't break it even further
+		return
+	broken_percentage += dam_value
+	if(!broken_matress && (broken_percentage >= 100))
+		broken_matress = TRUE
+		sleepy = 1 //Worse than a bedroll, better than nothing
+		visible_message(span_warning("\The [src] gives an violent snap, it looks broken!"))
+		playsound(src, 'sound/misc/mat/bed break.ogg', 50, TRUE, ignore_walls = FALSE)
+		desc += " The bed looks stained and seen better days."
+	else if(broken_percentage >= 100) // clamp
+		broken_percentage = 100
+	else
+		playsound(src, pick(list('sound/misc/mat/bed squeak (1).ogg','sound/misc/mat/bed squeak (2).ogg','sound/misc/mat/bed squeak (3).ogg')), 30, TRUE, ignore_walls = FALSE)
 
 /datum/sex_controller/proc/is_spent()
 	if(charge < CHARGE_FOR_CLIMAX)
@@ -782,6 +823,11 @@
 	desire_stop = FALSE
 	user.doing = FALSE
 	current_action = null
+	bed = null
+	target_on_bed = FALSE
+	collar_bell_user = FALSE
+	collar_bell_target = FALSE
+	using_zones = list()
 
 /datum/sex_controller/proc/try_start_action(action_type)
 	if(action_type == current_action)
@@ -797,6 +843,10 @@
 	// Set vars
 	desire_stop = FALSE
 	current_action = action_type
+	bed = null
+	target_on_bed = FALSE
+	collar_bell_user = FALSE
+	collar_bell_target = FALSE
 	var/datum/sex_action/action = SEX_ACTION(current_action)
 	log_combat(user, target, "Started sex action: [action.name]")
 	INVOKE_ASYNC(src, PROC_REF(sex_action_loop))
@@ -811,6 +861,7 @@
 	action.on_start(user, target)
 	find_occupying_furniture()
 	find_occupying_grass()
+	find_occupying_bed()
 	while(TRUE)
 		if(!isnull(target.client) && target.client.prefs.sexable == FALSE) //Vrell - Needs changed to let me test sex mechanics solo
 			break
@@ -852,6 +903,15 @@
 		return FALSE
 
 	return FALSE
+
+/datum/sex_controller/proc/find_occupying_bed()
+	if(bed)
+		return
+	if(target && !(target.mobility_flags & MOBILITY_STAND) && isturf(target.loc)) // find target's bed
+		bed = locate() in target.loc
+		target_on_bed = TRUE
+	if(!bed && !(user.mobility_flags & MOBILITY_STAND) && isturf(user.loc)) // find our bed
+		bed = locate() in user.loc
 
 /datum/sex_controller/proc/find_occupying_furniture()
 	if(bed || table_or_pillory)
