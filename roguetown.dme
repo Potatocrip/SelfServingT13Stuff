@@ -699,7 +699,6 @@
 #include "code\datums\sexcon\sex_actions\deviant\frotting.dm"
 #include "code\datums\sexcon\sex_actions\deviant\grinding.dm"
 #include "code\datums\sexcon\sex_actions\deviant\rub_body.dm"
-#include "code\datums\sexcon\sex_actions\deviant\rub_ears.dm"
 #include "code\datums\sexcon\sex_actions\deviant\scissoring.dm"
 #include "code\datums\sexcon\sex_actions\deviant\spanking.dm"
 #include "code\datums\sexcon\sex_actions\deviant\tailjob.dm"
