@@ -153,7 +153,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 				if(species_name == "Black Beast")
 					testing("Updating to Xiaoren.")
 					species_name = "Xiaoren"
-				else if(species_name == "Beastman")
+				else if(species_name == "Beastmen")
 					testing("Updating to Liumang.")
 					species_name = "Liumang"
 
