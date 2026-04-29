@@ -268,6 +268,11 @@
 
 /datum/sex_controller/proc/adjust_arousal_manual(amt)
 	manual_arousal = clamp(manual_arousal + amt, SEX_MANUAL_AROUSAL_MIN, SEX_MANUAL_AROUSAL_MAX)
+	apply_no_coom_cheating()
+
+/datum/sex_controller/proc/apply_no_coom_cheating()
+	if(user)
+		user.apply_status_effect(/datum/status_effect/debuff/no_coom_cheating)
 
 /datum/sex_controller/proc/update_pink_screen()
 	var/severity = 0
@@ -413,13 +418,15 @@
 /datum/sex_controller/proc/after_ejaculation()
 	set_arousal(40)
 	adjust_charge(-CHARGE_FOR_CLIMAX)
-	if(user.has_flaw(/datum/charflaw/addiction/lovefiend))
-		user.sate_addiction()
-	user.add_stress(/datum/stressevent/cumok)
 	user.emote("sexmoanhvy", forced = TRUE)
 	user.playsound_local(user, 'sound/misc/mat/end.ogg', 100)
 	last_ejaculation_time = world.time
-	GLOB.azure_round_stats[STATS_PLEASURES]++
+	if(HAS_TRAIT(user, TRAIT_UNSATISFIED)) //Given for 30 seconds when someone sets their arousal, it prevents gaining any benefits from orgasm
+		return
+	user.add_stress(/datum/stressevent/cumok)
+	if(user.has_flaw(/datum/charflaw/addiction/lovefiend))
+		user.sate_addiction()
+
 
 /datum/sex_controller/proc/after_intimate_climax()
 	if(user == target)
@@ -802,6 +809,7 @@
 			update_exposure()
 		if("set_arousal")
 			var/amount = input(user, "Value above 120 will immediately cause orgasm!", "Set Arousal", arousal) as num
+			apply_no_coom_cheating()
 			if(aphrodisiac > 1 && amount > 0)
 				set_arousal(amount * aphrodisiac)
 			else
