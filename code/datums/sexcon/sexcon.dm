@@ -74,6 +74,8 @@
 	user = null
 	target = null
 	bed = null
+	table_or_pillory = null
+	grassy_knoll = null
 	collar_bell_user = FALSE
 	collar_bell_target = FALSE
 	. = ..()
@@ -103,7 +105,7 @@
 	animate(user, pixel_x = target_x, pixel_y = target_y, time = time)
 	animate(pixel_x = oldx, pixel_y = oldy, time = time)
 	if(bed && force > SEX_FORCE_MID)
-		if (!istype(bed) || QDELETED(bed))
+		if(!istype(bed) || QDELETED(bed))
 			bed = null
 			target_on_bed = FALSE
 			return
@@ -117,7 +119,26 @@
 			target_y = oldy-1
 			animate(target, pixel_y = target_y, time = time)
 			animate(pixel_y = oldy, time = time)
-		bed.damage_bed(force > SEX_FORCE_HIGH ? 0.5 : 0.25)
+		bed.damage_bed(force > SEX_FORCE_HIGH ? 1.0 : 0.5)
+	else if(table_or_pillory && target && force > SEX_FORCE_MID)
+		if(!istype(table_or_pillory) || QDELETED(table_or_pillory))
+			table_or_pillory = null
+			return
+		oldy = table_or_pillory.pixel_y
+		target_y = oldy-1
+		time /= 2
+		animate(table_or_pillory, pixel_y = target_y, time = time)
+		animate(pixel_y = oldy, time = time)
+		oldy = target.pixel_y
+		target_y = oldy-1
+		animate(target, pixel_y = target_y, time = time)
+		animate(pixel_y = oldy, time = time)
+		playsound(table_or_pillory, pick(list('sound/misc/mat/table (1).ogg','sound/misc/mat/table (2).ogg','sound/misc/mat/table (3).ogg','sound/misc/mat/table (4).ogg')), 30, TRUE, ignore_walls = FALSE)
+	else if(grassy_knoll)
+		if(!istype(grassy_knoll) || QDELETED(grassy_knoll))
+			grassy_knoll = null
+			return
+		SEND_SIGNAL(grassy_knoll, COMSIG_MOVABLE_CROSSED, user)
 	
 	if((collar_bell_user || collar_bell_target) && (force > SEX_FORCE_MID))
 		playsound(collar_bell_target && target ? target : user, SFX_COLLARJINGLE, 50, TRUE, ignore_walls = FALSE)
@@ -840,6 +861,8 @@
 	user.doing = FALSE
 	current_action = null
 	bed = null
+	table_or_pillory = null
+	grassy_knoll = null
 	target_on_bed = FALSE
 	collar_bell_user = FALSE
 	collar_bell_target = FALSE
@@ -861,6 +884,8 @@
 	current_action = action_type
 	bed = null
 	target_on_bed = FALSE
+	table_or_pillory = null
+	grassy_knoll = null
 	collar_bell_user = FALSE
 	collar_bell_target = FALSE
 	var/datum/sex_action/action = SEX_ACTION(current_action)
