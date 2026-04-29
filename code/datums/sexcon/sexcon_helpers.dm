@@ -99,10 +99,16 @@
 			playsound(target, pick('sound/misc/mat/intercourse/firm (1).ogg','sound/misc/mat/intercourse/firm (2).ogg','sound/misc/mat/intercourse/firm (3).ogg'), 50, TRUE, -2, ignore_walls = FALSE)
 		if(SEX_FORCE_HIGH)
 			playsound(target, pick('sound/misc/mat/intercourse/plap layer (1).ogg','sound/misc/mat/intercourse/plap layer (2).ogg','sound/misc/mat/intercourse/plap layer (3).ogg','sound/misc/mat/intercourse/plap layer (4).ogg'), 30, TRUE, -2, ignore_walls = FALSE)
-			playsound(target, pick('sound/misc/mat/intercourse/rough (1).ogg','sound/misc/mat/intercourse/rough (2).ogg','sound/misc/mat/intercourse/rough (3).ogg'), 60, TRUE, -2, ignore_walls = FALSE)
+			if(do_knot_action && action?.knot_on_finish)
+				playsound(target, pick('sound/misc/mat/intercourse/knotfuck (1).ogg','sound/misc/mat/intercourse/knotfuck (2).ogg','sound/misc/mat/intercourse/knotfuck (3).ogg','sound/misc/mat/intercourse/knotfuck (4).ogg'), 60, TRUE, -2, ignore_walls = FALSE)
+			else
+				playsound(target, pick('sound/misc/mat/intercourse/rough (1).ogg','sound/misc/mat/intercourse/rough (2).ogg','sound/misc/mat/intercourse/rough (3).ogg'), 60, TRUE, -2, ignore_walls = FALSE)
 		if(SEX_FORCE_EXTREME, SEX_FORCE_LUDICROUS)
 			playsound(target, pick('sound/misc/mat/intercourse/plap layer (1).ogg','sound/misc/mat/intercourse/plap layer (2).ogg','sound/misc/mat/intercourse/plap layer (3).ogg','sound/misc/mat/intercourse/plap layer (4).ogg'), 60, TRUE, -2, ignore_walls = FALSE)
-			playsound(target, pick('sound/misc/mat/intercourse/brutal (1).ogg','sound/misc/mat/intercourse/brutal (2).ogg','sound/misc/mat/intercourse/brutal (3).ogg'), 60, TRUE, -2, ignore_walls = FALSE)
+			if(do_knot_action && action?.knot_on_finish)
+				playsound(target, pick('sound/misc/mat/intercourse/knotfuck (1).ogg','sound/misc/mat/intercourse/knotfuck (2).ogg','sound/misc/mat/intercourse/knotfuck (3).ogg','sound/misc/mat/intercourse/knotfuck (4).ogg'), 60, TRUE, -2, ignore_walls = FALSE)
+			else
+				playsound(target, pick('sound/misc/mat/intercourse/brutal (1).ogg','sound/misc/mat/intercourse/brutal (2).ogg','sound/misc/mat/intercourse/brutal (3).ogg'), 60, TRUE, -2, ignore_walls = FALSE)
 		else
 			playsound(target, 'sound/misc/mat/segso.ogg', 50, TRUE, -2, ignore_walls = FALSE)
 
@@ -178,6 +184,8 @@
 		if(!wife.is_fertile())
 			return
 		var/prob_for_impreg = vag.impregnation_probability
+		if(wife.sexcon.knotted_status) // if they're knotted, increased by two factor for dramatic impact
+			prob_for_impreg =  min(prob_for_impreg * 2, IMPREG_PROB_MAX)
 		if(prob(prob_for_impreg))
 			vag.be_impregnated(src)
 			vag.impregnation_probability = IMPREG_PROB_DEFAULT // Reset on success
@@ -185,6 +193,8 @@
 			vag.impregnation_probability = min(prob_for_impreg + IMPREG_PROB_INCREMENT, IMPREG_PROB_MAX)
 	else
 		var/prob_for_impreg = wife.mpreg_chance
+		if(wife.sexcon.knotted_status)
+			prob_for_impreg =  min(prob_for_impreg * 2, IMPREG_PROB_MAX)
 		if(prob(prob_for_impreg))
 			if(wife.mpreg)
 				to_chat(wife, span_love("I feel a surge of warmth inside me again..."))

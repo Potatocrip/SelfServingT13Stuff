@@ -4,6 +4,7 @@
 	category = SEX_CATEGORY_PENETRATE
 	user_sex_part = SEX_PART_COCK
 	target_sex_part = SEX_PART_JAWS
+	knot_on_finish = TRUE
 
 /datum/sex_action/throat_sex/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
@@ -30,7 +31,10 @@
 	playsound(target, list('sound/misc/mat/insert (1).ogg','sound/misc/mat/insert (2).ogg'), 20, TRUE, ignore_walls = FALSE)
 
 /datum/sex_action/throat_sex/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] fucks [target]'s throat."))
+	if(!user.sexcon.do_knot_action)
+		user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] fucks [target]'s throat."))
+	else
+		user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] knot-fucks [target]'s throat."))
 	user.sexcon.intercourse_noise(target, TRUE)
 	user.sexcon.oralcourse_noise(target)
 	user.sexcon.do_thrust_animate(target)
@@ -74,7 +78,10 @@
 	playsound(target, list('sound/misc/mat/insert (1).ogg','sound/misc/mat/insert (2).ogg'), 20, TRUE, ignore_walls = FALSE)
 
 /datum/sex_action/throat_sex/double/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] double-fucks [target]'s throat."))
+	if(!user.sexcon.do_knot_action)
+		user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] double-fucks [target]'s throat."))
+	else
+		user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] double-knots [target]'s throat."))
 	user.sexcon.intercourse_noise(target, TRUE)
 	user.sexcon.oralcourse_noise(target)
 	user.sexcon.do_thrust_animate(target)

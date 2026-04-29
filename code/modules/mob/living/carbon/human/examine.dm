@@ -99,6 +99,10 @@
 				. += span_notice("A fellow noble.")
 			else
 				. += span_notice("A noble!")
+
+		// Knotted effect message
+		if(has_status_effect(/datum/status_effect/knot_tied))
+			. += span_warning("A knot is locked inside [p_them()].")
 			
 		if (HAS_TRAIT(src, TRAIT_OUTLANDER) && !HAS_TRAIT(user, TRAIT_OUTLANDER)) 
 			. += span_phobia("A foreigner...")
