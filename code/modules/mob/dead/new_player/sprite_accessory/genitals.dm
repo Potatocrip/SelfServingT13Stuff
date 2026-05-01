@@ -3,7 +3,7 @@
 	color_keys = 2
 	color_key_names = list("Member", "Skin")
 	relevant_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER) //Vrell - Yes I know this is hacky but it works for now
-	var/uses_size_sprites = FALSE
+	var/uses_size_sprites = TRUE
 
 /datum/sprite_accessory/penis/adjust_appearance_list(list/appearance_list, obj/item/organ/organ, obj/item/bodypart/bodypart, mob/living/carbon/owner)
 	generic_gender_feature_adjust(appearance_list, organ, bodypart, owner, OFFSET_BELT, OFFSET_BELT_F)
@@ -46,21 +46,46 @@
 	name = "Plain"
 	color_key_defaults = list(KEY_CHEST_COLOR, KEY_CHEST_COLOR)
 
+/datum/sprite_accessory/penis/human_alt
+	icon_state = "humanalt"
+	name = "Plain (ALT)"
+	color_key_defaults = list(KEY_CHEST_COLOR, KEY_CHEST_COLOR)
+	uses_size_sprites = FALSE
+
 /datum/sprite_accessory/penis/knotted
 	icon_state = "knotted"
 	name = "Knotted"
 	color_key_defaults = list(null, KEY_CHEST_COLOR)
 	default_colors = list("C52828", null)
 
+/datum/sprite_accessory/penis/knotted_alt
+	icon_state = "knottedalt"
+	name = "Knotted (ALT)"
+	color_key_defaults = list(null, KEY_CHEST_COLOR)
+	default_colors = list("C52828", null)
+	uses_size_sprites = FALSE
+
 /datum/sprite_accessory/penis/flared
 	icon_state = "flared"
 	name = "Flared"
 	color_key_defaults = list(KEY_CHEST_COLOR, KEY_CHEST_COLOR)
 
+/datum/sprite_accessory/penis/flared_alt
+	icon_state = "flaredalt"
+	name = "Flared (ALT)"
+	color_key_defaults = list(KEY_CHEST_COLOR, KEY_CHEST_COLOR)
+	uses_size_sprites = FALSE
+
 /datum/sprite_accessory/penis/flared_knotted
 	icon_state = "flared"
 	name = "Flared, Knotted"
 	color_key_defaults = list(KEY_CHEST_COLOR, KEY_CHEST_COLOR)
+
+/datum/sprite_accessory/penis/flared_knotted_alt
+	icon_state = "flaredalt"
+	name = "Flared, Knotted (ALT)"
+	color_key_defaults = list(KEY_CHEST_COLOR, KEY_CHEST_COLOR)
+	uses_size_sprites = FALSE
 
 /datum/sprite_accessory/penis/barbknot
 	icon_state = "barbknot"
@@ -68,16 +93,34 @@
 	color_key_defaults = list(null, KEY_CHEST_COLOR)
 	default_colors = list("C52828", null)
 
+/datum/sprite_accessory/penis/barbknot_alt
+	icon_state = "barbknotalt"
+	name = "Barbed, Knotted (ALT)"
+	color_key_defaults = list(null, KEY_CHEST_COLOR)
+	default_colors = list("C52828", null)
+	uses_size_sprites = FALSE
+
 /datum/sprite_accessory/penis/tapered
 	icon_state = "tapered"
 	name = "Tapered"
 	default_colors = list("C52828", "C52828")
 
+/datum/sprite_accessory/penis/tapered_alt
+	icon_state = "taperedalt"
+	name = "Tapered (ALT)"
+	default_colors = list("C52828", "C52828")
+	uses_size_sprites = FALSE
+
 /datum/sprite_accessory/penis/taperedknot
 	icon_state = "taperedknot"
 	name = "Tapered, Knotted"
 	default_colors = list("C52828", "C52828")
-	uses_size_sprites = TRUE
+
+/datum/sprite_accessory/penis/taperedknot_alt
+	icon_state = "taperedknotalt"
+	name = "Tapered, Knotted (ALT)"
+	default_colors = list("C52828", "C52828")
+	uses_size_sprites = FALSE
 
 /datum/sprite_accessory/penis/taperedknot_mammal
 	icon_state = "taperedknot"
@@ -85,21 +128,47 @@
 	color_key_defaults = list(null, KEY_CHEST_COLOR)
 	default_colors = list("C52828", null)
 
+/datum/sprite_accessory/penis/taperedknot_mammal_alt
+	icon_state = "taperedknotalt"
+	name = "Tapered, Knotted (ALT)"
+	color_key_defaults = list(null, KEY_CHEST_COLOR)
+	default_colors = list("C52828", null)
+	uses_size_sprites = FALSE
+
 /datum/sprite_accessory/penis/tapered_mammal
 	icon_state = "tapered"
 	name = "Tapered"
 	color_key_defaults = list(null, KEY_CHEST_COLOR)
 	default_colors = list("C52828", null)
 
+/datum/sprite_accessory/penis/tapered_mammal_alt
+	icon_state = "taperedalt"
+	name = "Tapered (ALT)"
+	color_key_defaults = list(null, KEY_CHEST_COLOR)
+	default_colors = list("C52828", null)
+	uses_size_sprites = FALSE
+
 /datum/sprite_accessory/penis/tentacle
 	icon_state = "tentacle"
 	name = "Tentacled"
 	default_colors = list("C52828", "C52828")
 
+/datum/sprite_accessory/penis/tentacle_alt
+	icon_state = "tentaclealt"
+	name = "Tentacled (ALT)"
+	default_colors = list("C52828", "C52828")
+	uses_size_sprites = FALSE
+
 /datum/sprite_accessory/penis/hemi
 	icon_state = "hemi"
 	name = "Hemi"
 	default_colors = list("C52828", "C52828")
+
+/datum/sprite_accessory/penis/hemi_alt
+	icon_state = "hemialt"
+	name = "Hemi (ALT)"
+	default_colors = list("C52828", "C52828")
+	uses_size_sprites = FALSE
 
 /datum/sprite_accessory/penis/hemi_mammal
 	icon_state = "hemi"
@@ -107,10 +176,23 @@
 	color_key_defaults = list(null, KEY_CHEST_COLOR)
 	default_colors = list("C52828", null)
 
+/datum/sprite_accessory/penis/hemi_mammal_alt
+	icon_state = "hemialt"
+	name = "Hemi (ALT)"
+	color_key_defaults = list(null, KEY_CHEST_COLOR)
+	default_colors = list("C52828", null)
+	uses_size_sprites = FALSE
+
 /datum/sprite_accessory/penis/hemiknot
 	icon_state = "hemiknot"
 	name = "Knotted Hemi"
 	default_colors = list("C52828", "C52828")
+
+/datum/sprite_accessory/penis/hemiknot_alt
+	icon_state = "hemiknotalt"
+	name = "Knotted Hemi (ALT)"
+	default_colors = list("C52828", "C52828")
+	uses_size_sprites = FALSE
 
 /datum/sprite_accessory/testicles
 	icon = 'icons/mob/sprite_accessory/genitals/gonads.dmi'
