@@ -308,9 +308,8 @@
 	icon_state = "lewisgun"
 	item_state = "lewisgun"
 	item_flags = SLOWS_WHILE_IN_HAND
-	can_parry = TRUE
 	armor = ARMOR_SHIELD
-	possible_item_intents = list(, SHIELD_BLOCK, SHIELD_SMASH)
+	possible_item_intents = list(SHIELD_SMASH)
 	mag_type = /obj/item/ammo_box/magazine/lewis
 	slowdown = 2 //I'M THE JUGGAHNAUT BAYBEE
 	force = 40 //if someone hits you with a fucking lewis gun, you're gonna have a bad time
