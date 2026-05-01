@@ -321,13 +321,16 @@
 	recoil = 0.15
 	semi_auto = TRUE
 	burst = 3
+	var/coverage = 50
+	armor = ARMOR_SHIELD
+	can_parry = TRUE
 	wdefense = 11
 	max_integrity = 150
 	possible_item_intents = list(
 		/datum/intent/shoot/rifle,
 		/datum/intent/arc/rifle,
 		/datum/intent/shield/smash,
-		/datum/intent/shield/block,
+		/datum/intent/shield/block/metal,
 		INTENT_GENERIC,
 		)
 	sellprice = 240
