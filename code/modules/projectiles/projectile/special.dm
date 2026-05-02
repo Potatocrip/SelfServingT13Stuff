@@ -156,7 +156,7 @@
 	obj_flags = CAN_BE_HIT
 	force = 1
 	on_damage = 5
-	fuel = 180
+	fuel = 460
 	grid_width = 32
 	grid_height = 64
 	extinguishable = TRUE
@@ -185,7 +185,7 @@
 	icon_state = "fgunhigh"
 	extinguishable = FALSE
 	on = TRUE
-	fuel = 60
+	fuel = 180
 	sellprice = 3
 
 /obj/effect/illumination_flare_spawner
