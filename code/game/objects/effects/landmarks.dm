@@ -376,6 +376,12 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Innkeeper"
 	icon_state = "arrow"
 
+/obj/effect/landmark/start/barkeeperlate
+	name = "Innkeeper"
+	icon_state = "arrow"
+	jobspawn_override = list("Innkeeper")
+	delete_after_roundstart = FALSE
+
 /obj/effect/landmark/start/adventurer
 	name = "Adventurer"
 	icon_state = "arrow"
@@ -489,13 +495,13 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/jaeger
-	name = "Jaeger"
+	name = "Blackguard"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/jaegerlate
-	name = "Jaeger"
+	name = "Blackguard"
 	icon_state = "arrow"
-	jobspawn_override = list("Jaeger")
+	jobspawn_override = list("Blackguard")
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/rook
