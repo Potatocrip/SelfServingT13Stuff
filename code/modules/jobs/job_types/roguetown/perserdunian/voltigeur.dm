@@ -46,8 +46,8 @@
 	mask = /obj/item/clothing/mask/rogue/gasmask/perserdunmask
 	belt = /obj/item/storage/belt/rogue/leather/black/soldier
 	beltl = /obj/item/flashlight/flare/torch/lantern
-	beltr = /obj/item/storage/belt/rogue/pouch/ammobag/rifle
-	backl = /obj/item/gun/ballistic/rifle/repeater/lebel
+	beltr = /obj/item/storage/belt/rogue/pouch/ammobag/shotgun
+	backl = /obj/item/gun/ballistic/shotgun/levershotgun
 	wrists = /obj/item/scomstone/garrison
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
 	backr = /obj/item/storage/backpack/rogue/backpack/perserdun
@@ -80,11 +80,11 @@
 	H.adjust_skillrank(/datum/skill/craft/traps, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
 	H.change_stat("strength", 1)
-	H.change_stat("constitution", 1)
-	H.change_stat("intelligence", 0)
-	H.change_stat("endurance", 1)
+	H.change_stat("constitution", -1)
+	H.change_stat("intelligence", -1)
+	H.change_stat("endurance", 0)
 	H.change_stat("perception", 3)
-	H.change_stat("speed", 2)
+	H.change_stat("speed", 5)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_SLEUTH, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)
