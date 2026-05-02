@@ -62,6 +62,16 @@
 	var/suppress_moan = FALSE
 	/// Allow players to decide if they want to subtly do this action or not (only for actions that can be done subtly)
 	var/do_subtle_action = FALSE
+	/// Knot based variables
+	var/do_knot_action = FALSE
+	var/knotted_status = KNOTTED_NULL // knotted state and used to prevent multiple knottings when we do not handle that case
+	var/knotted_part = SEX_PART_NULL // which orifice was knotted (bitflag)
+	var/knotted_part_partner = SEX_PART_NULL // which orifice was knotted on partner (bitflag)
+	var/tugging_knot = FALSE
+	var/tugging_knot_check = 0
+	var/tugging_knot_blocked = FALSE
+	var/mob/living/carbon/knotted_owner = null // whom has the knot
+	var/mob/living/carbon/knotted_recipient = null // whom took the knot
 	/// Allow crotch to be exposed and bypass clothes check
 	var/bottom_exposed = FALSE
 	/// Allow chest to be exposed and show breasts
@@ -78,6 +88,9 @@
 	grassy_knoll = null
 	collar_bell_user = FALSE
 	collar_bell_target = FALSE
+	if(knotted_status)
+		knot_exit()
+	//receiving = list()
 	. = ..()
 
 /datum/sex_controller/proc/do_thrust_animate(atom/movable/target, pixels = 4, time = 2.7)
@@ -350,7 +363,9 @@
 		playsound(user, pick(list('sound/misc/mat/mouthend (1).ogg','sound/misc/mat/mouthend (2).ogg')), 100, FALSE, ignore_walls = FALSE)
 	else
 		playsound(user, 'sound/misc/mat/endin.ogg', 50, TRUE, ignore_walls = FALSE)
-	if(splashed_user)
+	if(user != target && do_knot_action && !isnull(target) && istype(target))
+		knot_try()
+	if(splashed_user && !splashed_user.sexcon.knotted_status)
 		var/status_type = !oral ? /datum/status_effect/facial/internal : /datum/status_effect/facial
 		var/datum/status_effect/facial/splashed_type = splashed_user.has_status_effect(status_type)
 		if(!splashed_type)
@@ -363,8 +378,6 @@
 				splashed_user.apply_status_effect(/datum/status_effect/creampie_leak/long)
 			else
 				splashed_user.apply_status_effect(/datum/status_effect/creampie_leak)
-	if(target.has_flaw(/datum/charflaw/addiction/lovefiend))
-		target.sate_addiction(/datum/charflaw/addiction/lovefiend)
 	after_ejaculation()
 	after_intimate_climax(oral)
 
@@ -685,17 +698,6 @@
 		return FALSE
 	return TRUE
 
-/datum/sex_controller/proc/double_penis_type()
-	var/obj/item/organ/penis/penis = user.getorganslot(ORGAN_SLOT_PENIS)
-	if(!penis)
-		return FALSE
-	if(!penis.functional)
-		return FALSE
-	switch(penis.penis_type)
-		if(PENIS_TYPE_TAPERED_DOUBLE,PENIS_TYPE_TAPERED_DOUBLE_KNOTTED)
-			return TRUE
-	return FALSE
-
 /datum/sex_controller/proc/considered_limp()
 	if(arousal >= AROUSAL_HARD_ON_THRESHOLD)
 		return FALSE
@@ -750,6 +752,11 @@
 				dat += " | <a href='?src=[REF(src)];task=toggle_subtle'>DOING SUBTLY</a>"
 			else
 				dat += " | <a href='?src=[REF(src)];task=toggle_subtle'>DOING VISIBLY</a>"
+		else if(action.knot_on_finish && knot_penis_type())
+			if(do_knot_action)
+				dat += " | <a href='?src=[REF(src)];task=toggle_knot'><font color='#d146f5'>USING KNOT</font></a>"
+			else
+				dat += " | <a href='?src=[REF(src)];task=toggle_knot'><font color='#eac8de'>NOT USING KNOT</font></a>"
 	dat += "</center><center><a href='?src=[REF(src)];task=set_arousal'>SET AROUSAL</a> | <a href='?src=[REF(src)];task=freeze_arousal'>[arousal_frozen ? "UNFREEZE AROUSAL" : "FREEZE AROUSAL"]</a></center>"
 	if(target == user)
 		dat += "<center>Doing unto yourself</center>"
@@ -846,6 +853,8 @@
 			action_category = SEX_CATEGORY_PENETRATE
 		if("toggle_subtle")
 			do_subtle_action = !do_subtle_action
+		if("toggle_knot")
+			do_knot_action = !do_knot_action
 	show_ui()
 
 /datum/sex_controller/proc/try_stop_current_action()
@@ -857,6 +866,9 @@
 /datum/sex_controller/proc/stop_current_action()
 	if(!current_action)
 		return
+	var/datum/sex_action/action = SEX_ACTION(current_action)
+	if(!user.sexcon.knotted_status) // never show the remove message, unless unknotted
+		action.on_finish(user, target)
 	desire_stop = FALSE
 	user.doing = FALSE
 	current_action = null
@@ -864,6 +876,8 @@
 	table_or_pillory = null
 	grassy_knoll = null
 	target_on_bed = FALSE
+	table_or_pillory = null
+	grassy_knoll = null
 	collar_bell_user = FALSE
 	collar_bell_target = FALSE
 	using_zones = list()
@@ -879,11 +893,14 @@
 		return
 	if(!can_perform_action(action_type, user.incapacitated()))
 		return
+	knot_check_remove(action_type)
 	// Set vars
 	desire_stop = FALSE
 	current_action = action_type
 	bed = null
 	target_on_bed = FALSE
+	table_or_pillory = null
+	grassy_knoll = null
 	table_or_pillory = null
 	grassy_knoll = null
 	collar_bell_user = FALSE
