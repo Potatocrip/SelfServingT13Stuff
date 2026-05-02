@@ -123,3 +123,4 @@
 	)
 	H.adjust_skillrank(/datum/skill/combat/rifles, 4, TRUE)
 	H.change_stat("speed", -4)
+	maximum_possible_slots = 1
